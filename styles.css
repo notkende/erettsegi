@@ -1,0 +1,2056 @@
+/* L7 Litera - Szuper-tiszta, Premium Modern Cyberpunk Stíluslap */
+
+/* -------------------------------------------------------------
+   1. DIZÁJNRENDSZER ÉS NEON VÁLTOZÓK
+   ------------------------------------------------------------- */
+:root {
+  --bg-color: #0b0c0f;           /* Deep obsidian gray */
+  --bg-card: rgba(255, 255, 255, 0.03); /* Highly transparent glass plate */
+  --bg-header: rgba(11, 12, 15, 0.6);  /* Translucent header */
+  
+  /* Apple System Colors */
+  --system-blue: #007aff;
+  --system-purple: #954ced;
+  --system-green: #34c759;
+  --system-red: #ff3b30;
+  
+  --accent-color: var(--system-blue);
+  --accent-glow: rgba(0, 122, 255, 0.15);
+  
+  --border-color: rgba(255, 255, 255, 0.08); /* Crisp translucent edge */
+  --border-hover: rgba(255, 255, 255, 0.15);
+  
+  /* Szöveg színek */
+  --text-main: #f5f5f7;          /* Apple white text */
+  --text-muted: #8e8e93;         /* Apple gray text */
+  --text-inverse: #000000;
+  
+  /* Státusz színek */
+  --status-not-started: var(--system-red);
+  --status-in-progress: #ff9f0a; /* Apple orange */
+  --status-mastered: var(--system-green);
+  
+  /* Betűtípusok - Apple SF Pro Rendszerfontok */
+  --font-ui: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-reading: 'Lora', Georgia, serif;
+  --font-mono: SFMono-Regular, Consolas, Menlo, monospace;
+  
+  --transition-speed: 0.3s;
+  --border-radius-lg: 20px;      /* Apple Widget curvature */
+  --border-radius-md: 12px;
+  --border-radius-sm: 8px;
+  --border-radius-pill: 30px;
+  
+  --container-width: 1040px;
+  
+  /* Premium glass shadow with inset top specular light leak */
+  --card-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  --header-shadow: 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* VILÁGOS MÓD */
+body.light-mode {
+  --bg-color: #f4f5f8;           /* Light gray Apple background */
+  --bg-card: rgba(255, 255, 255, 0.35); /* Crystal clear white glass */
+  --bg-header: rgba(244, 245, 248, 0.6);
+  
+  --border-color: rgba(0, 0, 0, 0.05);
+  --border-hover: rgba(0, 0, 0, 0.12);
+  
+  --text-main: #1d1d1f;          /* Apple dark gray */
+  --text-muted: #86868b;
+  --text-inverse: #ffffff;
+  
+  --card-shadow: 0 16px 40px rgba(0, 0, 0, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  --header-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
+}
+
+/* -------------------------------------------------------------
+   2. ALAP RESET & TIPOGRÁFIA
+   ------------------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-ui);
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  line-height: 1.5;
+  min-height: 100vh;
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Animated Ambient Background for Glassmorphism */
+.ambient-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -10;
+  pointer-events: none;
+  overflow: hidden;
+  background-color: var(--bg-color);
+  transition: background-color var(--transition-speed);
+}
+
+.glow-sphere {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(140px);
+  opacity: 0.06;
+  mix-blend-mode: screen;
+  transition: opacity var(--transition-speed);
+}
+
+body.light-mode .glow-sphere {
+  opacity: 0.04;
+  mix-blend-mode: multiply;
+}
+
+.glow-1 {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, var(--system-blue) 0%, rgba(0, 122, 255, 0) 70%);
+  top: -150px;
+  left: -150px;
+  animation: float-slow-1 45s infinite alternate ease-in-out;
+}
+
+.glow-2 {
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(circle, var(--system-purple) 0%, rgba(149, 76, 237, 0) 70%);
+  bottom: -100px;
+  right: -100px;
+  animation: float-slow-2 55s infinite alternate ease-in-out;
+}
+
+.glow-3 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #e91e63 0%, rgba(233, 30, 99, 0) 70%);
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  animation: float-slow-3 65s infinite alternate ease-in-out;
+}
+
+@keyframes float-slow-1 {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(120px, 80px) scale(1.15); }
+  100% { transform: translate(-50px, 150px) scale(0.9); }
+}
+
+@keyframes float-slow-2 {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-150px, -90px) scale(0.85); }
+  100% { transform: translate(80px, -180px) scale(1.1); }
+}
+
+@keyframes float-slow-3 {
+  0% { transform: translate(-50%, -50%) scale(1); }
+  50% { transform: translate(-30%, -60%) scale(1.2); }
+  100% { transform: translate(-60%, -40%) scale(0.85); }
+}
+
+/* Általános üveghatás (iOS Glassmorphism) */
+.glass-panel {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+  backdrop-filter: blur(40px) saturate(210%);
+  -webkit-backdrop-filter: blur(40px) saturate(210%);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--card-shadow);
+  transition: all var(--transition-speed) cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body.light-mode .glass-panel {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.25) 100%);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.flashcard-controls .btn-outline {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border: 1px solid var(--border-color);
+  background: transparent;
+  padding: 6px 14px;
+  border-radius: var(--border-radius-pill);
+  transition: all var(--transition-speed);
+}
+
+.flashcard-controls .btn-outline:hover {
+  color: var(--system-blue);
+  border-color: var(--system-blue);
+  background-color: rgba(0, 122, 255, 0.05);
+}
+
+/* -------------------------------------------------------------
+   7/C. INTERAKTÍV KVÍZ (iOS STYLE)
+   ------------------------------------------------------------- */
+.quiz-wrapper {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+#quiz-start-view {
+  text-align: center;
+  padding: 24px 0;
+}
+
+#quiz-start-view h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#quiz-start-view p {
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+.quiz-progress-bar {
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  margin-bottom: 15px;
+  border-radius: var(--border-radius-pill);
+}
+
+body.light-mode .quiz-progress-bar {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.quiz-progress-fill {
+  height: 100%;
+  background-color: var(--system-blue);
+  width: 0%;
+  transition: width 0.3s ease;
+  border-radius: var(--border-radius-pill);
+}
+
+.quiz-header-status {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 15px;
+}
+
+.quiz-question-box {
+  margin-bottom: 15px;
+}
+
+.quiz-question-box h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.quiz-options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.quiz-option-btn {
+  background-color: var(--bg-card);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  padding: 12px 16px;
+  text-align: left;
+  cursor: pointer;
+  font-family: var(--font-ui);
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: var(--border-radius-md);
+  transition: all var(--transition-speed) cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.quiz-option-btn:hover {
+  border-color: var(--system-blue);
+  background-color: rgba(0, 122, 255, 0.04);
+  transform: translateX(4px);
+  box-shadow: 0 4px 15px rgba(0, 122, 255, 0.08);
+}
+
+.option-letter {
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: bold;
+  border-radius: var(--border-radius-sm);
+  transition: all var(--transition-speed);
+}
+
+/* Helyes/Helytelen gombok (Apple System Colors) */
+.quiz-option-btn.correct {
+  background-color: rgba(52, 199, 89, 0.1) !important;
+  border-color: var(--system-green) !important;
+  color: var(--system-green) !important;
+}
+
+.quiz-option-btn.correct .option-letter {
+  background-color: var(--system-green);
+  color: #ffffff;
+  border-color: var(--system-green);
+}
+
+.quiz-option-btn.incorrect {
+  background-color: rgba(255, 59, 48, 0.1) !important;
+  border-color: var(--system-red) !important;
+  color: var(--system-red) !important;
+}
+
+.quiz-option-btn.incorrect .option-letter {
+  background-color: var(--system-red);
+  color: #ffffff;
+  border-color: var(--system-red);
+}
+
+/* Egyedi letisztult görgetősáv (iOS Minimalist Scrollbar) */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+}
+body.light-mode ::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--system-blue);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-ui);
+  font-weight: 600;              /* Apple dizájnban a semi-bold letisztultabb */
+  letter-spacing: -0.02em;
+}
+
+/* -------------------------------------------------------------
+   3. FEJLÉC (MINIMALIST WEB APP HEADER)
+   ------------------------------------------------------------- */
+header {
+  background-color: var(--bg-header);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+body.light-mode header {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
+}
+
+.header-container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-area {
+  cursor: pointer;
+  font-family: var(--font-ui);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  display: flex;
+  align-items: center;
+}
+
+.logo-accent {
+  color: var(--system-blue);
+  font-weight: 700;
+  margin-right: 3px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Témaváltó gomb */
+.theme-toggle {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-muted);
+  width: 32px;
+  height: 32px;
+  border-radius: var(--border-radius-pill);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-speed);
+}
+
+.theme-toggle:hover {
+  border-color: var(--system-blue);
+  color: var(--text-main);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+body.light-mode .theme-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+/* -------------------------------------------------------------
+   4. POMODORO IDŐZÍTŐ WIDGET (SLEEK iOS VERSION)
+   ------------------------------------------------------------- */
+.pomodoro-widget {
+  position: relative;
+}
+
+.pomo-toggle-btn {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  padding: 0 12px;
+  height: 32px;
+  border-radius: var(--border-radius-pill);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 0.8rem;
+  transition: all var(--transition-speed);
+}
+
+.pomo-toggle-btn:hover {
+  border-color: var(--system-blue);
+}
+
+.pomo-toggle-btn svg {
+  color: var(--text-muted);
+}
+
+.pomo-toggle-btn:hover svg {
+  color: var(--system-blue);
+}
+
+.pomo-time {
+  background-color: rgba(0, 122, 255, 0.12);
+  color: var(--system-blue);
+  font-family: var(--font-mono);
+  padding: 1px 6px;
+  font-size: 0.8rem;
+  border-radius: var(--border-radius-sm);
+  margin-left: 2px;
+}
+
+.pomo-dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  width: 225px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
+  backdrop-filter: blur(40px) saturate(210%);
+  -webkit-backdrop-filter: blur(40px) saturate(210%);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--card-shadow);
+  padding: 16px;
+  z-index: 1000;
+  text-align: center;
+  border-radius: var(--border-radius-md);
+  animation: slideIn var(--transition-speed) cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body.light-mode .pomo-dropdown {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.3) 100%);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.pomo-dropdown.active {
+  display: block;
+}
+
+.pomo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.pomo-header h4 {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--text-main);
+}
+
+.close-pomo {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.pomo-timer-huge {
+  font-family: var(--font-ui);
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--text-main);
+  margin: 2px 0 14px 0;
+  letter-spacing: -0.03em;
+}
+
+.pomo-modes {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 12px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 3px;
+  border-radius: var(--border-radius-pill);
+}
+
+body.light-mode .pomo-modes {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.pomo-mode-btn {
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 6px 0;
+  cursor: pointer;
+  border-radius: var(--border-radius-pill);
+  transition: all var(--transition-speed);
+}
+
+.pomo-mode-btn.active {
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+body.light-mode .pomo-mode-btn.active {
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.pomo-controls {
+  display: flex;
+  gap: 6px;
+}
+
+.pomo-controls .btn {
+  flex: 1;
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 6px 0;
+  border: 1px solid var(--border-color);
+  background-color: rgba(255, 255, 255, 0.03);
+  color: var(--text-main);
+  cursor: pointer;
+  border-radius: var(--border-radius-pill);
+  transition: all var(--transition-speed);
+}
+
+body.light-mode .pomo-controls .btn {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.pomo-controls #pomo-start {
+  background-color: rgba(52, 199, 89, 0.15);
+  border-color: rgba(52, 199, 89, 0.3);
+  color: var(--system-green);
+}
+
+.pomo-controls #pomo-start:hover {
+  background-color: rgba(52, 199, 89, 0.25);
+}
+
+.pomo-controls #pomo-pause {
+  background-color: rgba(0, 122, 255, 0.15);
+  border-color: rgba(0, 122, 255, 0.3);
+  color: var(--system-blue);
+}
+
+.pomo-controls #pomo-pause:hover {
+  background-color: rgba(0, 122, 255, 0.25);
+}
+
+.pomo-controls #pomo-reset:hover {
+  border-color: var(--text-muted);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+body.light-mode .pomo-controls #pomo-reset:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* -------------------------------------------------------------
+   5. FŐOLDAL / VEZÉRLŐPULT (DASHBOARD)
+   ------------------------------------------------------------- */
+.main-content {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 35px 20px;
+}
+
+/* Üdvözlés és haladás szekció */
+.welcome-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.welcome-text h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  margin-bottom: 6px;
+  color: var(--text-main);
+}
+
+.welcome-text p {
+  color: var(--text-muted);
+  max-width: 520px;
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+/* Szuper-tiszta haladási kártya (iOS Widget Style) */
+.progress-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+  backdrop-filter: blur(40px) saturate(210%);
+  -webkit-backdrop-filter: blur(40px) saturate(210%);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  padding: 22px;
+  width: 310px;
+  flex-shrink: 0;
+  box-shadow: var(--card-shadow);
+}
+
+body.light-mode .progress-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.25) 100%);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+}
+
+.progress-header span:first-child {
+  color: var(--system-blue);
+}
+
+.progress-bar-wrapper {
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: var(--border-radius-pill);
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+
+body.light-mode .progress-bar-wrapper {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.progress-bar-global {
+  height: 100%;
+  background: linear-gradient(90deg, var(--system-blue) 0%, var(--system-green) 100%);
+  border-radius: var(--border-radius-pill);
+  transition: width 0.3s ease;
+}
+
+.progress-counters {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+}
+
+.counter-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counter-item span {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.lbl-mini {
+  color: var(--text-muted);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  margin-top: 2px;
+  font-weight: 500;
+}
+
+/* Kereső és szűrősáv (iOS Segmented and Pill Styles) */
+.search-filter-bar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.search-box {
+  flex: 2;
+  min-width: 280px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-pill);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 16px;
+  height: 38px;
+  transition: all var(--transition-speed);
+  backdrop-filter: blur(25px) saturate(180%);
+  -webkit-backdrop-filter: blur(25px) saturate(180%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+body.light-mode .search-box {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.25) 100%);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.search-box:focus-within {
+  border-color: var(--system-blue);
+  box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.18);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+body.light-mode .search-box:focus-within {
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.search-box svg {
+  color: var(--text-muted);
+}
+
+.search-box input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--text-main);
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+.search-box input::placeholder {
+  color: var(--text-muted);
+}
+
+.filter-pills {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.pill {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-muted);
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 0 16px;
+  height: 38px;
+  border-radius: var(--border-radius-pill); /* Kapszula forma a tisztább iOS hatásért */
+  cursor: pointer;
+  transition: all var(--transition-speed);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.pill:hover {
+  color: var(--text-main);
+  border-color: var(--system-blue);
+  background-color: rgba(0, 122, 255, 0.08);
+}
+
+body.light-mode .pill:hover {
+  background-color: rgba(0, 122, 255, 0.04);
+}
+
+.pill.active {
+  border-color: var(--system-blue);
+  background-color: var(--system-blue);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 122, 255, 0.15);
+}
+
+.sort-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.sort-select {
+  height: 38px;
+  padding: 0 14px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-card);
+  color: var(--text-muted);
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: var(--border-radius-pill);
+  outline: none;
+  cursor: pointer;
+  transition: all var(--transition-speed);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.sort-select:hover {
+  border-color: var(--system-blue);
+  color: var(--text-main);
+}
+
+.sort-select:focus {
+  border-color: var(--system-blue);
+  box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.18);
+  color: var(--text-main);
+}
+
+/* -------------------------------------------------------------
+   6. TÉTELEK RÁCSA (iOS WIDGET GRID)
+   ------------------------------------------------------------- */
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.topic-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+  backdrop-filter: blur(40px) saturate(210%);
+  -webkit-backdrop-filter: blur(40px) saturate(210%);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  padding: 24px;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  box-shadow: var(--card-shadow);
+  transition: all var(--transition-speed) cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body.light-mode .topic-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.25) 100%);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.topic-card:hover {
+  border-color: rgba(255, 255, 255, 0.18);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  transform: translateY(-4px) scale(1.01);
+}
+
+body.light-mode .topic-card:hover {
+  border-color: rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.35) 100%);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.85);
+  transform: translateY(-4px) scale(1.01);
+}
+
+.card-num {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.topic-card:hover .card-num {
+  color: var(--system-blue);
+}
+
+.card-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--text-main);
+  margin-top: 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: -0.015em;
+}
+
+.topic-card:hover .card-title {
+  color: var(--system-blue);
+}
+
+.card-author {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 3px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+body.light-mode .card-footer {
+  border-top-color: rgba(0, 0, 0, 0.04);
+}
+
+.card-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-meta-category {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--system-purple);
+  letter-spacing: 0.02em;
+}
+
+.card-meta-time {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+/* Szuper letisztult státusz kapszula */
+.card-status-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 2px 8px;
+  border-radius: var(--border-radius-pill);
+}
+
+.card-status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--status-not-started);
+}
+
+.card-status-dot.in-progress { background-color: var(--status-in-progress); }
+.card-status-dot.mastered { background-color: var(--status-mastered); }
+
+/* -------------------------------------------------------------
+   7. 2. NÉZET: TÉTEL WORKSPACE (MUNKA FELÜLET)
+   ------------------------------------------------------------- */
+.workspace-header {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+  backdrop-filter: blur(40px) saturate(210%);
+  -webkit-backdrop-filter: blur(40px) saturate(210%);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 24px;
+  box-shadow: var(--card-shadow);
+}
+
+body.light-mode .workspace-header {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.25) 100%);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: var(--border-radius-pill); /* Pill shaped buttons */
+  transition: all var(--transition-speed) cubic-bezier(0.16, 1, 0.3, 1);
+  border: none;
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+body.light-mode .btn-secondary {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.btn-secondary:hover {
+  border-color: var(--system-blue);
+  color: var(--system-blue);
+  background-color: rgba(0, 122, 255, 0.05);
+}
+
+#btn-back {
+  border-color: var(--border-color);
+  color: var(--text-main);
+  background: rgba(255, 255, 255, 0.03);
+  align-self: flex-start;
+}
+
+body.light-mode #btn-back {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+#btn-back:hover {
+  border-color: var(--system-blue);
+  color: var(--system-blue);
+  background-color: rgba(0, 122, 255, 0.05);
+}
+
+.topic-title-area {
+  margin: 4px 0;
+}
+
+.topic-meta-badges {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.badge {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: var(--border-radius-pill); /* Pill badges */
+}
+
+.badge-category {
+  background-color: rgba(149, 76, 237, 0.1);
+  border: 1px solid rgba(149, 76, 237, 0.25);
+  color: var(--system-purple);
+}
+
+.badge-era {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-color);
+  color: var(--text-muted);
+}
+
+body.light-mode .badge-era {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.badge-time {
+  background-color: rgba(52, 199, 89, 0.1);
+  border: 1px solid rgba(52, 199, 89, 0.25);
+  color: var(--system-green);
+}
+
+#workspace-topic-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--text-main);
+  letter-spacing: -0.035em;
+}
+
+.topic-status-picker {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.topic-status-picker label {
+  color: var(--text-muted);
+}
+
+.glass-select {
+  background-color: var(--bg-card);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  padding: 6px 14px;
+  outline: none;
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border-radius: var(--border-radius-pill);
+  transition: all var(--transition-speed);
+}
+
+.glass-select:focus {
+  border-color: var(--system-blue);
+  box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.18);
+}
+
+#btn-print {
+  border-color: var(--border-color);
+  color: var(--text-muted);
+  background: transparent;
+  padding: 6px 14px;
+  font-size: 0.75rem;
+  border-radius: var(--border-radius-pill);
+}
+
+#btn-print:hover {
+  border-color: var(--system-blue);
+  color: var(--system-blue);
+  background-color: rgba(0, 122, 255, 0.05);
+}
+
+/* Tantárgyválasztó segmented control */
+.subject-selector-bar {
+  display: flex;
+  gap: 2px;
+  padding: 4px;
+  background-color: rgba(0, 0, 0, 0.18);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  margin-bottom: 24px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  max-width: 320px;
+}
+
+body.light-mode .subject-selector-bar {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.subject-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 9px;
+  transition: all var(--transition-speed);
+  flex: 1;
+  text-align: center;
+  outline: none;
+}
+
+.subject-btn:hover {
+  color: var(--text-main);
+}
+
+.subject-btn.active {
+  color: #000000;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+body.light-mode .subject-btn.active {
+  color: #000000;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Fül navigációs sáv (iOS Segmented Control) */
+.workspace-tabs-bar {
+  display: flex;
+  gap: 2px;
+  padding: 4px;
+  background-color: rgba(0, 0, 0, 0.18);
+  border: 1px solid var(--border-color);
+  border-radius: 12px; /* iOS-szerű szögletesebb lekerekítés segmented-nek */
+  margin-bottom: 24px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+body.light-mode .workspace-tabs-bar {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.tab-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 7px 12px;
+  cursor: pointer;
+  border-radius: 9px;
+  transition: all var(--transition-speed);
+  flex: 1;
+  text-align: center;
+}
+
+.tab-btn:hover {
+  color: var(--text-main);
+}
+
+.tab-btn.active {
+  color: #000000;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+body.light-mode .tab-btn.active {
+  color: #000000;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* -------------------------------------------------------------
+   7/A. OLVASÁS FÜL (KIDOLGOZOTT TÉTEL)
+   ------------------------------------------------------------- */
+.reading-layout {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+/* TOC (Tartalomjegyzék) */
+.reading-toc h3 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--system-blue);
+  margin-bottom: 10px;
+  letter-spacing: 0.05em;
+}
+
+.toc-link {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  padding: 4px 12px;
+  border-left: 2px solid var(--border-color);
+  display: block;
+  transition: all var(--transition-speed);
+  border-radius: 0;
+}
+
+.toc-link:hover {
+  color: var(--text-main);
+  border-left-color: var(--text-muted);
+}
+
+.toc-link.active {
+  color: var(--system-blue);
+  border-left-color: var(--system-blue);
+}
+
+/* Cikk szövegtest (iOS Frosted Sheet Style) */
+.reading-article {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+  backdrop-filter: blur(40px) saturate(210%);
+  -webkit-backdrop-filter: blur(40px) saturate(210%);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  padding: 35px;
+  box-shadow: var(--card-shadow);
+}
+
+body.light-mode .reading-article {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.25) 100%);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.article-section {
+  margin-bottom: 35px;
+  padding-bottom: 25px;
+  border-bottom: 1px dashed rgba(255,255,255,0.06);
+}
+
+body.light-mode .article-section {
+  border-bottom-color: rgba(0, 0, 0, 0.06);
+}
+
+.article-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.article-section h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--system-blue);
+  margin-bottom: 16px;
+}
+
+/* Vázlat doboz / Villám-összefoglaló modern kártya */
+.outline-box {
+  background: linear-gradient(135deg, rgba(0, 122, 255, 0.03) 0%, rgba(149, 76, 237, 0.03) 100%);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--system-blue);
+  border-radius: var(--border-radius-md);
+  padding: 22px 24px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+}
+
+.outline-box li {
+  font-family: var(--font-ui);
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  padding-left: 24px;
+  position: relative;
+  list-style: none;
+  color: var(--text-main);
+}
+
+.outline-box li:last-child {
+  margin-bottom: 0;
+}
+
+.outline-box li::before {
+  content: '✦';
+  color: var(--system-blue);
+  font-size: 0.8rem;
+  position: absolute;
+  left: 0;
+  top: 1px;
+}
+
+.section-content-text {
+  font-family: var(--font-reading);
+  font-size: 1.12rem;
+  line-height: 1.75;
+  color: var(--text-main);
+  text-align: left;
+}
+
+body.light-mode .section-content-text {
+  color: #1d1d1f;
+}
+
+.section-content-text p {
+  margin-bottom: 18px;
+}
+
+.section-content-text p:last-child {
+  margin-bottom: 0;
+}
+
+.section-content-text strong {
+  color: var(--system-blue);
+  font-weight: 600;
+}
+
+body.light-mode .section-content-text strong {
+  text-shadow: none;
+}
+
+/* Idézetek */
+.quote-box {
+  background-color: rgba(149, 76, 237, 0.03);
+  border-left: 3px solid var(--system-purple);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  padding: 16px 22px;
+  margin: 24px 0;
+  font-style: italic;
+  font-family: var(--font-reading);
+  color: var(--text-main);
+  border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+}
+
+body.light-mode .quote-box {
+  background-color: rgba(149, 76, 237, 0.02);
+  color: #1d1d1f;
+}
+
+/* Elemzések */
+.work-item-analysis {
+  background-color: rgba(255, 255, 255, 0.015);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  padding: 22px;
+  margin-bottom: 22px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.work-item-analysis:last-child {
+  margin-bottom: 0;
+}
+
+.work-title-heading {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--system-blue);
+  margin-bottom: 14px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 6px;
+}
+
+/* -------------------------------------------------------------
+   7/B. TANULÓKÁRTYÁK (3D FLIP CARDS)
+   ------------------------------------------------------------- */
+.flashcards-wrapper {
+  max-width: 450px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.flashcards-tip {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.flashcard-container {
+  perspective: 1000px;
+  width: 100%;
+  height: 260px;
+  margin-bottom: 20px;
+}
+
+.flashcard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.flashcard.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card-side {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 28px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+  backdrop-filter: blur(40px) saturate(210%);
+  -webkit-backdrop-filter: blur(40px) saturate(210%);
+  border: 1px solid var(--border-color);
+  border-top: 3px solid var(--system-blue);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--card-shadow);
+  transition: all var(--transition-speed) cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body.light-mode .card-side {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.25) 100%);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  border-color: var(--border-color);
+  border-top: 3px solid var(--system-purple);
+}
+
+.flashcard:hover .card-front {
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.18);
+  transform: translateY(-4px);
+}
+
+.flashcard.is-flipped:hover .card-back {
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.18);
+  transform: rotateY(180deg) translateY(-4px);
+}
+
+.card-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 12px;
+}
+
+.card-front .card-tag { color: var(--system-blue); }
+.card-back .card-tag { color: var(--system-purple); }
+
+.card-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-main);
+}
+
+.card-instruction {
+  font-weight: 500;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border-color);
+  width: 100%;
+  padding-top: 10px;
+}
+
+.flashcard-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.card-counter {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+}
+
+.flashcard-controls .btn-outline {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border: 1px solid var(--border-color);
+  background: transparent;
+  padding: 6px 14px;
+  border-radius: var(--border-radius-pill);
+  transition: all var(--transition-speed);
+}
+
+.flashcard-controls .btn-outline:hover {
+  color: var(--system-blue);
+  border-color: var(--system-blue);
+  background-color: rgba(0, 122, 255, 0.05);
+}
+
+/* -------------------------------------------------------------
+   7/C. INTERAKTÍV KVÍZ (iOS STYLE)
+   ------------------------------------------------------------- */
+.quiz-wrapper {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+#quiz-start-view {
+  text-align: center;
+  padding: 24px 0;
+}
+
+#quiz-start-view h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#quiz-start-view p {
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+.quiz-progress-bar {
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  margin-bottom: 15px;
+  border-radius: var(--border-radius-pill);
+}
+
+body.light-mode .quiz-progress-bar {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.quiz-progress-fill {
+  height: 100%;
+  background-color: var(--system-blue);
+  width: 0%;
+  transition: width 0.3s ease;
+  border-radius: var(--border-radius-pill);
+}
+
+.quiz-header-status {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 15px;
+}
+
+.quiz-question-box {
+  margin-bottom: 15px;
+}
+
+.quiz-question-box h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.quiz-options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.quiz-option-btn {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%);
+  backdrop-filter: blur(25px) saturate(180%);
+  -webkit-backdrop-filter: blur(25px) saturate(180%);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  padding: 12px 16px;
+  text-align: left;
+  cursor: pointer;
+  font-family: var(--font-ui);
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: var(--border-radius-md);
+  transition: all var(--transition-speed) cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.02);
+}
+
+body.light-mode .quiz-option-btn {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0.25) 100%);
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.quiz-option-btn:hover {
+  border-color: var(--system-blue);
+  background-color: rgba(0, 122, 255, 0.04);
+  transform: translateX(4px);
+  box-shadow: 0 4px 15px rgba(0, 122, 255, 0.08);
+}
+
+.option-letter {
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: bold;
+  border-radius: var(--border-radius-sm);
+  transition: all var(--transition-speed);
+}
+
+/* Helyes/Helytelen gombok (Apple System Colors) */
+.quiz-option-btn.correct {
+  background-color: rgba(52, 199, 89, 0.1) !important;
+  border-color: var(--system-green) !important;
+  color: var(--system-green) !important;
+}
+
+.quiz-option-btn.correct .option-letter {
+  background-color: var(--system-green);
+  color: #ffffff;
+  border-color: var(--system-green);
+}
+
+.quiz-option-btn.incorrect {
+  background-color: rgba(255, 59, 48, 0.1) !important;
+  border-color: var(--system-red) !important;
+  color: var(--system-red) !important;
+}
+
+.quiz-option-btn.incorrect .option-letter {
+  background-color: var(--system-red);
+  color: #ffffff;
+  border-color: var(--system-red);
+}
+
+.quiz-feedback-box {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+  backdrop-filter: blur(25px) saturate(180%);
+  -webkit-backdrop-filter: blur(25px) saturate(180%);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--system-blue);
+  padding: 18px;
+  margin-top: 16px;
+  border-radius: var(--border-radius-md);
+  animation: slideIn var(--transition-speed) cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: var(--card-shadow);
+}
+
+body.light-mode .quiz-feedback-box {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0.25) 100%);
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.quiz-feedback-box.correct-style {
+  border-left-color: var(--system-green);
+}
+
+.quiz-feedback-box.incorrect-style {
+  border-left-color: var(--system-red);
+}
+
+#quiz-feedback-title {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.quiz-feedback-box.correct-style #quiz-feedback-title { color: var(--system-green); }
+.quiz-feedback-box.incorrect-style #quiz-feedback-title { color: var(--system-red); }
+
+#quiz-feedback-explanation {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+  margin-top: 2px;
+  line-height: 1.5;
+}
+
+#quiz-result-view {
+  text-align: center;
+  padding: 24px 0;
+}
+
+.quiz-result-score-huge {
+  font-family: var(--font-ui);
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--system-green);
+  margin-bottom: 12px;
+}
+
+#quiz-result-view h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+#quiz-result-view p {
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+/* -------------------------------------------------------------
+   7/D. SAJÁT JEGYZETEK
+   ------------------------------------------------------------- */
+.notes-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.notes-header h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.notes-header p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+#notes-textarea {
+  width: 100%;
+  height: 280px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+  backdrop-filter: blur(25px) saturate(180%);
+  -webkit-backdrop-filter: blur(25px) saturate(180%);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  font-family: var(--font-ui);
+  font-size: 0.95rem;
+  padding: 16px;
+  outline: none;
+  resize: vertical;
+  border-radius: var(--border-radius-lg);
+  transition: all var(--transition-speed);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.02);
+}
+
+body.light-mode #notes-textarea {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0.25) 100%);
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+#notes-textarea:focus {
+  border-color: var(--system-blue);
+  box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.18);
+}
+
+.notes-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notes-status-lbl {
+  font-family: var(--font-ui);
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+#btn-clear-notes {
+  border: 1px solid rgba(255, 59, 48, 0.25);
+  color: var(--system-red);
+  background: rgba(255, 59, 48, 0.05);
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 0.75rem;
+  border-radius: var(--border-radius-pill);
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: all var(--transition-speed);
+}
+
+#btn-clear-notes:hover {
+  background-color: rgba(255, 59, 48, 0.15);
+  border-color: rgba(255, 59, 48, 0.45);
+}
+
+/* -------------------------------------------------------------
+   8. FOOTER
+   ------------------------------------------------------------- */
+footer {
+  border-top: 1px solid var(--border-color);
+  padding: 20px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  margin-top: 50px;
+}
+
+.footer-container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+/* -------------------------------------------------------------
+   9. ANINMÁCIÓK
+   ------------------------------------------------------------- */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* -------------------------------------------------------------
+   10. NYOMTATÁSI NÉZET (@media print)
+   ------------------------------------------------------------- */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 11pt;
+  }
+  
+  header, footer, .print-hide, .workspace-tabs-bar, .reading-toc, #btn-back, .topic-status-picker, #pane-flashcards, #pane-quiz, #pane-notes {
+    display: none !important;
+  }
+  
+  #view-dashboard {
+    display: none !important;
+  }
+  
+  #view-topic-workspace, #pane-reading, .reading-article {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    background: transparent !important;
+  }
+  
+  .reading-layout {
+    display: block !important;
+  }
+  
+  #workspace-topic-title {
+    font-size: 22pt !important;
+    color: #000000 !important;
+  }
+  
+  .article-section {
+    page-break-inside: avoid;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .article-section h2 {
+    font-size: 14pt !important;
+    color: #000000 !important;
+  }
+  
+  .outline-box {
+    background: #f0f0f0 !important;
+    border: 1px solid #cccccc !important;
+  }
+  
+  .section-content-text {
+    font-family: serif !important;
+    color: #000000 !important;
+  }
+  
+  .quote-box {
+    background: #fafafa !important;
+    border-left: 3px solid #555555 !important;
+    color: #333333 !important;
+  }
+  
+  .work-item-analysis {
+    background: transparent !important;
+    border: 1px solid #dddddd !important;
+  }
+  
+  .work-title-heading {
+    color: #000000 !important;
+    border-bottom: 1px solid #cccccc;
+  }
+}
+
+/* -------------------------------------------------------------
+   11. FELELŐS ELRENDEZÉS (RESPONSIVE / MOBIL)
+   ------------------------------------------------------------- */
+@media (max-width: 992px) {
+  .welcome-section {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+  
+  .progress-card {
+    width: 100%;
+  }
+  
+  .search-filter-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  
+  .reading-layout {
+    grid-template-columns: 1fr;
+  }
+  
+  .reading-toc {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .reading-toc ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  
+  .toc-link {
+    border-left: none;
+    border-bottom: 2px solid transparent;
+    padding: 2px 6px;
+  }
+  
+  .toc-link.active {
+    border-bottom-color: var(--system-blue);
+  }
+}
+
+@media (max-width: 768px) {
+  .workspace-header {
+    padding: 16px;
+  }
+  
+  #workspace-topic-title {
+    font-size: 1.5rem;
+  }
+  
+  .tab-btn {
+    padding: 8px 10px;
+    font-size: 0.8rem;
+  }
+}
