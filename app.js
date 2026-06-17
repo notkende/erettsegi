@@ -280,7 +280,7 @@ function loadTopicDataScript(topicId) {
   
   const paddedId = String(topicId).padStart(2, '0');
   const filePrefix = currentSubject === 'grammar' ? 'grammar' : 'topic';
-  const scriptPath = `data/${filePrefix}-${paddedId}.js`;
+  const scriptPath = `${filePrefix}-${paddedId}.js`;
   
   // Keresünk már meglévő script taget ehhez az id-hoz és töröljük (ha pl. újra be akarnánk tölteni)
   const existingScript = document.getElementById(`${currentSubject}-script-${topicId}`);
