@@ -4,14 +4,16 @@
 // 1. GLOBÁLIS ÁLLAPOT (STATE)
 // -------------------------------------------------------------
 const state = {
-  currentSubject: 'literature', // 'literature' | 'grammar'
+  currentSubject: 'literature', // 'literature' | 'grammar' | 'history'
   topicsMetadata: {
     literature: [],
-    grammar: []
+    grammar: [],
+    history: []
   },
   loadedTopicsData: {
     literature: {},
-    grammar: {}
+    grammar: {},
+    history: {}
   },
   currentTopicId: null,   // Selected topic ID (1-20)
   currentCardIndex: 0,    // Flashcard pointer
@@ -243,6 +245,18 @@ const categories = {
     { id: 'Retorika', label: 'Retorika' },
     { id: 'Stilisztika', label: 'Stilisztika' },
     { id: 'Infó. társadalom', label: 'Infó. társ.' }
+  ],
+  history: [
+    { id: 'all', label: 'Mind' },
+    { id: 'Ókor', label: 'Ókor' },
+    { id: 'Középkor', label: 'Középkor' },
+    { id: 'Középkori Magyarország', label: 'Középkori Mo.' },
+    { id: 'Újkor', label: 'Újkor' },
+    { id: 'Újkori Magyarország', label: 'Újkori Mo.' },
+    { id: 'Magyarország a 19. sz.', label: '19. sz. Mo.' },
+    { id: '20. század', label: '20. sz. világ' },
+    { id: 'Magyarország 1945 után', label: '1945 után Mo.' },
+    { id: 'Állampolgári ism.', label: 'Állampolgári' }
   ]
 };
 
@@ -321,7 +335,7 @@ function getTopicTextToRead() {
   
   let text = `${meta.title}. `;
   
-  const ignoreAuthors = ["Szerző", "Kommunikáció", "Nyelvtörténet", "Retorika", "Stilisztika", "Szövegtan", "Információs társadalom", "Leíró nyelvtan", "Nyelv és társadalom"];
+  const ignoreAuthors = ["Szerző", "Kommunikáció", "Nyelvtörténet", "Retorika", "Stilisztika", "Szövegtan", "Információs társadalom", "Leíró nyelvtan", "Nyelv és társadalom", "Történelem"];
   if (meta.author && !ignoreAuthors.includes(meta.author)) {
     text += `Írta: ${meta.author}. `;
   }
@@ -625,6 +639,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (window.grammarTopicsMetadata) {
     state.topicsMetadata.grammar = window.grammarTopicsMetadata;
   }
+  if (window.historyTopicsMetadata) {
+    state.topicsMetadata.history = window.historyTopicsMetadata;
+  }
   
   // Supabase inicializálása
   initSupabase();
@@ -738,7 +755,7 @@ function loadTopicDataScript(topicId) {
   }
   
   const paddedId = String(topicId).padStart(2, '0');
-  const filePrefix = currentSubject === 'grammar' ? 'grammar' : 'topic';
+  const filePrefix = currentSubject === 'grammar' ? 'grammar' : (currentSubject === 'history' ? 'history' : 'topic');
   const scriptPath = `${filePrefix}-${paddedId}.js`;
   
   // Keresünk már meglévő script taget ehhez az id-hoz és töröljük (ha pl. újra be akarnánk tölteni)
@@ -779,6 +796,16 @@ window.loadGrammarData = function(topicId, data) {
   
   // Ha jelenleg is ez a tétel van megnyitva, rendereljük
   if (state.currentTopicId === topicId && state.currentSubject === 'grammar') {
+    renderTopicContent(topicId, data);
+  }
+};
+
+window.loadHistoryData = function(topicId, data) {
+  // Eltároljuk a gyorsítótárban
+  state.loadedTopicsData.history[topicId] = data;
+  
+  // Ha jelenleg is ez a tétel van megnyitva, rendereljük
+  if (state.currentTopicId === topicId && state.currentSubject === 'history') {
     renderTopicContent(topicId, data);
   }
 };
@@ -2217,6 +2244,8 @@ function handleCoachQuestion(type) {
     if (type === 'summary') {
       if (subject === 'literature') {
         response = `A tétel központi témája ${author} munkássága, kifejezetten a(z) "${title}" szemszögéből, ami a ${era} korszakában a következő kulcsfogalmakat járja körül: ${tags}.`;
+      } else if (subject === 'history') {
+        response = `Ez a történelem tétel a(z) ${meta.category} témakörét fejti ki részletesen, bemutatva a(z) ${tags} történelmi folyamatait, okait és következményeit a(z) ${era} időszakában.`;
       } else {
         response = `Ez a nyelvtan tétel a(z) ${meta.category} témakörét fejti ki részletesen, bemutatva a(z) ${tags} fogalmak elméleti alapjait és gyakorlati használatát.`;
       }
@@ -2228,6 +2257,8 @@ function handleCoachQuestion(type) {
       const analogyTag = tagList[0] || 'témakör';
       if (subject === 'literature') {
         response = `Képzeld el ${author} ezen témáját úgy, mint egy korabeli 'személyes blogot': a versek és művek nem száraz leírások, hanem pillanatképek a szerző legbelső érzelmeiről és reakcióiról a világ eseményeire.`;
+      } else if (subject === 'history') {
+        response = `Gondolj a(z) "${title}" eseményeire úgy, mint egy dominósorra: minden egyes döntés, csata vagy reform egy-egy lökés volt, ami elindította a következő történelmi fordulatot.`;
       } else {
         response = `Gondolj a(z) ${analogyTag} rendszerére úgy, mint a közúti KRESZ szabályokra: ha mindenki ismeri és betartja a szabályokat (a nyelvi normákat), a forgalom (a kommunikáció) balesetmentesen és gördülékenyen halad.`;
       }

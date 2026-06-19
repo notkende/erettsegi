@@ -365,3 +365,187 @@ window.grammarTopicsMetadata = [
     tags: ["internet", "netikett", "e-mail", "rövidítések", "digitalizáció"]
   }
 ];
+
+// Történelem érettségi tételek metaadatai
+window.historyTopicsMetadata = [
+  {
+    id: 1,
+    title: "A középkori város jellemzőinek bemutatása",
+    author: "Történelem",
+    category: "Középkor",
+    era: "Középkor",
+    duration: "10 perc",
+    tags: ["középkor", "város", "céhek", "privilégiumok", "kereskedelem"]
+  },
+  {
+    id: 2,
+    title: "A gazdaság fejlődése és a királyi jövedelmek alakulása Károly Róbert idején",
+    author: "Történelem",
+    category: "Középkori Magyarország",
+    era: "14. század",
+    duration: "12 perc",
+    tags: ["Anjou", "Károly Róbert", "bányabér", "kamarahaszna", "regálék", "aranyforint"]
+  },
+  {
+    id: 3,
+    title: "A II. ipari forradalom következményei",
+    author: "Történelem",
+    category: "Újkor",
+    era: "19-20. század",
+    duration: "10 perc",
+    tags: ["ipari forradalom", "monopólium", "villamosítás", "urbanizáció", "robbanómotor"]
+  },
+  {
+    id: 4,
+    title: "Gazdaságunk a dualizmus korában",
+    author: "Történelem",
+    category: "Magyarország a 19. sz.",
+    era: "Dualizmus",
+    duration: "12 perc",
+    tags: ["Monarchia", "kiegyezés", "iparfejlődés", "vasútépítés", "hitelrendszer"]
+  },
+  {
+    id: 5,
+    title: "A XVIII. századi magyar demográfiai és etnikai viszonyok",
+    author: "Történelem",
+    category: "Újkori Magyarország",
+    era: "18. század",
+    duration: "12 perc",
+    tags: ["demográfia", "betelepítés", "nemzetiségek", "szerbek", "németek", "románok"]
+  },
+  {
+    id: 6,
+    title: "A reformmozgalom kibontakozása",
+    author: "Történelem",
+    category: "Magyarország a 19. sz.",
+    era: "Reformkor",
+    duration: "12 perc",
+    tags: ["Széchenyi István", "Kossuth Lajos", "érdekegyesítés", "jobbágyfelszabadítás", "Hitel"]
+  },
+  {
+    id: 7,
+    title: "A Kádár-korszak mindennapjai",
+    author: "Történelem",
+    category: "Magyarország 1945 után",
+    era: "Kádár-rendszer",
+    duration: "10 perc",
+    tags: ["gulyáskommunizmus", "alku", "második gazdaság", "háztáji", "frizsider-szocializmus"]
+  },
+  {
+    id: 8,
+    title: "Mátyás uralkodói portréja",
+    author: "Történelem",
+    category: "Középkori Magyarország",
+    era: "15. század",
+    duration: "12 perc",
+    tags: ["Hunyadi Mátyás", "fekete sereg", "centralizáció", "reneszánsz", "füstpénz"]
+  },
+  {
+    id: 9,
+    title: "A bolsevik diktatúra",
+    author: "Történelem",
+    category: "20. század",
+    era: "Szovjetunió",
+    duration: "12 perc",
+    tags: ["Lenin", "Sztálin", "kollektivizálás", "GULAG", "egypártrendszer", "propaganda"]
+  },
+  {
+    id: 10,
+    title: "Az athéni demokrácia",
+    author: "Történelem",
+    category: "Ókor",
+    era: "Klasszikus kor",
+    duration: "10 perc",
+    tags: ["Athén", "demokrácia", "Szolón", "Kleiszthenész", "Periklész", "népgyűlés"]
+  },
+  {
+    id: 11,
+    title: "Az országgyűlési választási rendszer Magyarországon",
+    author: "Történelem",
+    category: "Állampolgári ism.",
+    era: "Jelenkor",
+    duration: "10 perc",
+    tags: ["választás", "szavazás", "arányos", "többségi", "parlament", "mandátum"]
+  },
+  {
+    id: 12,
+    title: "A reformáció és irányzatai, a katolikus megújulás",
+    author: "Történelem",
+    category: "Újkor",
+    era: "16. század",
+    duration: "12 perc",
+    tags: ["Luther", "Kálvin", "ellenreformáció", "Tridenti zsinat", "jezsuiták", "reformáció"]
+  },
+  {
+    id: 13,
+    title: "Szent István államszervező tevékenysége",
+    author: "Történelem",
+    category: "Középkori Magyarország",
+    era: "Államalapítás",
+    duration: "12 perc",
+    tags: ["Szent István", "egyházszervezet", "vármegyerendszer", "törvények", "koronázás"]
+  },
+  {
+    id: 14,
+    title: "Polgári forradalom Magyarországon",
+    author: "Történelem",
+    category: "Magyarország a 19. sz.",
+    era: "1848",
+    duration: "10 perc",
+    tags: ["forradalom", "március 15", "áprilisi törvények", "Batthyány Lajos", "közteherviselés"]
+  },
+  {
+    id: 15,
+    title: "A dualista állam",
+    author: "Történelem",
+    category: "Magyarország a 19. sz.",
+    era: "Dualizmus",
+    duration: "10 perc",
+    tags: ["Kiegyezés", "Ferenc József", "közös ügyek", "parlamentarizmus", "delegáció"]
+  },
+  {
+    id: 16,
+    title: "A német nemzetiszocializmus",
+    author: "Történelem",
+    category: "20. század",
+    era: "Harmadik Birodalom",
+    duration: "12 perc",
+    tags: ["Hitler", "NSDAP", "antiszemitizmus", "totális állam", "holokauszt", "propaganda"]
+  },
+  {
+    id: 17,
+    title: "A mohácsi csata",
+    author: "Történelem",
+    category: "Középkori Magyarország",
+    era: "16. század",
+    duration: "12 perc",
+    tags: ["Mohács", "II. Lajos", "Szulejmán", "három részre szakadás", "1526"]
+  },
+  {
+    id: 18,
+    title: "Az első világháború jellege, jellemzői",
+    author: "Történelem",
+    category: "20. század",
+    era: "I. világháború",
+    duration: "10 perc",
+    tags: ["világháború", "állóháború", "hátország", "lövészárok", "antant", "tengelyhatalmak"]
+  },
+  {
+    id: 19,
+    title: "Magyarország részvétele a második világháborúban",
+    author: "Történelem",
+    category: "20. század",
+    era: "II. világháború",
+    duration: "12 perc",
+    tags: ["Teleki Pál", "Bárdossy László", "Kállay Miklós", "Don-kanyar", "megszállás", "kiugrási kísérlet"]
+  },
+  {
+    id: 20,
+    title: "A hidegháború",
+    author: "Történelem",
+    category: "20. század",
+    era: "Hidegháború",
+    duration: "12 perc",
+    tags: ["kétpólusú világ", "USA", "Szovjetunió", "NATO", "Varsói Szerződés", "kubai rakétaválság"]
+  }
+];
