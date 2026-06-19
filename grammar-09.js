@@ -70,32 +70,164 @@ window.loadGrammarData(9, {
   ],
   quiz: [
     {
-      question: "Melyik nyelvjárásunk őrizte meg a leginkább a középkori magyar nyelv archaikus szavait és hangtani szerkezetét?",
-      options: ["Nyugat-dunántúli", "Moldvai csángó", "Északkeleti", "Közép-dunántúli"],
+      question: "Hogyan nevezzük a nemzeti nyelv területi, földrajzi alapon elkülönülő változatait?",
+      options: ["Szociolektusok", "Dialektusok (nyelvjárások)", "Jargonok", "Argó"],
       correctIndex: 1,
-      explanation: "A moldvai csángó nyelvjárás elszigeteltsége miatt rendkívül archaikus maradt, megőrizte a középkori szókincs elemeit és a sajátos sziszegő ejtésmódot."
+      explanation: "A földrajzi elhelyezkedés szerint tagolódó nyelvváltozatokat dialektusoknak vagy nyelvjárásoknak nevezzük."
     },
     {
-      question: "Mi az az 'ö-zés' és melyik nyelvjárásra jellemző leginkább?",
-      options: [
-        "A szavak végén álló magánhangzók elhagyása",
-        "A köznyelvi 'e' hangok helyett zárt 'ö' ejtése (pl. embër helyett embör), a dél-dunántúli nyelvjárásban",
-        "A palócok a-zása",
-        "Az l hang elhagyása"
-      ],
-      correctIndex: 1,
-      explanation: "Az ö-zés a dunántúli és különösen a dél-dunántúli nyelvjárás sajátossága, ahol sok e hang helyett ö-t ejtenek (pl. mögy, lösz)."
+      question: "Hány nagy nyelvjárási régióra osztja fel a modern magyar nyelvészet a magyar nyelvterületet?",
+      options: ["3", "5", "10", "15"],
+      correctIndex: 2,
+      explanation: "A magyar nyelvterületet jelenleg 10 nagy nyelvjárási régióra tagoljuk (pl. palóc, székely, nyugat-dunántúli stb.)."
     },
     {
-      question: "Hogyan tekint a modern nyelvtudomány a nyelvjárások használatára?",
+      question: "Melyik nyelvjárásunk áll történelmileg a legközelebb a mai köznyelvi normához?",
+      options: ["Székely", "Nyugat-dunántúli", "Északkeleti", "Palóc"],
+      correctIndex: 2,
+      explanation: "Az északkeleti nyelvjárás területéről indult el a Biblia-fordítás és a nyelvújítás, ezért ez lett a mai köznyelvünk alapja."
+    },
+    {
+      question: "Melyik nyelvjárásunkra jellemző a zárt 'ë' hang rendszeres megkülönböztetése a nyílt 'e' hangtól?",
+      options: ["Nyugat-dunántúli", "Palóc", "Székely", "Moldvai csángó"],
+      correctIndex: 0,
+      explanation: "A nyugat-dunántúli (és részben a déli) nyelvjárásokban élesen megkülönböztetik a zárt ë-t (pl. embër, mentek) a nyílttól."
+    },
+    {
+      question: "Mi jellemzi leginkább a palóc (északnyugati) nyelvjárást hangtanilag?",
       options: [
-        "A műveltség hiányának, amit teljesen ki kell irtani",
-        "Értékes kulturális örökségnek, amely kiegészíti a köznyelvi normát (helyzettől függő kétnyelvűség javasolt)",
-        "A hivatalos államigazgatás egyedüli elfogadott nyelvének",
-        "A külföldi nyelvek rossz hatásának"
+        "Erős ö-zés",
+        "Az illabiális (ajakkerekítés nélküli) 'a' hang használata és a zárt á-zás",
+        "A mássalhangzók sziszegő ejtése (s helyett sz)",
+        "Az l hang teljes elhagyása a szavak végéről"
       ],
       correctIndex: 1,
-      explanation: "A modern nyelvészet elveti a nyelvjárások megbélyegzését, és a szituatív kétnyelvűséget támogatja (családi körben nyelvjárás, hivatalos helyen köznyelv)."
+      explanation: "A palócok a köznyelvi 'a' hangot ajakkerekítés nélkül ejtik, ami szinte az 'á'-hoz közelít (pl. anya $\rightarrow$ ányá)."
+    },
+    {
+      question: "Melyik nyelvjárási régióra jellemző az 'ö-zés' (az e hangok egy részének ö-ként ejtése, pl. kellesz $\rightarrow$ köll)?",
+      options: ["Palóc", "Dél-dunántúli", "Északkeleti", "Moldvai csángó"],
+      correctIndex: 1,
+      explanation: "Az ö-zés a dél-dunántúli és a dél-alföldi nyelvjárások egyik legszembetűnőbb hangtani jellemzője."
+    },
+    {
+      question: "Melyik a legarchaikusabb, a középkori magyar nyelv elemeit és a sziszegő beszédet leginkább megőrző nyelvjárásunk?",
+      options: ["Székely", "Mezőségi (erdélyi)", "Moldvai csángó", "Tisza-Körös-vidéki"],
+      correctIndex: 2,
+      explanation: "A moldvai csángó nyelvjárás a földrajzi elszigeteltség miatt megőrizte a honfoglalás és középkor utáni nyelvállapot számos vonását."
+    },
+    {
+      question: "Hogyan nevezzük azokat a szavakat, amelyek csak bizonyos nyelvjárásokban léteznek, a köznyelvben nincsenek meg (pl. pityóka, sing)?",
+      options: ["Jelentésbeli tájszavak", "Valódi tájszavak", "Jargon szavak", "Idegen szavak"],
+      correctIndex: 1,
+      explanation: "A valódi tájszavak hangalakjukban és jelentésükben is teljesen eltérnek a köznyelvi szavaktól (pl. pityóka = burgonya)."
+    },
+    {
+      question: "Mit jelent a 'jelentésbeli tájszó' fogalma?",
+      options: [
+        "Olyan szó, amelynek a kiejtése helyi, de leírva köznyelvi",
+        "Olyan szó, amely a köznyelvben is él, de a nyelvjárásban más a jelentése (pl. bogár mint légy)",
+        "Olyan szó, amelynek nincs konkrét szótári jelentése",
+        "Kizárólag a fiatalok szlengjében használt kifejezés"
+      ],
+      correctIndex: 1,
+      explanation: "Jelentésbeli tájszó esetén a hangalak megegyezik egy köznyelvi szóval, de helyben mást jelent (pl. a bogár szót a légyre értik)."
+    },
+    {
+      question: "Mit jelent a 'nyelvi norma' fogalma?",
+      options: [
+        "A nyelvjárások elavult szavainak összességét",
+        "A köznyelv egységesített, szabálykönyvekbe foglalt szabályrendszerét, amely az országos megértést biztosítja",
+        "A szleng kifejezések kötelező iskolai használatát",
+        "A külföldi nyelvek nyelvtani szabályainak magyarítását"
+      ],
+      correctIndex: 1,
+      explanation: "A nyelvi norma a köznyelv kodifikált (MTA által elfogadott) szabályrendszere, amely zsinórmértékként szolgál az igényes kommunikációban."
+    },
+    {
+      question: "Melyik intézmény felelős a magyar nyelvi norma és a helyesírási szabályok hivatalos kodifikációjáért?",
+      options: ["Magyar Nemzeti Múzeum", "Magyar Tudományos Akadémia (MTA)", "Országos Széchényi Könyvtár", "Nemzeti Színház"],
+      correctIndex: 1,
+      explanation: "A magyar nyelvi norma és a helyesírási szabályzat őre és kodifikálója a Magyar Tudományos Akadémia."
+    },
+    {
+      question: "Mi a modern nyelvtudomány álláspontja a nyelvjárások használatáról?",
+      options: [
+        "Helytelen és műveletlen beszédmód, amelyet teljesen ki kell irtani",
+        "Értékes kulturális és nyelvi örökség, amely gazdagítja a nemzeti nyelvet",
+        "A hivatalos államigazgatás és törvénykezés kizárólagos nyelve",
+        "Idegen országok által ránk erőltetett beszédstílus"
+      ],
+      correctIndex: 1,
+      explanation: "A modern nyelvészet elveti a nyelvjárások megbélyegzését, és azokat a nemzeti kultúra és nyelv egyenrangú, értékes részeinek tartja."
+    },
+    {
+      question: "Mit jelent a nyelvjárásokkal kapcsolatban javasolt 'kétnyelvűség' (diglosszia) elve?",
+      options: [
+        "Minden magyar állampolgárnak kötelező két idegen nyelvet beszélnie",
+        "A beszélők családi körben bátran használhatják nyelvjárásukat, de hivatalos helyzetben a köznyelvi normát alkalmazzák",
+        "A nyelvjárások használatát teljesen be kell tiltani a nyilvánosság előtt",
+        "A nyelvjárások és a köznyelv szavait folyamatosan össze kell keverni"
+      ],
+      correctIndex: 1,
+      explanation: "A szituatív kétnyelvűség (diglosszia) lehetővé teszi a nyelvjárás megőrzését a magánéletben, miközben biztosítja a köznyelvi érvényesülést a közéletben."
+    },
+    {
+      question: "Melyik tényező játszik leginkább szerepet a nyelvjárások mai visszaszorulásában?",
+      options: [
+        "Az urbanizáció, az iskolázottság terjedése és a tömegmédia egységesítő hatása",
+        "A nyelvjárási szavak használatának törvényi büntetése",
+        "Az írásbeliség és a könyvkiadás teljes eltűnése a falvakból",
+        "A latin nyelv kötelező visszaállítása az iskolákban"
+      ],
+      correctIndex: 0,
+      explanation: "A modern mobilitás, a média (tévé, internet) és az egységes iskolarendszer természetes módon koptatja a regionális nyelvi különbségeket."
+    },
+    {
+      question: "Melyik szó valódi tájszó az alábbiak közül?",
+      options: ["kutya", "pityóka", "bogár", "asztal"],
+      correctIndex: 1,
+      explanation: "A 'pityóka' (burgonya) valódi tájszó, míg a 'bogár' a székelységben jelentésbeli tájszó (mert legyet jelent, de maga a hangalak a köznyelvben is él)."
+    },
+    {
+      question: "Ha a dél-alföldi nyelvjárásban a 'szőlő' szót 'szűlő'-nek ejtik (ű-zés), az az eltérés melyik szintjére példa?",
+      options: ["Nyelvtani szint", "Hangtani szint", "Szókincsbeli szint", "Stilisztikai szint"],
+      correctIndex: 1,
+      explanation: "A magánhangzók eltérő ejtése (pl. í-zés, ö-zés, ű-zés) a nyelvjárások hangtani szintű sajátossága."
+    },
+    {
+      question: "Melyik tudományos kiadványban rögzítették a magyar nyelvterület nyelvjárási adatait térképeken a 20. században?",
+      options: [
+        "A magyar nyelvjárások atlasza",
+        "Magyar Helyesírási Szabályzat",
+        "Erdélyi Tájszótár",
+        "A magyar nyelv etimológiai szótára"
+      ],
+      correctIndex: 0,
+      explanation: "A magyar nyelvjárások atlasza egy többkötetes tudományos munka, amely térképeken ábrázolja a különböző tájszavak és hangtani jelenségek földrajzi eloszlását."
+    },
+    {
+      question: "Melyik határon túli nyelvjárásunkra jellemző a szomszédos nyelvek erős hatása, a dallamos hanglejtés és a gazdag, egyedi szókincs?",
+      options: ["Nyugat-dunántúli", "Palóc", "Székely", "Tisza-Körös-vidéki"],
+      correctIndex: 2,
+      explanation: "A székely nyelvjárás (és az erdélyi régió) dallamos hanglejtéséről, sajátos mesemondó stílusáról és gazdag kifejezésvilágáról ismert."
+    },
+    {
+      question: "Melyik szó jelentésbeli tájszó a székely nyelvjárásban, ahol 'posztónadrág' értelemben használják?",
+      options: ["pityóka", "harisnya", "sing", "guba"],
+      correctIndex: 1,
+      explanation: "A székelyeknél a 'harisnya' hagyományosan a szorosan simuló gyapjú- vagy posztónadrágot jelenti, így ez a szó jelentésbeli tájszó."
+    },
+    {
+      question: "Melyik állítás igaz a nyelvi norma változékonyságára vonatkozóan?",
+      options: [
+        "A norma teljesen örök és változatlan, soha nem módosulhat",
+        "A norma lassan és rugalmasan követi a nyelv természetes fejlődését és a művelt köznyelvi szokásokat",
+        "A normát a politikai pártok határozzák meg törvényekkel",
+        "A norma csak az írott sajtóra vonatkozik, a beszéltre nem"
+      ],
+      correctIndex: 1,
+      explanation: "A nyelvi norma nem merev dogma; a nyelvészek időről időre felülvizsgálják (pl. a helyesírási szabályzat új kiadásai), igazítva az élő nyelvhasználathoz."
     }
   ]
 });

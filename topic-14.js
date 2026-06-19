@@ -70,27 +70,124 @@ window.loadTopicData(14, {
   ],
   quiz: [
     {
-      question: "Melyik híres erdélyi írócsoporthoz tartozott Áprily Lajos?",
-      options: ["Nyugat", "Erdélyi Helikon", "Nyugat-Dunántúli Kör", "Népi Írók köre"],
+      question: "Melyik regionális eszmeiség és irodalmi program határozza meg Áprily Lajos költészetének szellemi hátterét?",
+      options: ["Népiesség", "Transzszilvanizmus", "Urbánus líra", "Nyugatos dekadencia"],
       correctIndex: 1,
-      explanation: "Áprily az Erdélyi Helikon írói közösség egyik alapító tagja és meghatározó költője volt."
+      explanation: "Áprily az erdélyi transzszilvanizmus eszméjének egyik legjelentősebb képviselője, mely az erdélyi táj és kultúra szeretetén és az etnikumok békéjén alapul."
     },
     {
-      question: "Hogyan ábrázolja a természetet a 'Menedék' című versében?",
-      options: [
-        "Félelmetes, pusztító erőként",
-        "Lelki oltalmat és csendet nyújtó oszlopcsarnokként",
-        "Kihalt és unalmas tájként",
-        "Csak háttérként egy szerelmi történethez"
-      ],
+      question: "Melyik erdélyi írószervezet/folyóirat és közösség alapító tagja és szerkesztője volt Áprily Lajos?",
+      options: ["Nyugat", "Erdélyi Helikon", "Erdélyi Múzeum", "Kortárs"],
       correctIndex: 1,
-      explanation: "A versben a fenyvesek sötét-zölden zúgó oszlopcsarnokokként jelennek meg, ahova a költő a világ elől menekül."
+      explanation: "Áprily az Erdélyi Helikon írói közösségének meghatározó tagja és a folyóirat szerkesztője volt."
     },
     {
-      question: "Melyik évszak eljövetelét ábrázolja a 'Március' című költemény?",
-      options: ["Tél", "Tavasz", "Nyár", "Ősz"],
+      question: "Mi a lírai én alapvető gesztusa a 'Menedék' című Áprily-versben?",
+      options: ["Kivonulás a zaklatott, zajos társadalomból a természet csendjébe", "Lázadás a politikai elnyomás ellen", "A városi szórakozások dicsérete", "Elutazás egzotikus keleti országokba"],
+      correctIndex: 0,
+      explanation: "A Menedék a költő elvonulási programverse, amelyben a külvilág fájdalma elől a természet oltalmat adó magányába menekül."
+    },
+    {
+      question: "Milyen stílusirányzat sajátosságait hordozzák a 'Március' című vers ragyogó, pillanatnyi hangulatokat ábrázoló képei?",
+      options: ["Barokk", "Klasszicizmus", "Impresszionizmus", "Realizmus"],
+      correctIndex: 2,
+      explanation: "A Március a színek, hangok és mozgások pillanatnyi benyomásainak megragadásával az impresszionista tájköltészet kiemelkedő példája."
+    },
+    {
+      question: "Milyen stílusjegyek jellemzik Áprily Lajos formakincsét és költői nyelvét?",
+      options: ["Formabontó szabadversek rímek nélkül", "Neoklasszicista tisztaság, dallamos jambikus ritmusok és zárt formák", "Dadaista szójátékok és érthetetlen kifejezések", "Népies, dadogó ritmusok"],
       correctIndex: 1,
-      explanation: "A március a tavasz kezdete, a vers a jég szakadását, a rügyek pattanását és a tavaszi megújulást ünnepli."
+      explanation: "Áprily költészetére a neoklasszikus formai fegyelem jellemző, amellyel a külvilág zűrzavarával szemben teremtett belső harmóniát."
+    },
+    {
+      question: "Hol töltötte Áprily Lajos az életét lezáró, Visegrád melletti elvonulás éveit?",
+      options: ["Szentgyörgypusztán", "Badacsonyban", "Tihanyban", "Zebegényben"],
+      correctIndex: 0,
+      explanation: "A háború után Áprily a Visegrád melletti Szentgyörgypusztára vonult vissza, ahol csendben, a természethez közel élt."
+    },
+    {
+      question: "Melyik híres erdélyi iskolában tanított Áprily Lajos évtizedekig, ahol Dsida Jenő is a tanítványa volt?",
+      options: ["Debreceni Református Kollégium", "Nagyenyedi Bethlen Gábor Kollégium", "Sárospataki Kollégium", "Kolozsvári Piarista Gimnázium"],
+      correctIndex: 1,
+      explanation: "Áprily a patinás nagyenyedi kollégium tanára volt, amely fontos kulturális bázisnak számított Erdélyben."
+    },
+    {
+      question: "Hogyan ábrázolja a költő a fenyveseket a 'Menedék' című versben?",
+      options: ["Félelmetes, áthatolhatatlan dzsungelként", "Sötét-zölden zúgó oszlopcsarnokokként", "Kiszáradt, pusztuló erdőként", "Gyümölcsöt termő kertekként"],
+      correctIndex: 1,
+      explanation: "A költő a fenyveseket szakrális térként, 'sötét-zölden zúgó oszlopcsarnokokként' írja le, melyek védelmet nyújtanak."
+    },
+    {
+      question: "Melyik természeti elem hangja társul a megnyugváshoz a 'Menedék' című költeményben?",
+      options: ["A vihar dörgése", "A patakok csobogása és a fenyvesek zúgása", "A madarak vijjogása", "A vadállatok üvöltése"],
+      correctIndex: 1,
+      explanation: "A természet békés hangjai (zúgás, csobogás) a zaklatott lélek lecsendesítését és gyógyulását szolgálják."
+    },
+    {
+      question: "Mi a fő szimbolikája a 'Március' című költeményben a jég szakadásának és a rügyek pattanásának?",
+      options: ["Az elkerülhetetlen világvége", "A tavaszi megújulás és az élet újjászületése a tél után", "A mezőgazdasági nehézségek kezdete", "Az öregedés szomorúsága"],
+      correctIndex: 1,
+      explanation: "A fagyos tél utáni tavasz az élet győzelmét, a reményt és a megújulást jelképezi."
+    },
+    {
+      question: "Melyik budapesti református leánynevelő intézet igazgatója volt Áprily Lajos a harmincas években?",
+      options: ["Baár-Madas", "Lónyay", "Veres Pálné", "Kanizsai Dorottya"],
+      correctIndex: 0,
+      explanation: "Áprily 1934-től a budapesti Baár-Madas Református Leánynevelő Intézet igazgatójaként tevékenykedett."
+    },
+    {
+      question: "Melyik városhoz kötődik Áprily Lajos születése?",
+      options: ["Kolozsvár", "Brassó", "Marosvásárhely", "Nagyszeben"],
+      correctIndex: 1,
+      explanation: "Áprily Lajos 1887-ben született Brassóban."
+    },
+    {
+      question: "Melyik állítás HAMIS Áprily Lajos költői magatartásával kapcsolatban?",
+      options: ["Költészetében kiemelt szerepet kap a csend és a rezignáció", "Aktívan támogatta az avantgárd formabontó mozgalmakat", "A természetet gyógyító menedéknek tekintette", "Műfordítóként is kiemelkedő életművet hagyott hátra"],
+      correctIndex: 1,
+      explanation: "Áprily tudatosan elzárkózott az avantgárd irányzatoktól, költészetét a neoklasszicista tisztaság és a hagyományos formák jellemzik."
+    },
+    {
+      question: "Melyik orosz klasszikus verses regény fordítása fűződik Áprily Lajos nevéhez, amely a mai napig a legnépszerűbb magyar változat?",
+      options: ["Háború és béke", "Anyegin (Puskin)", "Bűn és bűnhődés", "A Karamazov testvérek"],
+      correctIndex: 1,
+      explanation: "Puskin Anyeginjének Áprily Lajos-féle műfordítása a magyar fordításirodalom egyik csúcsteljesítménye."
+    },
+    {
+      question: "Melyik versében írja le Áprily a kolozsvári Házsongárdi temető hangulatát?",
+      options: ["A tetőn", "Március", "Kolozsvári elégia (Házsongárd)", "Menedék"],
+      correctIndex: 2,
+      explanation: "A kolozsvári sírkert, a Házsongárd hangulatát Áprily több versében (pl. Kolozsvári elégia) is megörökítette."
+    },
+    {
+      question: "Milyen uralkodó hangulat uralja Áprily Lajos kései, szentgyörgypusztai verseit?",
+      options: ["Lázas politikai forradalmiság", "Bölcs, rezignált nyugalom és a halál közeledtének csendes elfogadása", "Kétségbeesett düh és lázadás", "Könnyed, rokokó humor"],
+      correctIndex: 1,
+      explanation: "Kései líráját a természetben megtalált béke, a csend és a megnyugvó búcsúzás határozza meg."
+    },
+    {
+      question: "Ki volt Áprily Lajos unokája, a híres énekes, dalszerző és előadóművész?",
+      options: ["Cseh Tamás", "Presser Gábor", "Kaláka együttes", "Péterfy Bori"],
+      correctIndex: 3,
+      explanation: "Péterfy Bori énekes-színésznő Áprily Lajos dédunokája (illetve Jékely Zoltán költő, Áprily fiának az unokája; Jékely Zoltán lánya Péterfy Bori édesanyja)."
+    },
+    {
+      question: "Melyik folyóparti vidék ihlette Áprily Lajos kései természetverseit?",
+      options: ["A Balaton-felvidék", "A Dunakanyar Visegrád környékén", "A Tisza-tó", "A Dráva völgye"],
+      correctIndex: 1,
+      explanation: "Szentgyörgypuszta a Dunakanyarban, Visegrád közelében található, az itteni táj és a Duna közelsége hatotta át kései verseit."
+    },
+    {
+      question: "Milyen műfaji rokonai vannak a 'Március' című versnek a magyar irodalomban?",
+      options: ["Petőfi Sándor tájleíró költeményei és Kosztolányi Dezső impresszionista versei", "Zrínyi Miklós eposza", "Katona József tragédiája", "Arany János balladái"],
+      correctIndex: 0,
+      explanation: "A Március a magyar tájleíró költészet hagyományait folytatja modern, impresszionista hangvételben."
+    },
+    {
+      question: "Melyik a legfontosabb emberi érték, amelyet Áprily költészete a háborúk és a politikai viharok ellenére közvetít?",
+      options: ["A technikai haladás mindenáron való szolgálata", "A belső harmónia, az erkölcsi tisztaság és a természet iránti hűség megőrzése", "A hatalom megszerzésének vágya", "A múlt teljes elfelejtése"],
+      correctIndex: 1,
+      explanation: "Áprily neoklasszicista költészete és kivonulása a lelki épség és az emberi méltóság megőrzésének módja volt a történelmi viharok idején."
     }
   ]
 });

@@ -67,27 +67,149 @@ window.loadGrammarData(7, {
   ],
   quiz: [
     {
-      question: "Melyik szóalkotási móddal jött létre a 'csőr' szó a nyelvújítás idején?",
-      options: ["Szóösszetétel", "Szóelvonás", "Szóösszerántás (szóvegyülés)", "Szóképzés"],
-      correctIndex: 2,
-      explanation: "A 'csőr' a 'cső' és az 'orr' szavak részeinek mesterséges összevonásából (szóösszerántással) jött létre."
-    },
-    {
-      question: "Mi volt Kazinczy Ferenc híres megbékélő írásának címe, amely lezárta a vitát 1819-ben?",
-      options: ["Felelet a Mondolatra", "Orthophonia (Igaz szólás)", "Ágis tragédiája", "Magyar Nyelvőr"],
+      question: "Melyik évszámhoz kötjük hagyományosan a magyar nyelvújítás kezdetét (Bessenyei György Ágis tragédiája c. művének megjelenéséhez)?",
+      options: ["1844", "1772", "1813", "1872"],
       correctIndex: 1,
-      explanation: "Az 1819-ben kiadott Orthophonia (Igaz szólás) c. tanulmányában Kazinczy elismerte az ortológusok igazát bizonyos pontokon, lecsendesítve a vitát."
+      explanation: "A nyelvújítás kezdetét Bessenyei György Ágis tragédiája című színművének 1772-es megjelenésétől számítjuk."
     },
     {
-      question: "Melyik állítás igaz a nyelvújítás történelmi eredményeire nézve?",
+      question: "Melyik eseményt tekintik a nyelvújítási korszak lezárásának 1872-ben?",
       options: [
-        "A mozgalom teljesen elbukott, egyetlen szó sem maradt meg",
-        "A magyar nyelvet alkalmassá tette az állami és tudományos működésre, hozzájárulva a hivatalossá válásához 1844-ben",
-        "Kizárólag a német szavak teljes átvételét célozta meg",
-        "Visszavezette a magyar nyelvet a rovásíráshoz"
+        "A Magyar Nyelvőr című folyóirat megindulását",
+        "Kazinczy Ferenc halálát",
+        "A Magyar Tudós Társaság megalakulását",
+        "A magyar nyelv államnyelvvé nyilvánítását"
+      ],
+      correctIndex: 0,
+      explanation: "A korszak zárópontjának a Magyar Nyelvőr c. folyóirat megindítását (1872) tekintik, amely a tudományos nyelvművelést helyezte előtérbe."
+    },
+    {
+      question: "Ki volt a nyelvújítási mozgalom vezéralakja, aki széphalmi birtokáról szervezte a neológusok táborát?",
+      options: ["Bessenyei György", "Kölcsey Ferenc", "Kazinczy Ferenc", "Vörösmarty Mihály"],
+      correctIndex: 2,
+      explanation: "Kazinczy Ferenc kiterjedt levelezésén keresztül Széphalomról irányította a nyelvújító mozgalmat, a neológusok szellemi vezére volt."
+    },
+    {
+      question: "Hogyan nevezték a nyelvújítás azon táborát, amely a szókincs bátor és radikális bővítését szorgalmazta?",
+      options: ["Ortológusok", "Neológusok", "Puristák", "Grammatikusok"],
+      correctIndex: 1,
+      explanation: "A neológusok (újítók) szerint a nyelvnek követnie kell a szellemi és tudományos fejlődést, így bátor szókincsbővítést hirdettek."
+    },
+    {
+      question: "Hogyan nevezték a hagyományőrzők táborát, akik ellenezték az erőszakos nyelvi beavatkozást?",
+      options: ["Neológusok", "Ortológusok", "Széphalmiak", "Akadémikusok"],
+      correctIndex: 1,
+      explanation: "Az ortológusok (nyelvvédők) a nyelv hagyományait és eredeti szellemét féltették a mesterséges szóalkotásoktól."
+    },
+    {
+      question: "Melyik mű volt a nyelvújítási vita csúcspontját jelentő, 1813-ban kiadott ortológus gúnyirat?",
+      options: ["Felelet a Mondolatra", "Ágis tragédiája", "Mondolat", "Orthophonia"],
+      correctIndex: 2,
+      explanation: "A Mondolat (1813) egy gúnyirat volt, amelyben az ortológusok Kazinczyék túlzó szóalkotási kísérleteit parodizálták ki."
+    },
+    {
+      question: "Kik írták a nyelvújítókat védő 'Felelet a Mondolatra' (1815) című szatirikus választ?",
+      options: [
+        "Kazinczy Ferenc és Bessenyei György",
+        "Kölcsey Ferenc és Szemere Pál",
+        "Arany János és Petőfi Sándor",
+        "Budenz József és Szarvas Gábor"
       ],
       correctIndex: 1,
-      explanation: "A nyelvújítás sikeresen gazdagította a nyelvet több ezer új kifejezéssel, ami elengedhetetlen volt ahhoz, hogy a magyar 1844-ben hivatalos államnyelvvé válhasson."
+      explanation: "Kölcsey Ferenc és Szemere Pál 1815-ben adták ki a Felelet a Mondolatra c. röpiratot, amely tisztázta a nyelvújítás esztétikai és művészi céljait."
+    },
+    {
+      question: "Melyik Kazinczy-tanulmány zárta le békítőleg a neológus-ortológus vitát 1819-ben?",
+      options: ["Mondolat", "Orthophonia (Igaz szólás)", "Széphalmi levelek", "Pályám emlékezete"],
+      correctIndex: 1,
+      explanation: "Az Orthophonia (1819) című írásában Kazinczy elismerte a mérsékelt nyelvvédők igazát is, ezzel megbékélést hozott a két tábor között."
+    },
+    {
+      question: "Melyik szóalkotási móddal jött létre a 'vizsga' szó a 'vizsgálat' szóból?",
+      options: ["Szóösszetétel", "Szóelvonás (vagy szócsonkítás)", "Szóösszerántás", "Idegen szó magyarítása"],
+      correctIndex: 1,
+      explanation: "A 'vizsga' szó a 'vizsgálat' szóból jött létre úgy, hogy a szó végét elhagyták (szóelvonás/szócsonkítás)."
+    },
+    {
+      question: "Melyik szóalkotási móddal jött létre a 'csőr' a 'cső' és az 'orr' szavakból?",
+      options: ["Szóösszetétel", "Szóelvonás", "Szóösszerántás (szóvegyülés)", "Szóképzés"],
+      correctIndex: 2,
+      explanation: "A 'csőr' a 'cső' és az 'orr' szavak részeinek mesterséges összevonásával (szóösszerántással) jött létre."
+    },
+    {
+      question: "Hogyan keletkezett a 'gyár' szó a nyelvújítás során a 'gyárt' vagy 'gyártmány' szavakból?",
+      options: [
+        "A képzettnek hitt szóból elvonták a képzőt (szóelvonás)",
+        "Összetették a 'gép' és 'ár' szavakat",
+        "Német szóból vették át közvetlen hangtani magyarítással",
+        "A népnyelvből emelték fel közvetlenül az irodalmi nyelvbe"
+      ],
+      correctIndex: 0,
+      explanation: "A 'gyár' szót a 'gyárt' igéből vonták el, leválasztva a végződést, hogy egy új főnevet kapjanak (szóelvonás)."
+    },
+    {
+      question: "Melyik szó jött létre szóösszetétellel az alábbiak közül?",
+      options: ["vizsga", "csőr", "folyóirat", "hős"],
+      correctIndex: 2,
+      explanation: "A 'folyóirat' a 'folyó' és az 'irat' szavak összetételével keletkezett."
+    },
+    {
+      question: "Melyik szóalkotási módra példa a 'regény', 'építész' és 'szobrász' szavak keletkezése?",
+      options: ["Szóösszerántás", "Szóképzés (új vagy ritka képzők használatával)", "Szóelvonás", "Népnyelvi szavak felemelése"],
+      correctIndex: 1,
+      explanation: "Ezeket a szavakat képzéssel hozták létre, például az -ész/-ász képzők (építész, szobrász) vagy a -ny képző (regény) segítségével."
+    },
+    {
+      question: "Melyik szóalkotási módra példa a 'hős', 'dísz', 'hon' és 'ábra' szavak elterjedése?",
+      options: ["Szóösszerántás", "Régi, elfeledett szavak feltámasztása", "Latin szavak közvetlen átvétele", "Szócsonkítás"],
+      correctIndex: 1,
+      explanation: "A nyelvújítók elfeledett, régi krónikákban és dokumentumokban szereplő elavult szavakat kerestek és támasztottak fel."
+    },
+    {
+      question: "Mit jelent a nyelvújítás során alkalmazott 'szócsonkítás'?",
+      options: [
+        "Egy szó végének tudatos elhagyása, rövidítése a beszéd meggyorsítására",
+        "Két szó részeinek egybegyúrása",
+        "Egy szó magánhangzóinak lerövidítése",
+        "Csak a mássalhangzók megtartása egy szóból"
+      ],
+      correctIndex: 0,
+      explanation: "A szócsonkítás során egy meglévő hosszabb szót egyszerűen megkurtítottak (pl. professzor $\\rightarrow$ prof, vizsgálat $\\rightarrow$ vizsga)."
+    },
+    {
+      question: "Melyik népnyelvi szót emelték be az irodalmi nyelvbe a nyelvújítók?",
+      options: ["zongora", "betyár", "kórház", "állvány"],
+      correctIndex: 1,
+      explanation: "A 'betyár', 'burgonya', 'cserfes' szavak a népnyelvből kerültek be a nyelvújítás idején a köznyelvi szókincsbe."
+    },
+    {
+      question: "Melyik évben lett a magyar nyelv az állam, a törvényhozás és az oktatás hivatalos nyelve Magyarországon?",
+      options: ["1772", "1813", "1844", "1867"],
+      correctIndex: 2,
+      explanation: "A magyar nyelv a nyelvújítás eredményeinek is köszönhetően 1844-ben vált hivatalos államnyelvvé (a latin helyett)."
+    },
+    {
+      question: "Melyik nyelvújítási szó jött létre szóösszerántással a 'könnyű' és 'elme' szavakból?",
+      options: ["könnyelmű", "rovar", "csőr", "zongora"],
+      correctIndex: 0,
+      explanation: "A 'könnyelmű' a 'könnyű' és az 'elme' szavak összevonásából (összerántásából) jött létre."
+    },
+    {
+      question: "Melyik állítás fogalmazza meg helyesen a neológusok legfőbb nyelvi alapelvét?",
+      options: [
+        "Csak azokat a szavakat szabad használni, amelyek a Bibliában is le vannak írva",
+        "A nyelvnek nincs szüksége új szavakra, a régiekkel mindent ki lehet fejezni",
+        "A szépírónak joga és kötelessége a nyelv fejlesztése és szépítése az esztétikai elvek alapján",
+        "A nyelv megújítását kizárólag külföldi szavak átvételével kell megvalósítani"
+      ],
+      correctIndex: 2,
+      explanation: "Kazinczyék vallották, hogy a nyelvet a művészeknek és íróknak joguk van formálni, csiszolni és szépíteni a jobb kifejezhetőségért."
+    },
+    {
+      question: "Melyik mai, teljesen hétköznapi szavunk jött létre a nyelvújítás idején képzéssel?",
+      options: ["fa", "érzelem", "kéz", "víz"],
+      correctIndex: 1,
+      explanation: "Az 'érzelem' szó az 'érez' igéből keletkezett a nyelvújítás korában a -lem képző segítségével."
     }
   ]
 });

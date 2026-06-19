@@ -76,27 +76,124 @@ window.loadTopicData(13, {
   ],
   quiz: [
     {
-      question: "Milyen diplomája volt Örkény Istvánnak, ami befolyásolta precíz stílusát?",
-      options: ["Orvos és Jogász", "Gyógyszerész és Vegyészmérnök", "Történész és Klasszika-filológus", "Színész és Rendező"],
+      question: "Milyen két egyetemi diplomával rendelkezett Örkény István, amelyek rányomták bélyegüket szikár és pontos írói stílusára?",
+      options: ["Jogász és történelem szakos tanár", "Gyógyszerész és vegyészmérnök", "Orvos és pszichológus", "Közgazdász és újságíró"],
       correctIndex: 1,
-      explanation: "Örkény gyógyszerész és vegyészmérnök volt, a reálértelmiségi látásmód és a pontos fogalmazás innen is ered."
+      explanation: "Örkény gyógyszerész és vegyészmérnök volt, reálértelmiségi háttere nagyban hozzájárult pontos, sallangmentes fogalmazásmódjához."
     },
     {
-      question: "Mit tesz Tót Lajos az Őrnaggyal a 'Tóték' végén?",
-      options: [
-        "Hazakíséri a vonathoz",
-        "A margarinvágóval négy egyenlő részre vágja",
-        "Örökbe fogadja",
-        "Bebörtönzi a pincébe"
-      ],
+      question: "Melyik háborús trauma és fogságélmény formálta alapvetően Örkény István groteszk világszemléletét?",
+      options: ["A spanyol polgárháború", "A Don-kanyarban átélt munkaszolgálat és a szovjet hadifogság", "Az I. világháborús lövészárok-háború", "A recski kényszermunkatábor"],
       correctIndex: 1,
-      explanation: "A dobozolásba és a megaláztatásokba belefáradt Tót végül a margarinvágóval négy egyenlő részre szeli az Őrnagyot."
+      explanation: "Örkény a Don-kanyarnál szolgált munkaszolgálatosként, túlélte a katasztrófát, majd szovjet fogságba került; ez a tapasztalat alakította ki abszurd és groteszk látásmódját."
     },
     {
-      question: "Mi a címe az egyperces novellák használati utasításának?",
-      options: ["Előszó", "Használati utasítás", "Bevezetés", "Olvass el!"],
+      question: "Mi a groteszk lényege Örkény István művészetében?",
+      options: ["A tiszta komikum, melynek célja az önfeledt nevettetés", "A tragikus és komikus elemek hirtelen összekapcsolása, ami egyszerre vált ki nevetést és megdöbbenést", "A misztikus, vallásos témák elvont ábrázolása", "A romantikus és szentimentális érzések túlzó felnagyítása"],
       correctIndex: 1,
-      explanation: "Az egypercesek gyűjteménye a 'Használati utasítás' című rövid, ironikus írással kezdődik."
+      explanation: "A groteszk esztétikai minősége össze nem illő elemek (félelem és nevetés, tragikum és komikum) együttes jelenlétén alapul."
+    },
+    {
+      question: "Melyik Örkény által teremtett, rendkívül tömör prózai műfaj vált a magyar irodalom klasszikusává?",
+      options: ["A levélregény", "Az egyperces novella", "A történelmi eposz", "A drámai költemény"],
+      correctIndex: 1,
+      explanation: "Az egyperces novella Örkény egyedi műfaja, amelyet a rendkívüli tömörség és a groteszk látásmód jellemez."
+    },
+    {
+      question: "Milyen címmel látta el Örkény az egyperces novellák gyűjteményét bevezető, ironikus útmutatót?",
+      options: ["Előszó helyett", "Használati utasítás", "Olvasói kézikönyv", "Figyelmeztetés"],
+      correctIndex: 1,
+      explanation: "A kötet a 'Használati utasítás' című szellemes írással kezdődik, amely instrukciókat ad a novellák olvasásához és értelmezéséhez."
+    },
+    {
+      question: "Mi a konfliktus lényege az 'In memoriam dr. K. H. G.' című egyperces novellában?",
+      options: ["Két német katona vitája a frontvonalon", "A munkaszolgálatos értelmiségi szellemi felsőbbrendűsége és a német őr primitív fizikai erőszakja", "Két orvos szakmai féltékenysége a táborban", "Egy fogoly szökése a fogságból"],
+      correctIndex: 1,
+      explanation: "Dr. K. H. G. a német kultúráról beszélget az őrrel, aki nem érti őt, és a szellemi fölénnyel szemben a fegyverével válaszol."
+    },
+    {
+      question: "Melyik német költő nevének említése után lövi le az őr dr. K. H. G.-t a novellában?",
+      options: ["Goethe", "Schiller", "Hölderlin", "Heine"],
+      correctIndex: 2,
+      explanation: "A novella végén dr. K. H. G. Hölderlin nevét említi, mire az őr azt mondja: 'Lőjön a szar', és agyonlövi."
+    },
+    {
+      question: "Mi a 'Nászutasok a légypapíron' című novella groteszk parabolájának alapja?",
+      options: ["Két ember utazása a világ körül", "Két légy kényelmes otthonként tekint a halálos csapdára és tervezi a jövőt", "Egy házaspár vitája a nászúton", "Rovarok lázadása a háztartás ellen"],
+      correctIndex: 1,
+      explanation: "A legyek berendezik az életüket a ragadós papíron, nem véve észre a rájuk váró elkerülhetetlen pusztulást."
+    },
+    {
+      question: "Hol játszódik a Tóték című kisregény és dráma cselekménye?",
+      options: ["Budapesten a Rákosi-korszakban", "Egy mátrai faluban a II. világháború alatt", "A Don-kanyarban a fronton", "Egy szovjet hadifogolytáborban"],
+      correctIndex: 1,
+      explanation: "A Tóték cselekménye egy csendes mátrai hegyi faluban játszódik a második világháború idején."
+    },
+    {
+      question: "Ki a Tóték című műben a Tót családhoz érkező vendég, aki terrorizálja őket?",
+      options: ["Egy szovjet kém", "Az Őrnagy, a fiuk frontparancsnoka", "A helyi csendőrparancsnok", "Egy gazdag rokon Amerikából"],
+      correctIndex: 1,
+      explanation: "A család Gyula fiuk parancsnokát, a háborús idegbajos Őrnagyot fogadja be, hogy fiuknak kedvezőbb sorsa legyen a fronton."
+    },
+    {
+      question: "Milyen abszurd és mániákus tevékenységre kényszeríti az Őrnagy a Tót családot éjszakánként?",
+      options: ["Kártyázásra és ivásra", "Margarinos dobozok hajtogatására (dobozolásra)", "A falu körüli őrködésre", "Katonai menetelés gyakorlására"],
+      correctIndex: 1,
+      explanation: "Az Őrnagy mániás dobozhajtogató, és a családot is bevonja az egész éjszakás dobozolásba."
+    },
+    {
+      question: "Mi a Tóték tragikus iróniája (titka), amelyet az olvasó tud, de a család nem?",
+      options: ["Az Őrnagy valójában nem is katona, hanem szélhámos", "Gyula, a család fia már elesett a fronton a történet elején", "A ház alatt aranybánya húzódik", "Tót Lajos valójában az Őrnagy apja"],
+      correctIndex: 1,
+      explanation: "A postás eltitkolja a gyászjelentést, így a család feleslegesen rendeli alá magát az Őrnagy minden megalázó kívánságának."
+    },
+    {
+      question: "Mit tesz Tót Lajos az Őrnaggyal a mű legvégén, amikor az váratlanul visszatér?",
+      options: ["Boldogan átöleli", "A margarinvágóval négy egyenlő részre vágja", "Kiköltözteti a pajtába", "Feljelenti a rendőrségen"],
+      correctIndex: 1,
+      explanation: "Miután az Őrnagy visszatér, a megaláztatásokat megelégelő Tót Lajos a dobozvágó margarinszeletelővel négy egyenlő darabra vágja őt."
+    },
+    {
+      question: "Melyik szereplő felelős a Tótékban a hírek manipulálásáért (a levelek visszatartásáért)?",
+      options: ["A pap", "A postás (Gyuri atyafi)", "A polgármester", "A doktor"],
+      correctIndex: 1,
+      explanation: "A postás szűri a leveleket, és a rossz híreket (így Gyula halálhírét is) megsemmisíti, mert meg akarja kímélni a falubelieket a fájdalomtól."
+    },
+    {
+      question: "Hogyan érhető el az egyperces novellák tömörsége?",
+      options: ["Minden írásjel elhagyásával", "A részletes leírások és a felesleges szavak mellőzésével, az olvasó aktív gondolati társítására építve", "Kizárólag idegen nyelvű szavak használatával", "Csak tőmondatok alkalmazásával"],
+      correctIndex: 1,
+      explanation: "Örkény az egypercesekben szikár nyelvezetet használ, így a művek értelmezéséhez elengedhetetlen az olvasó aktív szellemi részvétele."
+    },
+    {
+      question: "Milyen történelmi korszakban állt Örkény publikációs tilalom (szilencium) alatt, ami miatt gyógyszergyárban dolgozott?",
+      options: ["A Horthy-rendszerben", "Az 1956-os forradalom utáni megtorlás idején", "A II. világháború alatt", "A Rendszerváltás után"],
+      correctIndex: 1,
+      explanation: "Az 1956-os eseményekben való részvétele miatt Örkényt évekig eltiltották a publikálástól, így vegyész diplomájával egy gyógyszergyárban vállalt munkát."
+    },
+    {
+      question: "Melyik Tóték-szereplő húzatja Tót Lajos szemébe a sisak ellenzőjét, hogy ne lássa annak ásítását?",
+      options: ["Tótné (Mariska)", "Az Őrnagy", "Ágika", "A postás"],
+      correctIndex: 1,
+      explanation: "Az Őrnagy nem bírja az ásítást, mert attól fél, hogy a falubeliek unatkoznak mellette, ezért ráveszi a családot, hogy Tót húzza a sisakját a szemébe."
+    },
+    {
+      question: "Melyik állítás HAMIS Örkény István egyperces novelláival kapcsolatban?",
+      options: ["Vannak köztük néhány soros, sőt szinte csak címből álló művek is", "Mindig reális és vidám történeteket mutatnak be fanyar humor nélkül", "Gyakran épülnek köznapi szövegtípusok (pl. hirdetés, gyászjelentés) paródiájára", "A Használati utasítás szerint a novellák újbóli elolvasása ajánlott, ha nem értjük őket"],
+      correctIndex: 1,
+      explanation: "Az egyperces novellák groteszk és abszurd helyzeteket mutatnak be, amelyeket áthat a fanyar humor és az irónia."
+    },
+    {
+      question: "Melyik kifejezés írja le legpontosabban a Tót család magatartását az Őrnaggyal szemben a Tótékban?",
+      options: ["Fegyveres ellenállás", "Önkéntes szolgaság és önfeladás a fiuk megmentése érdekében", "Teljes közöny és passzivitás", "Nyílt gúnyolódás"],
+      correctIndex: 1,
+      explanation: "A család a fronton lévő fiuk iránti szeretetből és félelemből önként aláveti magát a zsarnoki Őrnagy minden abszurd parancsának."
+    },
+    {
+      question: "Melyik irodalmi fogalom áll a legközelebb Örkény abszurd látásmódjához?",
+      options: ["Transzszilvanizmus", "Groteszk", "Szentimentalizmus", "Klasszicizmus"],
+      correctIndex: 1,
+      explanation: "Örkény a 20. századi magyar groteszk irodalom legfőbb képviselője és elméleti tisztázója."
     }
   ]
 });

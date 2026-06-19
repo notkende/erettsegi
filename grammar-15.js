@@ -72,32 +72,224 @@ window.loadGrammarData(15, {
   ],
   quiz: [
     {
-      question: "Melyik logikai hibát követi el az, aki a vitapartner személyiségét, jellemét támadja ahelyett, hogy annak érveivel vitatkozna?",
+      question: "Mi az érvelés elsődleges célja a retorikában (szónoklattanban)?",
       options: [
-        "Argumentum ad hominem (személyeskedés)",
-        "Argumentum ad verecundiam (tekintélyre hivatkozás)",
-        "Hamis dilemma",
-        "Körbefutó érvelés"
+        "A hallgatóság meggyőzése egy állítás igazságáról vagy hamisságáról",
+        "A hallgatóság szórakoztatása és megnevettetése",
+        "A szavak gyors kiejtésének gyakorlása",
+        "A vitapartner fizikai megfélemlítése"
       ],
       correctIndex: 0,
-      explanation: "Az argumentum ad hominem (személyeskedés) az a logikai hiba, amikor az ellenfél személyét vagy hitelességét támadják az állítása helyett."
+      explanation: "Az érvelés racionális bizonyítási folyamat, amelynek célja a befogadó meggyőzése és véleményének formálása."
     },
     {
-      question: "Milyen érvtípust alkalmazunk a következő mondatban: 'A tüdőrákos esetek 90%-áért a dohányzás a felelős, ezért a dohányzás súlyos egészségkárosodást okoz.'?",
+      question: "Melyik ókori görög filozófus fektette le a formális logika és az érveléselmélet alapjait?",
       options: [
-        "Tekintélyre hivatkozó érv",
-        "Ok-okozati összefüggésre épülő érv",
-        "Analógia",
-        "Szóértelmezésen alapuló érv"
+        "Arisztotelész",
+        "Platón",
+        "Szókratész",
+        "Pitagorasz"
       ],
-      correctIndex: 1,
-      explanation: "A mondat megmutatja a dohányzás (ok) és a tüdőrák/egészségkárosodás (okozat) közötti közvetlen kapcsolatot, így ez ok-okozati érv."
+      correctIndex: 0,
+      explanation: "Arisztotelész az 'Organon' című logikai értekezéseiben határozta meg a következtetések és a szillogizmusok szabályait."
     },
     {
-      question: "Melyik rész követi a 'bizonyítást' a klasszikus érvelő beszéd szerkezetében?",
-      options: ["Bevezetés", "Cáfolás (az ellenérvek cáfolása)", "Elbeszélés", "Összegzés"],
-      correctIndex: 1,
-      explanation: "A klasszikus szónoki beszédben a saját álláspont bizonyítása után azonnal következik a cáfolás (az ellenérvek bemutatása és megsemmisítése)."
+      question: "Melyik három kötelező elemből épül fel egy teljes, logikus érv a Toulmin-modell szerint?",
+      options: [
+        "Tétel (állítás), bizonyíték (alátámasztás) és összekötő elem (garancia)",
+        "Bevezetés, tárgyalás és befejezés",
+        "Premissza, konklúzió és cáfolat",
+        "Kérdés, válasz és magyarázat"
+      ],
+      correctIndex: 0,
+      explanation: "A teljes érv magjából (tétel), az azt alátámasztó tényből (bizonyíték) és a kettő közötti logikai hidat képező magyarázatból (garancia) áll."
+    },
+    {
+      question: "Mit nevezünk 'tételnek' az érvelés során?",
+      options: [
+        "Azt a határozott állítást, véleményt, amelyet be szeretnénk bizonyítani.",
+        "A bizonyítékként felhasznált statisztikai adatot.",
+        "Az ellenfél cáfolatának szövegét.",
+        "A szónoki beszéd zárómondatát."
+      ],
+      correctIndex: 0,
+      explanation: "A tétel (Claim) az érvelés kiindulópontja, az a kijelentés, amelynek igazságát a bizonyítékokkal igyekszünk igazolni."
+    },
+    {
+      question: "Mi a szerepe az összekötő elemnek (garanciának) az érv szerkezetében?",
+      options: [
+        "Megteremti a logikai kapcsolatot a tétel és a bizonyíték között.",
+        "Díszíti a beszédet költői képekkel.",
+        "Összefoglalja a beszéd főbb pontjait a végén.",
+        "A vitapartner személyét jellemzi."
+      ],
+      correctIndex: 0,
+      explanation: "A garancia (Warrant) magyarázza meg, hogy a felhozott bizonyíték miért támasztja alá éppen az adott tételt."
+    },
+    {
+      question: "Hogyan nevezzük azt a csonka érvet (entiméma), amelyben az összekötő elem a magától értetődősége miatt elmarad?",
+      options: [
+        "Entiméma",
+        "Szillogizmus",
+        "Analógia",
+        "Parafrázis"
+      ],
+      correctIndex: 0,
+      explanation: "Az entiméma a csonka vagy elhallgatott érv, amelyben a beszélő a hallgatóság intelligenciájára bízva kihagyja a nyilvánvaló premisszát vagy garanciát."
+    },
+    {
+      question: "Melyik következtetési módszer halad az általános elvtől az egyedi, konkrét eset felé (dedukció)?",
+      options: [
+        "Dedukció",
+        "Indukció",
+        "Analógia",
+        "Általánosítás"
+      ],
+      correctIndex: 0,
+      explanation: "A dedukció során egy elfogadott általános szabályból vezetjük le az egyedi esetre vonatkozó igazságot."
+    },
+    {
+      question: "Hogyan nevezzük a deduktív következtetés klasszikus formáját, amely két előzményből (premissza) és egy záró következtetésből (konklúzió) áll?",
+      options: [
+        "Szillogizmus",
+        "Entiméma",
+        "Szóértelmezés",
+        "Cento"
+      ],
+      correctIndex: 0,
+      explanation: "A szillogizmus a logikai következtetés alapformája (pl. Minden ember halandó [főtétel]. Szókratész ember [altétel]. Szókratész halandó [következtetés].)."
+    },
+    {
+      question: "Mi a jellemzője az induktív következtetésnek (indukciónak)?",
+      options: [
+        "Egyedi tényekből, megfigyelésekből következtet az általános szabályra, de nem ad 100%-os biztonságot.",
+        "Az általános elméletből vezet le egyedi eseteket csalhatatlanul.",
+        "Kizárólag híres emberek véleményére támaszkodik.",
+        "A vitapartner fizikai tulajdonságaiból indul ki."
+      ],
+      correctIndex: 0,
+      explanation: "Az indukció tapasztalati úton gyűjt adatokat, és azokból von le általánosítást (pl. 'minden eddig látott hattyú fehér, tehát minden hattyú fehér' - ám ez cáfolható egy fekete hattyúval)."
+    },
+    {
+      question: "Milyen érvtípust alkalmazunk a következő mondatban: 'A hazugság szándékos félretájékoztatás, így amit tettél, az hazugság.'?",
+      options: [
+        "Definícióból (meghatározásból) vett érv",
+        "Ok-okozati összefüggésre épülő érv",
+        "Tekintélyre hivatkozó érv",
+        "Hasonlóságon alapuló érv (analógia)"
+      ],
+      correctIndex: 0,
+      explanation: "Ez az érv a 'hazugság' fogalmának pontos definíciójára épül, abból vezeti le a konkrét eset minősítését."
+    },
+    {
+      question: "Milyen érvtípust képvisel a következő kijelentés: 'Ha nem óvjuk a környezetet, a globális felmelegedés lakhatatlanná teszi a Földet.'?",
+      options: [
+        "Ok-okozati összefüggésre épülő érv",
+        "Tekintélyre hivatkozó érv",
+        "Definícióból levezetett érv",
+        "Általánosításon alapuló érv"
+      ],
+      correctIndex: 0,
+      explanation: "Az érv bemutatja a cselekvés hiányának (ok) és a Föld lakhatatlanná válásának (okozat) közvetlen összefüggését."
+    },
+    {
+      question: "Hogyan nevezzük azt az érvtípust, amely egy elismert szakértő, tudós vagy intézmény véleményével támasztja alá a tételt?",
+      options: [
+        "Tekintélyre hivatkozó érv (argumentum ad verecundiam)",
+        "Személyeskedés (argumentum ad hominem)",
+        "Analógia",
+        "Tényeken alapuló érv"
+      ],
+      correctIndex: 0,
+      explanation: "A tekintélyre való hivatkozás során egy elismert külső forrás hitelességét használjuk fel a saját igazunk bizonyítására."
+    },
+    {
+      question: "Milyen érvtípus látható a következő mondatban: 'Ahogy a hajónak kell a kapitány, úgy a cégnek is kell a vezető.'?",
+      options: [
+        "Analógián (hasonlóságon) alapuló érv",
+        "Ok-okozati érv",
+        "Tényen alapuló érv",
+        "Definícióból vett érv"
+      ],
+      correctIndex: 0,
+      explanation: "Az analógia párhuzamot von két különböző terület (hajózás és cégvezetés) hasonló belső szerkezete, működése között."
+    },
+    {
+      question: "Mi a klasszikus érvelő beszéd (retorikai beszéd) helyes szerkezeti sorrendje?",
+      options: [
+        "Bevezetés, elbeszélés, tétel, bizonyítás, cáfolás, befejezés",
+        "Cáfolás, bevezetés, bizonyítás, elbeszélés, befejezés",
+        "Tétel, bizonyítás, cáfolás, elbeszélés, bevezetés",
+        "Bevezetés, bizonyítás, befejezés"
+      ],
+      correctIndex: 0,
+      explanation: "A klasszikus szónoki beszéd hatos tagolása logikusan építi fel a témát, előbb felkészít, kifejti a tényeket, bizonyítja a saját igazát, cáfolja az ellenvéleményeket, majd összegez."
+    },
+    {
+      question: "Mi a feladata a 'cáfolásnak' (refutatio) a szónoki beszédben?",
+      options: [
+        "Az ellenérvek bemutatása és azok logikai megsemmisítése, igazságtartalmuk cáfolása.",
+        "A beszéd legfontosabb tételeinek újbóli elismétlése.",
+        "A hallgatóság érzelmi befolyásolása és megkönnyeztetése.",
+        "A saját állítások alátámasztása statisztikai adatokkal."
+      ],
+      correctIndex: 0,
+      explanation: "A cáfolás során a szónok anticipating jelleggel maga hozza fel a lehetséges ellenérveket, és bizonyítja be azok tarthatatlanságát."
+    },
+    {
+      question: "Melyik logikai hibát követi el az a vitázó, aki a partnere érvei helyett annak jellemét, külsejét vagy múltját támadja?",
+      options: [
+        "Személyeskedés (argumentum ad hominem)",
+        "Tekintélyre hivatkozás (argumentum ad verecundiam)",
+        "Hamis dilemma",
+        "Szalmabáb-érvelés"
+      ],
+      correctIndex: 0,
+      explanation: "Az argumentum ad hominem az a logikai hiba, amelynél a vitapartner személyét hiteltelenítik, megkerülve az érdemi vitát."
+    },
+    {
+      question: "Mit jelent a 'hamis dilemma' logikai hibája?",
+      options: [
+        "Amikor a valóságnál jóval kevesebb (általában kettő, szélsőséges) választási lehetőséget mutatunk be, elhallgatva a többi opciót.",
+        "Amikor a bizonyítás során folyamatosan ismételgetjük a tételt.",
+        "Amikor nem létező szakértőre hivatkozunk.",
+        "Amikor túl sok logikus érvet hozunk fel egyszerre."
+      ],
+      correctIndex: 0,
+      explanation: "A hamis dilemma tipikus manipulációs eszköz (pl. 'Vagy velünk vagy, vagy ellenünk'), ami kizárja a köztes, árnyaltabb megoldásokat."
+    },
+    {
+      question: "Mi a lényege a körbefutó érvelésnek (petitio principii)?",
+      options: [
+        "Amikor a bizonyítani kívánt tételt eleve igaznak feltételezzük, és önmagával bizonyítjuk.",
+        "Amikor a vitapartnerünket összezavarjuk körkörös mozdulatokkal.",
+        "Amikor a beszéd elején elmondottakat a végén megcáfoljuk.",
+        "Amikor statisztikai adatokból hibás következtetést vonunk le."
+      ],
+      correctIndex: 0,
+      explanation: "A körbefutó érvelésben az állítás és a bizonyíték tartalmilag azonos (pl. 'Ez a könyv azért sikeres, mert sokan olvassák, és azért olvassák sokan, mert sikeres.')."
+    },
+    {
+      question: "Mi a szalmabáb logikai hiba (strawman fallacy) lényege?",
+      options: [
+        "A vitapartner álláspontjának eltorzítása, és ennek a legyengített, hamis álláspontnak a támadása.",
+        "Kizárólag mezőgazdasági témákban történő érvelés.",
+        "A beszéd közbeni elnémulás és merevvé válás.",
+        "Az érzelmekre való túlzott apellálás a tények helyett."
+      ],
+      correctIndex: 0,
+      explanation: "A szalmabáb hiba során a vitázó egy könnyen támadható, karikírozott álláspontot tulajdonít ellenfelének, majd azt diadalmasan megcáfolja."
+    },
+    {
+      question: "Arisztotelész szerint melyik retorikai meggyőzési eszköz épít a hallgatóság értelmére és a racionális érvekre?",
+      options: [
+        "Logosz",
+        "Étosz",
+        "Pátosz",
+        "Szillogizmus"
+      ],
+      correctIndex: 0,
+      explanation: "Arisztotelész hármas felosztásában a logosz a racionális érvelés, az étosz a szónok hitelessége, a pátosz pedig a hallgatóság érzelmi megérintése."
     }
   ]
 });

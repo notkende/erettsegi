@@ -58,27 +58,204 @@ window.loadTopicData(8, {
   ],
   quiz: [
     {
-      question: "Melyik folyón hajózik a Szent Borbála a regény kezdetén?",
-      options: ["Tisza", "Duna", "Rajna", "Száva"],
-      correctIndex: 1,
-      explanation: "A regény híres kezdőképeiben a Szent Borbála hajó a Dunán, a Vaskapu szoroson keresztül hajózik Magyarország felé."
-    },
-    {
-      question: "Ki Tímár Mihály sötét alteregója, aki a Balaton jegén leli halálát?",
-      options: ["Brazovics Athanáz", "Kacsuka Imre", "Krisztyán Tódor", "Kárpáthy János"],
+      question: "Melyik évben jelent meg Jókai Mór „Az arany ember” című regénye?",
+      options: ["1848-ban", "1867-ben", "1872-ben", "1901-ben"],
       correctIndex: 2,
-      explanation: "Krisztyán Tódor a regény gonosztevője, aki zsarolja Mihályt, végül a rianásba esve megfullad."
+      explanation: "A regény 1872-ben jelent meg, a kiegyezést követő gazdasági fellendülés és polgárosodás időszakában."
     },
     {
-      question: "Milyen stílusirányzatok keverednek 'Az arany ember'-ben?",
+      question: "Milyen társadalmi folyamat ábrázolása miatt mutat a regény a realizmus felé a romantika mellett?",
       options: [
-        "Klasszicizmus és barokk",
-        "Romantika és realizmus",
-        "Szentimentalizmus és avantgárd",
-        "Naturalizmus és szürrealizmus"
+        "A jobbágyfelszabadítás nehézségei",
+        "A feltörekvő tőkés kapitalizmus, a spekuláció és a polgárosodás rideg világa",
+        "Az 1848-as szabadságharc előkészítése",
+        "A török hódoltság utáni újjáépítés"
       ],
       correctIndex: 1,
-      explanation: "A mű romantikus alapú (titkok, utópia, végletek), de a főhős vívódásának ábrázolása és a társadalmi leírások miatt a realizmus jegyeit is hordozza."
+      explanation: "A regény részletesen ábrázolja a korabeli gabonakereskedelmet, a tőkés spekulációkat és a pénzuralta polgári társadalmat."
+    },
+    {
+      question: "Jókai melyik családi/magánéleti válsága ihlette a regénybeli Tímár Mihály és Tímea hideg, boldogtalan házasságát?",
+      options: [
+        "Szüleivel való végzetes szakítása",
+        "Laborfalvi Rózával való házasságának megfáradása",
+        "Gyermekének korai elvesztése",
+        "Anyagi csődje és vagyonvesztése"
+      ],
+      correctIndex: 1,
+      explanation: "Jókai és Laborfalvi Rózsa házassága ebben az időszakban már megfáradt, ami visszatükröződik a regény házassági konfliktusában."
+    },
+    {
+      question: "Ki volt az a fiatal lány, aki iránt érzett plátói szerelme mintául szolgált Jókainak Noémi alakjához és a Senki szigetének idilljéhez?",
+      options: ["Lukanics Ottilia", "Vágó Márta", "Szendrey Júlia", "Brüll Adél"],
+      correctIndex: 0,
+      explanation: "Jókai Lukanics Ottilia iránt táplált plátói szerelmet, aki a tüdőbetegsége miatt fiatalon elhunyt; az ő alakja ihlette a tiszta Noémit."
+    },
+    {
+      question: "Mi a foglalkozása Tímár Mihálynak a regény kezdetén, mielőtt meggazdagodna?",
+      options: ["Földbirtokos", "Hajóbiztos", "Katonatiszt", "Bankár"],
+      correctIndex: 1,
+      explanation: "Tímár szegény hajóbiztos a Szent Borbála nevű gabonaszállító hajón."
+    },
+    {
+      question: "Hogyan tesz szert Tímár Mihály az első komolyabb tőkéjére?",
+      options: [
+        "Kártyán nyeri egy bécsi kaszinóban",
+        "Megtalálja Ali pasa elrejtett kincsét a süllyedő hajó vörös búza-rakományában",
+        "Állami segélyt kap a Vaskapu szabályozásáért",
+        "Hatalmas örökséget kap Brazovics Athanáztól"
+      ],
+      correctIndex: 1,
+      explanation: "Tímár Ali pasa kincseit találja meg a Szent Borbála süllyedő rakományában (a vörös búzás zsákokban), és ezt nem szolgáltatja vissza, hanem saját tőkeként használja fel."
+    },
+    {
+      question: "Melyik ókori uralkodó mítosza kapcsolódik Tímár Mihály alakjához, akinek érintésétől minden arannyá vált, mégis boldogtalan maradt?",
+      options: ["Kroiszosz (Krőzus)", "Midasz király", "Alexandrosz (Nagy Sándor)", "Salamon király"],
+      correctIndex: 1,
+      explanation: "Tímár Mihály az „arany ember”, akinek minden vállalkozása sikerrel jár (akárcsak a Midasz-mítoszban), de a belső békét a vagyon nem hozza el számára."
+    },
+    {
+      question: "Mi történik a kapzsi komáromi kereskedővel, Brazovics Athanázzal, miután Tímár üzletileg tönkreteszi őt?",
+      options: [
+        "Külföldre szökik a hitelezői elől",
+        "Gutaütést kap (szélütés éri) és meghal",
+        "Párbajban életét veszti",
+        "Társul Tímár Mihállyal"
+      ],
+      correctIndex: 1,
+      explanation: "Brazovics a tönkremenetel hírére gutaütést kap és hirtelen meghal, családja pedig mély szegénységbe süllyed."
+    },
+    {
+      question: "Ki volt eredetileg Tímea, akit Tímár Mihály feleségül vesz?",
+      options: [
+        "Brazovics Athanáz lánya",
+        "A szultán elől menekülő Ali pasa lánya",
+        "Teréza mama leánygyermeke",
+        "Egy komáromi polgármester leánya"
+      ],
+      correctIndex: 1,
+      explanation: "Tímea Ali pasa lánya, akit apja menekít ki Törökországból, de útközben meghal, a lány gyámságát pedig Tímár veszi át."
+    },
+    {
+      question: "Miért egyezik bele Tímea a házasságba Tímár Mihállyal, ha nem szereti őt?",
+      options: [
+        "Mert fél tőle",
+        "Mély hálából és engedelmességből a megmentője iránt",
+        "Zsarolás hatására",
+        "Hogy bosszút álljon apja haláláért"
+      ],
+      correctIndex: 1,
+      explanation: "Tímea hálás Mihálynak a megmentéséért és gondoskodásáért, ezért kötelességtudatból hozzámegy, bár szíve Kacsuka Imréé."
+    },
+    {
+      question: "Mit jelképez a regényben a komáromi polgári világ?",
+      options: [
+        "A szabadságot és a művészetek tiszteletét",
+        "A pénzuralmat, a társadalmi elvárásokat és a hazug, formális kapcsolatokat",
+        "A természettel való harmonikus együttélést",
+        "A tudományos haladást és a vallásosságot"
+      ],
+      correctIndex: 1,
+      explanation: "A komáromi világ a rideg kötelességek, a spekuláció és a boldogtalan polgári lét színtere."
+    },
+    {
+      question: "Mi a Senki szigete a regényben?",
+      options: [
+        "Egy kalózok által uralt veszélyes sziget a Fekete-tengeren",
+        "Egy Duna-menti lakatlan, államon és pénzen kívüli utópisztikus paradicsom",
+        "Brazovics Athanáz magánbirtoka",
+        "A király által Tímárnak adományozott üdülőhely"
+      ],
+      correctIndex: 1,
+      explanation: "A Senki szigete a Duna közepén elhelyezkedő lakatlan, törvények és pénz nélküli paradicsom, ahol a természet és az őszinte érzelmek dominálnak."
+    },
+    {
+      question: "Kik élnek a Senki szigetén, kik befogadják Tímár Mihályt?",
+      options: [
+        "Krisztyán Tódor és családja",
+        "Teréza mama és lánya, Noémi",
+        "Ali pasa és kísérete",
+        "Kacsuka Imre és katonái"
+      ],
+      correctIndex: 1,
+      explanation: "A szigeten Teréza és lánya, Noémi élnek békében a természettel, miután menekülni kényszerültek a polgári társadalomból."
+    },
+    {
+      question: "Miben különbözik Noémi karaktere Tímeáétól?",
+      options: [
+        "Noémi gazdagabb és műveltebb, mint Tímea",
+        "Noémi önzetlenül, Tímár vagyona nélkül szereti Mihályt, míg Tímea csak kötelességből van vele",
+        "Noémi gyűlöli a természetet és városba vágyik",
+        "Noémi intrikus és zsarolja Tímárt"
+      ],
+      correctIndex: 1,
+      explanation: "Noémi a romantikus tiszta szerelem megtestesítője, aki Tímárnak magáért az emberért szereti, nem a pénzéért."
+    },
+    {
+      question: "Ki Krisztyán Tódor a regényben?",
+      options: [
+        "Tímár Mihály jóságos segítőtársa a hajón",
+        "Mihály sötét alteregója, a Senki szigetét és Tímárt is zsaroló gonosztevő",
+        "Tímea törvényes gyámja",
+        "Teréza mama rég elveszett fia"
+      ],
+      correctIndex: 1,
+      explanation: "Krisztyán Tódor a mű intrikusa, aki felfedezi Tímár kettős életét és titkait, és zsarolással próbálja tönkretenni őt."
+    },
+    {
+      question: "Hol és hogyan leli halálát Krisztyán Tódor?",
+      options: [
+        "Párbajban esik el Komáromban",
+        "A Balaton jegének rianásába esik és megfullad Mihály ruhájában",
+        "A törökök végzik ki a határon",
+        "Öngyilkos lesz a Senki szigetén"
+      ],
+      correctIndex: 1,
+      explanation: "Krisztyán Tódor a befagyott Balatonon megpróbálja megölni Tímárt, de a jég beszakad alatta, és Mihály ruháját viselve megfullad."
+    },
+    {
+      question: "Hogyan oldódik fel Tímár kettős életének konfliktusa?",
+      options: [
+        "Mihály feljelenti magát a rendőrségen",
+        "A világ a Balatonba fúlt Krisztyán Tódort hiszi Tímárnak, így ő névtelenül Noémihez menekülhet",
+        "Tímea elválik tőle és Noémihez költözik",
+        "Mihály megosztja vagyonát a két nő között és Komáromban marad"
+      ],
+      correctIndex: 1,
+      explanation: "Krisztyán Tódor holttestét Tímárként azonosítják a rajta talált ruhák alapján. Tímár ezt kihasználva hagyja, hogy halottnak higgyék, és a szigetre vonul vissza."
+    },
+    {
+      question: "Mi a regény végső erkölcsi tanulsága, amit a Senki szigetére való kivonulás képvisel?",
+      options: [
+        "A boldogságot csak a politikai karrier és a vagyon hozhatja meg",
+        "A valódi béke és boldogság csak a társadalmi konvencióktól és a kapzsiságtól mentes, természetközeli életben érhető el",
+        "A magány az ember egyetlen természetes állapota",
+        "Minden embernek kötelessége a polgári társadalomban maradni és küzdeni"
+      ],
+      correctIndex: 1,
+      explanation: "Jókai a regény zárlatával a romantikus kivonulást hirdeti: a tiszta erkölcs és a boldogság összeegyeztethetetlen a modern tőkés társadalommal."
+    },
+    {
+      question: "Miért tekinthető a regény a romantika és a realizmus határvonalán álló alkotásnak?",
+      options: [
+        "Mert nincsenek benne érzelmek, csak száraz tények",
+        "Mert a mesés fordulatok és végletes jellemek mellett mély lélektani ábrázolást és pontos társadalomrajzot ad",
+        "Mert teljesen mellőzi a leírásokat és csak párbeszédekből áll",
+        "Mert történelmi eseményeken alapul, de nincsenek benne kitalált szereplők"
+      ],
+      correctIndex: 1,
+      explanation: "A regény romantikus elemekkel (kincs, sziget, véletlenek) operál, de a főhős bűntudatának lélektani rajza és a gazdasági folyamatok bemutatása realista."
+    },
+    {
+      question: "Mi történik Tímeával a regény végén, Tímár vélt halála után?",
+      options: [
+        "Koldusszegényen hal meg Komáromban",
+        "Hozzámegy szerelméhez, Kacsuka Imréhez, örökölve Tímár hatalmas vagyonát",
+        "A Senki szigetére utazik Noémihez",
+        "Apáca lesz egy kolostorban"
+      ],
+      correctIndex: 1,
+      explanation: "Tímea hozzámegy Kacsuka Imréhez, és megkapja Tímár vagyonát, így a maga módján ő is megtalálja a megérdemelt békét."
     }
   ]
 });

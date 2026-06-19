@@ -64,27 +64,124 @@ window.loadTopicData(19, {
   ],
   quiz: [
     {
-      question: "Ki a szerzője 'A vadkacsa' című drámának?",
-      options: ["Anton Csehov", "Henrik Ibsen", "George Bernard Shaw", "Arthur Miller"],
-      correctIndex: 1,
-      explanation: "A drámát Henrik Ibsen norvég drámaíró írta 1884-ben."
-    },
-    {
-      question: "Ki fogalmazza meg az élethazugság szükségességének elméletét a drámában?",
-      options: ["Gregers Werle", "Hjalmar Ekdal", "Relling doktor", "Gina Ekdal"],
-      correctIndex: 2,
-      explanation: "Relling orvosként látja, hogy a betegei és barátai (mint Hjalmar) összeomlanának a kíméletlen igazság súlya alatt, ezért támogatja élethazugságaikat."
-    },
-    {
-      question: "Melyik állítás igaz a vadkacsára?",
-      options: [
-        "A padláson él egy ketrecben, sérült szárnnyal",
-        "A vadonban él szabadon",
-        "Egy kitalált állat, ami fizikailag nem létezik",
-        "Hjalmar kedvenc étele"
-      ],
+      question: "Ki Henrik Ibsen, és mi a szerepe a drámatörténetben?",
+      options: ["Norvég drámaíró, a modern polgári realista dráma megteremtője", "Svéd költő, a romantikus eposz megújítója", "Dán vígjátékíró, a klasszicista színház képviselője", "Angol drámaíró, az abszurd színház úttörője"],
       correctIndex: 0,
-      explanation: "A vadkacsa egy meglőtt, sérült madár, amit az öreg Ekdal és Hedvig ápolnak a padláson tartott pót-erdőben."
+      explanation: "Henrik Ibsen norvég drámaíró, a modern európai színjátszás és a polgári realista dráma egyik legfőbb alakja."
+    },
+    {
+      question: "Mit jelent az „analitikus drámaszerkezet” kifejezés, amely A vadkacsát jellemzi?",
+      options: ["A cselekmény kizárólag a jövőbeli tervekre fókuszál", "A sorsfordító események a múltban történtek, s a jelenben ezek titkai fokozatosan lepleződnek le", "A szereplők tudományos analízissel elemzik a környezetüket", "A darabnak nincs valódi története, csak hangulatképekből áll"],
+      correctIndex: 1,
+      explanation: "Az analitikus drámában a múltbeli titkok és bűnök fokozatos felszínre kerülése alakítja a jelenbeli konfliktusokat."
+    },
+    {
+      question: "Mi Hjalmar Ekdal foglalkozása, amit a felesége, Gina tart életben a valóságban?",
+      options: ["Fényképész", "Orvos", "Nagykereskedő", "Tanár"],
+      correctIndex: 0,
+      explanation: "Hjalmar Ekdal fényképész, de a munkát nagyrészt felesége, Gina végzi helyette."
+    },
+    {
+      question: "Milyen illúzióban, élethazugságban él Hjalmar Ekdal a mindennapokban?",
+      options: ["Azt hiszi, hogy ő Norvégia leggazdagabb embere", "Azt hiszi, hogy egy világmegváltó fényképészeti találmányon dolgozik", "Azt hiszi, hogy nemes származású", "Azt hiszi, hogy ő írta a vadkacsáról szóló verset"],
+      correctIndex: 1,
+      explanation: "Hjalmar azzal áltatja magát és környezetét, hogy egy nagy találmányon dolgozik, ami visszaadja a család becsületét."
+    },
+    {
+      question: "Mit csinál az öreg Ekdal a padláson berendezett pót-erdőben?",
+      options: ["Fényképeket hív elő", "Nyulakra vadászik és a régi vadászó életét imitálja", "Különleges kacsákat tenyészt eladásra", "Csempészárut rejteget"],
+      correctIndex: 1,
+      explanation: "Az öreg Ekdal a padláson fenyőfák és állatok között sétál, és úgy tesz, mintha a vadonban vadászna."
+    },
+    {
+      question: "Mi a lényege Relling doktor híres élethazugság-elméletének?",
+      options: ["Minden embert kényszeríteni kell az igazság elfogadására", "A hazugság bűn, amelyet azonnal büntetni kell", "A gyenge átlagember nem bírja el a valóságot, az illúzió megőrzi az életkedvét", "Az élethazugság csak a gazdagok kiváltsága"],
+      correctIndex: 2,
+      explanation: "Relling szerint az élethazugság (szellemi kábítószer) szükséges ahhoz, hogy a hétköznapi, gyenge ember elviselje a létezést."
+    },
+    {
+      question: "Ki képviseli az „ideális követelést” (a teljes igazságot és a hazugságmentes életet) a darabban?",
+      options: ["Relling doktor", "Gregers Werle", "Gina Ekdal", "Az öreg Ekdal"],
+      correctIndex: 1,
+      explanation: "Gregers Werle a kíméletlen igazság megszállottja, aki a morális megtisztulást az igazság feltárásában látja."
+    },
+    {
+      question: "Miért alakul ki tragédia, amikor Gregers elárulja Hjalmarnak a múlt titkait?",
+      options: ["Hjalmar börtönbe kerül", "A morális megtisztulás helyett a család szétesik, és Hjalmar eltaszítja magától Hedviget", "Werle nagykereskedő mindenkit kisemmiz", "Gina elhagyja a várost"],
+      correctIndex: 1,
+      explanation: "A kíméletlen igazság szétrombolja a család törékeny egyensúlyát; Hjalmar összeomlik és elutasítja Hedviget."
+    },
+    {
+      question: "Milyen testi fogyatékosság fenyegeti a kis Hedviget, ami egyben Werle nagykereskedő örökségére is utal?",
+      options: ["Süketség", "Némaság", "Fokozatos vakulás", "Bénulás"],
+      correctIndex: 2,
+      explanation: "Hedvig örökletes betegség miatt vakul meg, ahogyan a feltételezett biológiai apja, Werle nagykereskedő is."
+    },
+    {
+      question: "Hogyan került a vadkacsa az Ekdal családhoz?",
+      options: ["Hedvig találta az utcán", "Werle nagykereskedő lőtte meg, majd a kutyája hozta fel a vízből, végül Ekdalék fogadták be", "Az öreg Ekdal vásárolta a piacon", "Gregers hozta ajándékba a hegyekből"],
+      correctIndex: 1,
+      explanation: "A vadkacsát Werle sebesítette meg, de kutyája kimentette a vízből, és végül az Ekdal család padlására került."
+    },
+    {
+      question: "Miben hasonlít a vadkacsa sorsa az Ekdal családhoz?",
+      options: ["Mindketten Werle nagykereskedő jóindulatától függnek és a pót-világ hínárjába menekülnek", "Mindketten szabadon élnek a tengeren", "Mindketten gazdagok és sikeresek", "Mindketten meggyógyulnak a darab végére"],
+      correctIndex: 0,
+      explanation: "A vadkacsa a mélybe menekült a hínár közé, ahogy a család is a padlás illúzióiba menekül a valódi élet elől."
+    },
+    {
+      question: "Mit javasol Gregers Hedvignek, hogy bebizonyítsa apja iránti szeretetét és kiengesztelje őt?",
+      options: ["Hogy szökjön el otthonról", "Hogy áldozza fel a legértékesebb kincsét, a vadkacsát", "Hogy adjon el minden fényképet", "Hogy kérjen pénzt Werle nagykereskedőtől"],
+      correctIndex: 1,
+      explanation: "Gregers ráveszi Hedviget, hogy apja szeretetéért lője le kedvenc állatát, a vadkacsát."
+    },
+    {
+      question: "Mi történik a padláson, amikor Hedvig felmegy a fegyverrel?",
+      options: ["Lelövi a vadkacsát, ahogy Gregers kérte", "Véletlenül vagy szándékosan önmagát lövi szíven a madár helyett", "Lelövi a padlásra lopakodó macskát", "Elrejti a fegyvert a ládába"],
+      correctIndex: 1,
+      explanation: "Hedvig a madár helyett saját magát lövi le, hogy feláldozza életét az apja szeretetéért."
+    },
+    {
+      question: "Ki Gina Ekdal a darabban, és mi jellemzi a karakterét?",
+      options: ["Hjalmar lázadó lánya, aki el akar szökni", "Hjalmar gyakorlatias felesége, aki a családot összetartja és elfogadja az illúziókat", "Egy gazdag úrhölgy, aki lenézi a szegényeket", "Relling doktor asszisztense"],
+      correctIndex: 1,
+      explanation: "Gina két lábbal áll a földön, ő vezeti a műtermet, és elviseli a múlt titkait a család békéje érdekében."
+    },
+    {
+      question: "Ki a darab végén az a szereplő, aki azonnal átlátja Hedvig halálának tragikumát és Hjalmar várható érzelmi színjátékát?",
+      options: ["Gregers Werle", "Relling doktor", "Az öreg Ekdal", "Gina Ekdal"],
+      correctIndex: 1,
+      explanation: "Relling orvosként tudja, hogy Hjalmar gyásza hamarosan egy újabb pózzá, élethazugsággá fog alakulni."
+    },
+    {
+      question: "Melyik norvég városban játszódik a dráma cselekménye?",
+      options: ["Oslo (akkori Krisztiánia)", "Bergen", "Trondheim", "Stavanger"],
+      correctIndex: 0,
+      explanation: "Ibsen legtöbb polgári drámája, így A vadkacsa is Krisztiániában (ma Oslo) játszódik."
+    },
+    {
+      question: "Milyen szimbolikus jelentése van a vakságnak / vakulásnak a műben?",
+      options: ["A szellemi és anyagi gazdagságnak", "Az igazság elől való elzárkózásnak, a belső látásnak és a titkoknak", "Az isteni büntetésnek", "A művészetek iránti fogékonyságnak"],
+      correctIndex: 1,
+      explanation: "A látás elvesztése szimbolizálja a szereplők képtelenségét vagy nemakarását a valóság meglátására."
+    },
+    {
+      question: "Ki Werle nagykereskedő és mi a szerepe a múlt eseményeiben?",
+      options: ["Hjalmar igazi apja", "Egy szegény csavargó", "Gregers apja, aki korábban Ginát teherbe ejtette és anyagilag segítette Ekdalékat", "Egy híres norvég orvos"],
+      correctIndex: 2,
+      explanation: "Werle nagykereskedő a múltbeli szálak mozgatója, ő alapozta meg Hjalmar műtermét és házasságát is."
+    },
+    {
+      question: "Mit állít Ibsen a darabban az ideálok megszállott követéséről?",
+      options: ["Az ideálok követése mindig boldogsághoz vezet", "Az ideálok vak követése és a kíméletlen igazságkeresés romboló, katasztrofális lehet a gyenge emberekre", "Az ideálok csak a színházban léteznek", "Az ideálok követése felesleges luxus"],
+      correctIndex: 1,
+      explanation: "A dráma azt mutatja be, hogy Gregers elvakult igazságkeresése hogyan teszi tönkre egy család életét."
+    },
+    {
+      question: "Hogyan reagál Hjalmar, amikor először megtudja, hogy Hedvig talán nem az ő lánya?",
+      options: ["Megbocsát feleségének és még jobban szereti Hedviget", "Kétségbeesik, eltaszítja magától Hedviget és el akar költözni", "Párbajra hívja Werle nagykereskedőt", "Eladja a műtermet és elutazik"],
+      correctIndex: 1,
+      explanation: "Hjalmar önző és teátrális módon reagál: megtagadja a gyermeket, és látványosan ki akar vonulni a házból."
     }
   ]
 });

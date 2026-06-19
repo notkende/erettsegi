@@ -81,22 +81,164 @@ window.loadTopicData(6, {
   ],
   quiz: [
     {
-      question: "Melyik Balaton-parti településen érte a halál József Attilát?",
-      options: ["Balatonfüred", "Balatonszárszó", "Siófok", "Fonyód"],
-      correctIndex: 1,
-      explanation: "József Attila 1937. december 3-án a balatonszárszói vasútállomáson lelte halálát."
+      question: "Melyik időszakot nevezzük József Attila kései költészetének?",
+      options: ["1922–1925", "1928–1932", "1935–1937", "1930–1934"],
+      correctIndex: 2,
+      explanation: "József Attila kései korszaka a halála előtti évekre, azaz 1935 és 1937 közé tehető."
     },
     {
-      question: "Ki volt a kései versek egyik nagy ihletője, a költő pszichoanalitikusa?",
-      options: ["Vágó Márta", "Gyömrői Edit", "Kozmutza Flóra", "Brüll Adél"],
-      correctIndex: 1,
-      explanation: "Gyömrői Edit volt József Attila analitikusa, aki iránt a költő viszonzatlan, viharos szerelmet táplált."
+      question: "Ki volt az a pszichoanalitikus nő, akihez József Attila kezelésre járt, és aki iránt viszonzatlan szerelmet táplált a kései korszakában?",
+      options: ["Vágó Márta", "Kozmutza Flóra", "Gyömrői Edit", "Szántó Judit"],
+      correctIndex: 2,
+      explanation: "Gyömrői Edit volt József Attila analitikusa, akihez mély, viszonzatlan és viharos érzelmek fűzték."
     },
     {
-      question: "Melyik évszakot nevezi a legszebbnek József Attila az 'Íme, hát megleltem hazámat' c. vers utolsó szakaszában?",
-      options: ["Tavasz", "Nyár", "Ősz", "Tél"],
+      question: "Ki volt József Attila utolsó szerelme, a kései versek (például a Flóra-versek) ihletője?",
+      options: ["Kozmutza Flóra", "Gyömrői Edit", "Vágó Márta", "Galathea Anna"],
+      correctIndex: 0,
+      explanation: "Kozmutza Flóra volt a költő utolsó nagy szerelme, akit feleségül is akart venni, és aki később Illyés Gyula felesége lett."
+    },
+    {
+      question: "Melyik Balaton-parti településen hunyt el József Attila 1937-ben?",
+      options: ["Balatonszárszó", "Balatonfüred", "Fonyód", "Siófok"],
+      correctIndex: 0,
+      explanation: "József Attila 1937. december 3-án a balatonszárszói vasútállomáson lelte halálát vonatbaleset (öngyilkosság) következtében."
+    },
+    {
+      question: "Mi a jellemzője a kései költészetben gyakori önmegszólító verstípusnak?",
+      options: [
+        "A költő a múzsáját szólítja meg közvetlen hangnemben",
+        "A lírai én önmagát szólítja meg E/2. személyben, külső szemlélőként",
+        "A költő Istenhez fordul bocsánatért",
+        "A lírai én a társadalomhoz intéz szónoki beszédet"
+      ],
+      correctIndex: 1,
+      explanation: "Az önmegszólító versben a költő eltávolodik önmagától, és E/2. személyben beszél magához, értékelve saját sorsát."
+    },
+    {
+      question: "Hogyan szólítja meg önmagát a lírai én a „Karóval jöttél...” című versben?",
+      options: ["Érett, bölcs férfiként", "Bűnös, vezeklő emberként", "Gyermeki naivitású, ábrándozó lényként", "Haragos forradalmárként"],
+      correctIndex: 2,
+      explanation: "A „Karóval jöttél...” kezdetű versben a felnőtt beszélő a gyermeki énjét szembesíti az illúziók elvesztésével."
+    },
+    {
+      question: "Fejezze be a „Karóval jöttél...” ismert sorát: „Karóval jöttél, nem virággal, / vitáztál a ...”!",
+      options: ["gonosz halállal", "csalfa világgal", "szigorú apáddal", "néma magánnyal"],
+      correctIndex: 1,
+      explanation: "A pontos idézet: „Karóval jöttél, nem virággal, / vitáztál a csalfa világgal”."
+    },
+    {
+      question: "Mi a központi motívuma a „Tudod, hogy nincs bocsánat” című versnek?",
+      options: [
+        "A társadalmi egyenlőtlenség elleni lázadás",
+        "A bűn és a bocsánat hiánya miatti kérlelhetetlen önítélet",
+        "A szerelem mindent feloldó ereje",
+        "A természet szépségében való elmerülés"
+      ],
+      correctIndex: 1,
+      explanation: "A vers a bűntudat, a megbocsátás lehetetlensége és az ezzel való racionális, méltóságteljes szembenézés műve."
+    },
+    {
+      question: "Mit javasol végső megoldásként önmagának a beszélő a „Tudod, hogy nincs bocsánat” végén?",
+      options: [
+        "A harc folytatását a végsőkig",
+        "A külföldre menekülést",
+        "A halál, a megsemmisülés méltóságteljes elfogadását",
+        "A vallásos megtérést"
+      ],
+      correctIndex: 2,
+      explanation: "A költő a halált a sors elkerülhetetlen, drámaiság nélküli részeként fogadja el: „Légy, ami lennél: férfi. / A fű kinő utánad.”"
+    },
+    {
+      question: "Milyen jellegű versnek tekinthető József Attila „Íme, hát megleltem hazámat...” című műve?",
+      options: ["Politikai röpirat", "Saját sírvers (számvető vers)", "Szerelmi dal", "Játékos életkép"],
+      correctIndex: 1,
+      explanation: "A vers a költő utolsó befejezett műve, amelyben a halál közelségének tudatában von le végső számvetést életéről."
+    },
+    {
+      question: "Hogyan alakul át a „haza” fogalma az „Íme, hát megleltem hazámat...” című költeményben?",
+      options: [
+        "A haza a szabadságot és a jólétet jelképezi",
+        "A haza csupán a sírt, a halál fizikai helyét jelenti a költőnek",
+        "A haza a gyermekkori emlékek boldog színhelye",
+        "A haza egyenlő a magyar nyelv szépségével"
+      ],
+      correctIndex: 1,
+      explanation: "A haza itt már nem oltalmat nyújtó otthon, hanem a végzetes föld, amely befogadja a költő holttestét."
+    },
+    {
+      question: "Melyik évszakot nevezi a legszebbnek az „Íme, hát megleltem hazámat...” utolsó strófája?",
+      options: ["A tavaszt", "A nyarat", "Az őszt", "A telet"],
       correctIndex: 3,
-      explanation: "A vers végén így ír: 'Szép a tavasz és szép a nyár is, / de szebb az ősz s legszebb a tél...', ahol a tél a halál és a végső nyugalom metaforája."
+      explanation: "A vers záró soraiban a tél – mint a halál és a végső megnyugvás metaforája – a legszebb: „Szép a tavasz és szép a nyár is, / de szebb az ősz s legszebb a tél...”."
+    },
+    {
+      question: "Melyik stilisztikai törekvés jellemzi József Attila kései líráját?",
+      options: [
+        "A bonyolult, expresszionista és szürrealista képek halmozása",
+        "A stilisztikai egyszerűsödés, a tiszta, szinte hétköznapi nyelvhasználat",
+        "A barokkos körmondatok és a mitológiai utalások dominanciája",
+        "A dadaista szabadversforma kizárólagossága"
+      ],
+      correctIndex: 1,
+      explanation: "A kései versek eszköztelen, letisztult nyelven szólnak, háttérbe szorulnak a korábbi avantgárd stílusjegyek."
+    },
+    {
+      question: "Melyik versforma válik uralkodóvá József Attila kései számvető verseiben?",
+      options: ["A hexameteres antikváló forma", "A szabadvers", "A klasszicizálódó, tiszta dalforma", "A szonettkoszorú"],
+      correctIndex: 2,
+      explanation: "A kései versek többnyire szigorúan szerkesztett, dallamos, klasszikus strófaszerkezetű, tiszta rímelésű dalok."
+    },
+    {
+      question: "Melyik kései versében fogalmazódik meg leginkább a gyermekkori sérelmek, a szeretetlenség fájdalmas felidézése és a bűntudat?",
+      options: ["Óda", "Külvárosi éj", "Karóval jöttél...", "A Dunánál"],
+      correctIndex: 2,
+      explanation: "A „Karóval jöttél...” a gyermeki ént szólítja meg, s a gyermekkori vágyak meghiúsulását fájlalja („Eljátszottad a fejedet...”)."
+    },
+    {
+      question: "Milyen diagnózissal kezelték József Attilát a kései éveiben, amelyet a mai orvostudomány inkább borderline személyiségzavarként azonosít?",
+      options: ["Paranoia", "Skizofrénia", "Hisztéria", "Melankólia"],
+      correctIndex: 1,
+      explanation: "József Attilát a korabeli orvosok skizofréniával diagnosztizálták, ami mélyítette a betegségtudatát és szorongásait."
+    },
+    {
+      question: "Melyik folyóirat társszerkesztője volt József Attila kései korszakában (1936-tól), amely szellemi menedéket is jelentett számára?",
+      options: ["Nyugat", "Szép Szó", "Ma", "Válasz"],
+      correctIndex: 1,
+      explanation: "József Attila Ignotus Pállal közösen szerkesztette a Szép Szó című polgári radikális folyóiratot 1936-tól haláláig."
+    },
+    {
+      question: "Milyen hangnem jellemzi József Attila utolsó heteiben írt verseit?",
+      options: [
+        "Lázadó, forradalmi, optimista",
+        "Racionális, szenvtelen, belenyugvó és tragikus",
+        "Játékos, ironikus, távolságtartó",
+        "Misztikus, vallásos, áhítatos"
+      ],
+      correctIndex: 1,
+      explanation: "Az utolsó versek mentesek a pátosztól; a halált és a sorsot rideg logikával és megrendítő nyugalommal veszik tudomásul."
+    },
+    {
+      question: "Mit jelképez Kozmutza Flóra alakja a kései versekben?",
+      options: [
+        "A múlt politikai harcait",
+        "Az anyai szeretet pótlását",
+        "A megváltás, az életben maradás utolsó reményét",
+        "A művészi hírnév elérését"
+      ],
+      correctIndex: 2,
+      explanation: "A Flóra-versekben a szerelem mint az életbe visszavezető, a betegségből and a halálból kimentő utolsó szalmaszál jelenik meg."
+    },
+    {
+      question: "Mi a kései számvető versek alapvető egzisztenciális kérdése?",
+      options: [
+        "Hogyan lehet megdönteni a fennálló rendszert?",
+        "Hogyan élhet a költő örökké a műveiben?",
+        "Van-e értelme a létezésnek a szeretet és a megbocsátás hiányában?",
+        "Melyik társadalmi osztályhoz tartozik a költő?"
+      ],
+      correctIndex: 2,
+      explanation: "A kései versek az emberi létezés végső kérdéseit feszegetik, amikor a szeretet elmaradása és a bűntudat felemészti a lírai ént."
     }
   ]
 });

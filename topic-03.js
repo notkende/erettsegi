@@ -83,32 +83,164 @@ window.loadTopicData(3, {
   ],
   quiz: [
     {
-      question: "Melyik folyóirathoz kötődik szorosan Ady Endre munkássága?",
-      options: ["Hét", "Nyugat", "Válasz", "Kortárs"],
+      question: "Mikor élt Ady Endre?",
+      options: ["1823–1849", "1817–1882", "1877–1919", "1883–1941"],
+      correctIndex: 2,
+      explanation: "Ady Endre 1877-ben született Érmindszenten és 1919-ben hunyt el Budapesten."
+    },
+    {
+      question: "Melyik irodalmi folyóirat vezéregyénisége volt Ady Endre?",
+      options: ["A Hét", "A Nyugat", "A Válasz", "Az Élet és Irodalom"],
       correctIndex: 1,
-      explanation: "Ady Endre a 'Nyugat' folyóirat (indult 1908-ban) vezéregyénisége és szimbolikus alakja volt."
+      explanation: "Ady a 20. századi modern magyar líra megújítójaként a Nyugat folyóirat szimbolikus vezéregyénisége volt."
     },
     {
-      question: "Melyik állítás igaz a Léda-szerelemre?",
+      question: "Hogyan szakított Ady Endre a 19. századi hagyományos magyar szerelmi lírával?",
       options: [
-        "Csendes, békés, idillikus kapcsolat volt",
-        "Démoni szenvedély, folyamatos harc és diszharmónia jellemezte",
-        "A szülők teljes támogatásával jött létre",
-        "Csak plátói, levelezés útján tartott kapcsolat volt"
-      ],
-      correctIndex: 0, // wait! correctIndex should be 1! (Let's check options: 0 is "Csendes", 1 is "Démoni szenvedély".) Let's set correctIndex: 1.
-      explanation: "A Léda-kapcsolatot a folyamatos harc, a szakítások és békülések, a szenvedély és diszharmónia jellemezte."
-    },
-    {
-      question: "Melyik gesztus határozza meg az 'Őrizem a szemed' képi világát?",
-      options: [
-        "A tánc",
-        "A rohanás",
-        "A kezek egymásba kulcsolása és a szemkontaktus",
-        "A sírás és a veszekedés"
+        "Csak plátói, elvont kapcsolatokról írt",
+        "Elvetette a szerelmi témát a költészetéből",
+        "A harmonikus, házasság-idill helyett a szerelmet mint diszharmonikus küzdelmet és démoni szenvedélyt ábrázolta",
+        "Kizárólag humoros szerelmi verseket írt"
       ],
       correctIndex: 2,
-      explanation: "A vers legfontosabb motívuma a kezek fogása és a szemek őrzése: 'vénülő kezemmel fogom a kezedet... őrizem a szemedet'."
+      explanation: "Ady újszerűsége a szerelem drámai, zaklatott, halálközeli élményként való bemutatásában rejlik."
+    },
+    {
+      question: "Ki volt Ady első nagy szerelmi múzsája, a Léda-versek ihletője?",
+      options: ["Boncza Berta", "Diósy Ödönné Brüll Adél", "Vészi Margit", "Szendrey Júlia"],
+      correctIndex: 1,
+      explanation: "Brüll Adél (Léda) volt Ady nagyváradi és párizsi éveinek meghatározó szerelme."
+    },
+    {
+      question: "Mely évek közé tehető az Ady-költészet Léda-korszaka?",
+      options: ["1896–1900", "1903–1912", "1912–1915", "1915–1919"],
+      correctIndex: 1,
+      explanation: "A Léda-korszak 1903 (a nagyváradi találkozás) és 1912 (a szakítás) közé tehető."
+    },
+    {
+      question: "Mi jellemezte Léda társadalmi és szellemi helyzetét?",
+      options: [
+        "Fiatal, írástudatlan parasztlány volt",
+        "Érett, férjezett, művelt asszony volt, aki megnyitotta Ady előtt a francia kultúra kapuit",
+        "Apáca volt egy francia kolostorban",
+        "A bécsi udvar arisztokrata tagja volt"
+      ],
+      correctIndex: 1,
+      explanation: "Léda polgári származású, férjezett nőként Párizsban élt, s nagy hatással volt Ady műveltségére."
+    },
+    {
+      question: "Melyik évben jelent meg a „Lédával a bálban” című költemény?",
+      options: ["1903", "1907", "1912", "1916"],
+      correctIndex: 1,
+      explanation: "A Lédával a bálban 1907-ben jelent meg a Vér és arany című kötetben."
+    },
+    {
+      question: "Milyen alapvető kontrasztra épül a „Lédával a bálban” képi világa?",
+      options: [
+        "A szegények és gazdagok ellentétére",
+        "A vidám, rózsaszín báli hangulat és a sötét, gyászos szerelmespár fekete színkontrasztjára",
+        "A téli táj és a tavaszi virágzás ellentétére",
+        "A földi élet és a túlvilági boldogság szembeállítására"
+      ],
+      correctIndex: 1,
+      explanation: "A rózsaszínű bálozók és a feketében sírva belépő pár kontrasztja a szerelmi tragikumot szimbolizálja."
+    },
+    {
+      question: "Hogyan reagálnak a bálozók a sötét szerelmespár belépésére a „Lédával a bálban” versben?",
+      options: [
+        "Kinevetik és kicsúfolják őket",
+        "Táncba hívják és megvendégelik őket",
+        "Megrettennek, elnémul a zene, eloltják a gyertyákat és menekülnek",
+        "Közömbösen tovább mulatnak"
+      ],
+      correctIndex: 2,
+      explanation: "A vers szerint: 'Elhal a zene s a bálteremben / A rózsakoszorúk elhervadnak... / S eloltanak minden gyertyát'."
+    },
+    {
+      question: "Melyik vers zárja le végleg az Ady és Léda közötti kapcsolatot 1912-ben?",
+      options: ["Héja-nász az avaron", "Özvegy legények éneke", "Elbocsátó, szép üzenet", "Őrizem a szemed"],
+      correctIndex: 2,
+      explanation: "Az Elbocsátó, szép üzenet Ady legkegyetlenebb szakítóverse, amellyel végleg lezárta a kapcsolatot."
+    },
+    {
+      question: "Milyen hangnem, magatartás jellemzi az „Elbocsátó, szép üzenet” című vers beszélőjét?",
+      options: [
+        "Alázatos bocsánatkérés és gyász",
+        "Gőgös, kegyetlen önmítosz, amely megtagadja a kapcsolat egyenrangúságát",
+        "Reménykedő, újrakezdést javasló hangnem",
+        "Semleges, baráti búcsúzás"
+      ],
+      correctIndex: 1,
+      explanation: "Ady büszkén kijelenti, hogy Lédát csak az ő tekintete és költői zsenije tette naggyá a világ számára."
+    },
+    {
+      question: "Kit takar a „Csinszka” név Ady kései költészetében?",
+      options: ["Brüll Adélt", "Boncza Bertát, a költő feleségét", "Vészi Margitot", "Kaffka Margitot"],
+      correctIndex: 1,
+      explanation: "Boncza Bertát nevezte el a költő Csinszkának (a lengyel csin/csacsa szóból alkotva játékosan)."
+    },
+    {
+      question: "Mely évek közé tehető az Ady-líra Csinszka-korszaka?",
+      options: ["1903–1912", "1912–1915", "1915–1919", "1919–1923"],
+      correctIndex: 2,
+      explanation: "A Csinszka-korszak a házasságkötéstől (1915) Ady haláláig (1919) tartott."
+    },
+    {
+      question: "Mi a Csinszka-szerelem legfőbb motívuma Ady számára a világháború alatt?",
+      options: [
+        "A harcias szenvedély és a fizikai pusztulás vágya",
+        "A politikai karrier építése",
+        "A menedékkeresés, a béke és az élet megőrzése a külvilág pusztítása közepette",
+        "A kozmikus magány kifejezése"
+      ],
+      correctIndex: 2,
+      explanation: "A Csinszka-versek a háborús apokalipszis elleni védekezést, a szerelmet mint oltalmat ábrázolják."
+    },
+    {
+      question: "Melyik évben keletkezett az „Őrizem a szemed” című híres vers?",
+      options: ["1907", "1912", "1916", "1919"],
+      correctIndex: 2,
+      explanation: "Az Őrizem a szemed 1916-ban, az első világháború derekán íródott."
+    },
+    {
+      question: "Milyen kulcsképek határozzák meg az „Őrizem a szemed” című vers képi világát?",
+      options: [
+        "A száguldó ménes és a gémeskút",
+        "A szikrázó csillagok és a hulló meteorok",
+        "Az egymást fogó kezek és az egymásba néző szemek mint a menedék szimbólumai",
+        "A vérző kardok és a csatatér képei"
+      ],
+      correctIndex: 2,
+      explanation: "A vers legfontosabb szimbólumai a 'vénülő kéz' és a 'szem', amelyek az oltalmat közvetítik."
+    },
+    {
+      question: "Melyik stílusirányzat határozta meg leginkább Ady egyedi szerelmi szimbólumrendszerét?",
+      options: ["Klasszicizmus", "Szimbolizmus", "Klasszikus realizmus", "Humanista reneszánsz"],
+      correctIndex: 1,
+      explanation: "Ady a magyar szimbolizmus legnagyobb alakja, aki elvont fogalmakat egyedi képekkel fejez ki."
+    },
+    {
+      question: "Melyik Ady-féle szerelmi szimbólum jelképezi a folyamatos küzdelmet, a szerelmesek marakodását?",
+      options: ["A fekete zongora", "A héja-nász (Héja-nász az avaron)", "A halál-rokon", "A fekete vitorlás"],
+      correctIndex: 1,
+      explanation: "A ragadozó madarak násza a szerelem diszharmonikus, marakodó jellegét ábrázolja."
+    },
+    {
+      question: "Melyik kifejezés Ady egyedi, szerelmi költészetére jellemző szóalkotása?",
+      options: ["Csókos ütközet", "Pajkos pásztor", "Erényes házasság", "Tiszta szerelem"],
+      correctIndex: 0,
+      explanation: "A 'csókos ütközet' jól mutatja a szerelem és a harc képének Ady-féle összekapcsolódását."
+    },
+    {
+      question: "Melyik állítás igaz Ady kései (Csinszka) lírájának hangvételére a Léda-versekhez képest?",
+      options: [
+        "Még vadabb és démonibb lett",
+        "Lelassult, elnéptelenedett a költészete",
+        "Csendesebb, intimebb és népdalokhoz hasonlóan egyszerűbb dalolás jellemzi",
+        "Kizárólag politikai jelszavakká egyszerűsödött"
+      ],
+      correctIndex: 2,
+      explanation: "A Csinszka-líra intimebb, dallamosabb, egyszerűbb formavilágot mutat a háborús fenyegetettségben."
     }
   ]
 });

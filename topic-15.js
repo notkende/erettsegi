@@ -76,27 +76,124 @@ window.loadTopicData(15, {
   ],
   quiz: [
     {
-      question: "Melyik állítás igaz Varró Dániel szerelmi költészetére?",
-      options: [
-        "Szigorúan kerüli a modern technikai szavakat",
-        "A szerelem tragikus, halálközeli élményként jelenik meg nála",
-        "A szerelem örök témáját a mai kor eszközeivel (SMS, e-mail) és humorral ábrázolja",
-        "Kizárólag szabadverseket ír"
-      ],
-      correctIndex: 2,
-      explanation: "Varró a modern kor kommunikációs eszközeit emeli be a lírába, megújítva ezzel a hagyományos szerelmi költészetet."
-    },
-    {
-      question: "Hány sorból áll az 'SMS-vers'?",
-      options: ["3 sor", "14 sor (szonett)", "8 sor", "Csak 1 szóból áll"],
-      correctIndex: 0,
-      explanation: "Az SMS-vers egy végtelenül tömör, mindössze 3 soros alkotás."
-    },
-    {
-      question: "Melyik klasszikus versforma ironikus újraírása jellemzi a kötet több versét?",
-      options: ["A ballada", "A szonett és az epigramma", "Az eposz", "A zsoltár"],
+      question: "Melyik évben jelent meg Varró Dániel Szívdesszert című kötete?",
+      options: ["1999", "2007", "2012", "2020"],
       correctIndex: 1,
-      explanation: "A kötetben a klasszikus szonett és a kétsoros epigramma formák nyernek modern, ironikus megfogalmazást."
+      explanation: "A Szívdesszert című kötet 2007-ben látott napvilágot."
+    },
+    {
+      question: "Mi a Szívdesszert kötet alcíme?",
+      options: ["21. századi szerelmes szonettek", "Kis 21. századi epigrammák", "Postmodern haikuk", "Dalok Lillának"],
+      correctIndex: 1,
+      explanation: "A Szívdesszert alcíme szerint 'kis 21. századi epigrammák', utalva a versek tömörségére és klasszikus gyökereire."
+    },
+    {
+      question: "Milyen újszerű tematika jelenik meg Varró Dániel szerelmi lírájában?",
+      options: ["A középkori trubadúr költészet másolása", "A modern digitális kor eszközeinek (SMS, e-mail, térerő) és fogyasztói társadalmának beemelése", "A háborús és politikai események közvetlen ábrázolása", "Kizárólag a vidéki természet és a pásztori idill ábrázolása"],
+      correctIndex: 1,
+      explanation: "Varró a 21. század digitális kommunikációs formáit és szlengjét ötvözi a klasszikus szerelmi témával."
+    },
+    {
+      question: "Melyik klasszikus, háromsoros keleti versformára emlékeztet az 'SMS-vers' szerkezete és tömörsége?",
+      options: ["Szonett", "Haiku", "Gaszal", "Epigramma"],
+      correctIndex: 1,
+      explanation: "Az SMS-vers három sorból áll, tömörsége és képszerűsége a japán haiku versformát idézi."
+    },
+    {
+      question: "Milyen feszültséget fejez ki az 'Email-vers' a modern szerelmi kapcsolatokban?",
+      options: ["A levelek kézzel írásának nehézségét", "A digitális útvesztők (szerverek) miatti bizonytalanságot és a várakozást a 'térerő peremén'", "A postai díjak drágulását", "A nyelvtani hibák javíthatatlanságát"],
+      correctIndex: 1,
+      explanation: "Az Email-vers a technikai kifejezéseket (szerver, küldés gomb) és a szerelmes várakozás bizonytalanságát állítja párhuzamba."
+    },
+    {
+      question: "Ki illusztrálta a Szívdesszert című kötetet játékos rajzaival?",
+      options: ["Szabó T. Anna", "Gyarmati Fanni", "Nemes Nagy Ágnes", "Varró Dániel maga"],
+      correctIndex: 0,
+      explanation: "A kötet illusztrációit a neves kortárs költő, Szabó T. Anna készítette."
+    },
+    {
+      question: "Melyik stílusjegy a legmeghatározóbb Varró Dániel költészetében?",
+      options: ["Szigorú vallásosság", "Posztmodern játékosság, nyelvi humor és stílusparódia", "Melankolikus, tragikus elégikusság", "Sallangmentes realizmus"],
+      correctIndex: 1,
+      explanation: "Varró költészetét a virtuóz rímjátékok, a hangvétel-keveredés és az önirónia jellemzi."
+    },
+    {
+      question: "Milyen nyelvi rétegek keverednek a Szívdesszert verseiben?",
+      options: ["Kizárólag ómagyar és latin szavak", "A fennkölt lírai hangvétel, a modern szleng, a digitális szakzsargon és márkanevek", "Csak orvosi szakkifejezések", "Kizárólag tájszavak"],
+      correctIndex: 1,
+      explanation: "A posztmodern költészet sajátja a magas irodalmi nyelv és a hétköznapi, technikai vagy szleng kifejezések ütköztetése."
+    },
+    {
+      question: "Hány sorból áll a Szívdesszert kötetben található 'SMS-vers'?",
+      options: ["3", "14", "8", "4"],
+      correctIndex: 0,
+      explanation: "Az SMS-vers egy végtelenül tömör, haiku-szerű, 3 sorból álló költemény."
+    },
+    {
+      question: "Melyik klasszikus olasz/nyugati versforma ironikus újraírásával találkozhatunk a kötetben?",
+      options: ["Eposz", "Szonett", "Zsoltár", "Ballada"],
+      correctIndex: 1,
+      explanation: "Varró a hagyományos, 14 soros szonett formát tölti meg modern, játékos és ironikus tartalommal."
+    },
+    {
+      question: "Mi a címe Varró Dániel 1999-ben megjelent első verseskötetének, amellyel ismertté vált?",
+      options: ["Szívdesszert", "Bögre azúr", "Túl a Maszat-hegyen", "Mi lett hova"],
+      correctIndex: 1,
+      explanation: "Varró Dániel debütáló kötete a rendkívül sikeres 'Bögre azúr' volt."
+    },
+    {
+      question: "Varró Dániel melyik verses mesejátéka ért el kiemelkedő színházi sikereket?",
+      options: ["Csongor és Tünde", "Túl a Maszat-hegyen", "János vitéz", "Lúdas Matyi"],
+      correctIndex: 1,
+      explanation: "A Túl a Maszat-hegyen Varró népszerű verses meseregénye és színdarabja."
+    },
+    {
+      question: "Melyik egyetemen szerzett diplomát Varró Dániel magyar–angol szakon?",
+      options: ["SZTE", "PTE", "ELTE", "DE"],
+      correctIndex: 2,
+      explanation: "Varró Dániel az Eötvös Loránd Tudományegyetemen végezte tanulmányait."
+    },
+    {
+      question: "Mit jelent a 'térerő pereme' metafora az 'Email-vers'-ben?",
+      options: ["A falu szélét", "A digitális elszigeteltség, a bizonytalan várakozás és magány modern helyszínét", "Egy konkrét hegycsúcsot", "A számítógép monitorának szélét"],
+      correctIndex: 1,
+      explanation: "A térerő hiánya vagy bizonytalansága a modern ember számára a kapcsolat elvesztését és a magányt jelképezi."
+    },
+    {
+      question: "Melyik korábbi nagy magyar költő formaművészetének örököseként tekinthetünk Varró Dánielre virtuóz rímei miatt?",
+      options: ["Zrínyi Miklós", "Kosztolányi Dezső vagy Csokonai Vitéz Mihály", "Arany János balladaíró", "Ady Endre szimbolista"],
+      correctIndex: 1,
+      explanation: "Csokonai és Kosztolányi híresek voltak játékos, csilingelő rímeikről és formai bravúrjaikról, melyeket Varró is folytat."
+    },
+    {
+      question: "Hány versből áll a Szívdesszert kötet egésze?",
+      options: ["10", "32", "100", "50"],
+      correctIndex: 1,
+      explanation: "A Szívdesszert kötet harminckét rövidebb-hosszabb verset tartalmaz."
+    },
+    {
+      question: "Milyen hangulat jellemzi a Szívdesszert szerelmes verseit?",
+      options: ["Mélyen tragikus és kétségbeesett", "Fanyar humorú, ironikus, de egyben gyengéd és játékos", "Kizárólag dühös és vádaskodó", "Sírva vigadó népies bánat"],
+      correctIndex: 1,
+      explanation: "Bár a versek a mindennapi párkapcsolati bukdácsolásokról szólnak, a hangnem mindig tele van finom humorral és szeretettel."
+    },
+    {
+      question: "Melyik technikai kifejezés szerepel rímpárként a 'nekem én' szavakkal az 'Email-vers'-ben?",
+      options: ["Térerő peremén", "Szerverek legmélyén", "Gomb klikkelésén", "Internetes regény"],
+      correctIndex: 0,
+      explanation: "A versben szerepel a játékos rím: 'térerő peremén' - 'nekem én'."
+    },
+    {
+      question: "Melyik állítás igaz Varró Dániel műfordítói tevékenységére?",
+      options: ["Soha nem fordított semmit idegen nyelvből", "Klasszikus és kortárs műveket, drámákat és gyerekkönyveket is fordít nagy nyelvi leleménnyel", "Csak száraz műszaki leírásokat fordít", "Kizárólag kínai haikukat fordít"],
+      correctIndex: 1,
+      explanation: "Varró elismert műfordító, számos színdarab (pl. Shakespeare-művek) és népszerű gyerekkönyv (pl. Grinch) magyarítása fűződik a nevéhez."
+    },
+    {
+      question: "Milyen hatást vált ki az olvasóból a Szívdesszert kötet a szerelem digitalizált világának ábrázolásával?",
+      options: ["Rettegést a technológiától", "Felismerést, hogy az emberi érzelmek a modern és digitális korban is érvényesek és megélhetőek", "Az internet teljes elutasítását", "Unatkozást a téma banalitása miatt"],
+      correctIndex: 1,
+      explanation: "A kötet megmutatja, hogy a szerelem klasszikus témája a mobiltelefonok és az internet korában is költői tartalommal tölthető meg."
     }
   ]
 });

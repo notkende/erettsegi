@@ -76,27 +76,124 @@ window.loadTopicData(20, {
   ],
   quiz: [
     {
-      question: "Ki írta a krimi 'tízparancsolatát' 1929-ben a fair play érdekében?",
-      options: ["Arthur Conan Doyle", "Agatha Christie", "Ronald Knox", "Edgar Allan Poe"],
+      question: "Mely szavakból ered a „krimi” kifejezés?",
+      options: ["A latin crimen (bűn) és az angol crime (bűntény) szavakból", "A görög krinosz (ítélet) szóból", "A francia crie (kiáltás) szóból", "A német krieg (háború) szóból"],
+      correctIndex: 0,
+      explanation: "A krimi elnevezés a latin crimen (bűn) és a modern angol crime (bűntény) szavakból származik."
+    },
+    {
+      question: "Kit tart a világirodalom a detektívtörténet atyjának?",
+      options: ["Arthur Conan Doyle-t", "Agatha Christie-t", "Edgar Allan Poe-t", "Raymond Chandlert"],
       correctIndex: 2,
-      explanation: "Ronald Knox angol pap és krimiíró fektette le a klasszikus detektívregény 10 alapszabályát."
+      explanation: "Edgar Allan Poe 1841-ben megjelent 'A Morgue utcai kettős gyilkosság' című novellájával fektette le a műfaj alapjait."
     },
     {
-      question: "Melyik híres nyomozó kötődik Agatha Christie nevéhez?",
-      options: ["Sherlock Holmes", "Hercule Poirot", "Auguste Dupin", "Philip Marlowe"],
+      question: "Ki az első klasszikus irodalmi detektívfigura, akit Edgar Allan Poe alkotott meg?",
+      options: ["Sherlock Holmes", "Auguste Dupin", "Hercule Poirot", "Philip Marlowe"],
       correctIndex: 1,
-      explanation: "Hercule Poirot (valamint Miss Marple) Agatha Christie leghíresebb nyomozó karaktere."
+      explanation: "Auguste Dupin Poe novelláinak elemző elméjű nyomozója, a későbbi detektívfigurák mintaképe."
     },
     {
-      question: "Mi a funkciója a nyomozó melletti segítőtársnak (pl. Dr. Watsonnak)?",
-      options: [
-        "Ő a valódi gyilkos",
-        "Ő képviseli az átlagolvasót, akinek a nyomozó elmagyarázza a következtetéseket",
-        "Ő akadályozza a nyomozást",
-        "Nincs semmilyen funkciója"
-      ],
+      question: "Milyen tudományos módszer bevezetésével reformálta meg Sherlock Holmes a nyomozást?",
+      options: ["Indukció", "Dedukció (racionális logikai következtetés)", "Hipnózis", "Grafológia"],
       correctIndex: 1,
-      explanation: "A segítőtárs a narrátor, aki az átlagember szintjén áll, s rajta keresztül kap magyarázatot az olvasó a nyomozó zseniális elmebeli következtetéseire."
+      explanation: "Sherlock Holmes a dedukciót használta: az apró megfigyelt nyomokból jutott el a logikus összefüggésekig."
+    },
+    {
+      question: "Melyik korszakot nevezzük a krimi „aranykorának”?",
+      options: ["A 19. század közepét", "Az 1920 és 1950 közötti időszakot", "Az 1970-es éveket", "A 21. század elejét"],
+      correctIndex: 1,
+      explanation: "A két világháború közötti és az azt követő időszakot (1920–1950) nevezik a klasszikus detektívregény aranykorának."
+    },
+    {
+      question: "Ki írta a híres belga nyomozó, Hercule Poirot történeteit?",
+      options: ["Dorothy L. Sayers", "Agatha Christie", "Arthur Conan Doyle", "Raymond Chandler"],
+      correctIndex: 1,
+      explanation: "Hercule Poirot Agatha Christie leghíresebb nyomozója, aki a szürke agysejtek munkájára hagyatkozik."
+    },
+    {
+      question: "Milyen alapvető elv határozza meg a klasszikus krimiben az író és az olvasó közötti viszonyt?",
+      options: ["A titoktartás elve", "A fair play (tiszta játék) elve", "A naturalizmus elve", "A véletlenszerűség elve"],
+      correctIndex: 1,
+      explanation: "A fair play elve szerint az olvasónak ugyanazokat a nyomokat kell megkapnia, mint a nyomozónak, így elvben ő is rájöhet a megoldásra."
+    },
+    {
+      question: "Ki rögzítette 1929-ben a krimi „tízparancsolatát”?",
+      options: ["Ronald Knox", "S. S. Van Dine", "Agatha Christie", "Arthur Conan Doyle"],
+      correctIndex: 0,
+      explanation: "Ronald Knox angol író és pap fektette le a klasszikus detektívregény írásának 10 szabályát."
+    },
+    {
+      question: "Knox tízparancsolata szerint mit szigorúan tilos használni a bűntény megoldásában?",
+      options: ["Fényképeket és térképeket", "Természetfeletti erőket vagy korábban meg nem nevezett ikertestvéreket", "Orvosi vizsgálatokat", "Kihallgatási jegyzőkönyveket"],
+      correctIndex: 1,
+      explanation: "A tisztességes krimi kizárja a természetfeletti elemeket vagy a semmiből felbukkanó ikreket mint olcsó írói megoldásokat."
+    },
+    {
+      question: "Mit jelent a krimiben a „red herring” (hamis nyom / terelőút) kifejezés?",
+      options: ["Egy olyan nyom vagy gyanúsított, amely szándékosan félrevezeti az olvasót és a nyomozót", "A gyilkosság helyszínén hagyott névjegy", "A nyomozó titkos segítője", "A leleplezési jelenet helyszíne"],
+      correctIndex: 0,
+      explanation: "A red herring (füstölt hering) olyan hamis nyom, ami a feszültség fenntartása érdekében tévútra tereli a nyomozást."
+    },
+    {
+      question: "Hogyan nevezzük azt az írói eszközt, amely lassítja a nyomozást és késlelteti a leleplezést?",
+      options: ["Retardáció", "Expozíció", "Katarzis", "Alliteráció"],
+      correctIndex: 0,
+      explanation: "A retardáció (késleltetés) feszültségkeltő eszköz: újabb akadályokkal, mellékszálakkal halasztja el a végkifejletet."
+    },
+    {
+      question: "Mi a „suspense” lényege a bűnügyi történetekben?",
+      options: ["A humoros helyzetek teremtése", "A feszültség folyamatos fenntartása, amikor az olvasó sejti a veszélyt, de nem tudja a kimenetelt", "A bűntény tudományos részletezése", "A nyomozó múltjának bemutatása"],
+      correctIndex: 1,
+      explanation: "A suspense az olvasót bizonytalanságban és izgalomban tartó feszültségkeltési technika."
+    },
+    {
+      question: "Mi történik a klasszikus detektívregény „leleplezési jelenetében”?",
+      options: ["A gyilkos önként feladja magát a rendőrségen", "A nyomozó egybegyűjti a gyanúsítottakat, lépésről lépésre rekonstruálja a bűntényt, majd megnevezi a tettest", "A nyomozó párbajozik a gyanúsítottal", "A tettes elmenekül az országból"],
+      correctIndex: 1,
+      explanation: "A leleplezési jelenetben a detektív teátrálisan leplezi le a gyilkost a gyanúsítottak zárt köre előtt."
+    },
+    {
+      question: "Miért van szükség a zseniális nyomozó mellett egy átlagos intelligenciájú segítőtársra (pl. Dr. Watson)?",
+      options: ["Mert ő követi el a bűntényeket", "Mert ő képviseli az átlagolvasót, akinek a nyomozó elmagyarázza a bonyolult következtetéseket", "Mert a nyomozó nem tud egyedül utazni", "Mert ő végzi el a fizikai munkát"],
+      correctIndex: 1,
+      explanation: "A segítőtárs (pl. Watson, Hastings) a narrátor, aki az olvasó szemszögéből közvetíti és teszi érthetővé a nyomozást."
+    },
+    {
+      question: "Melyik krimi-irányzat alakult ki a 20. század közepén Amerikában, Raymond Chandler nevéhez kötődően?",
+      options: ["Zárt szoba rejtélye", "Hard-boiled (keményvonalas / noir) krimi", "Klasszikus angol detektívregény", "Tudományos fantasztikus krimi"],
+      correctIndex: 1,
+      explanation: "A hard-boiled krimi az amerikai nagyvárosok sötét valóságát, a korrupciót és az erőszakot mutatja be egy magányos magándetektív szemével."
+    },
+    {
+      question: "Ki Raymond Chandler leghíresebb, keményvonalas magándetektív karaktere?",
+      options: ["Philip Marlowe", "Sam Spade", "Sherlock Holmes", "Lew Archer"],
+      correctIndex: 0,
+      explanation: "Philip Marlowe Chandler cinikus, de morális tartással bíró, hard-boiled magándetektívje."
+    },
+    {
+      question: "Mit jelent a „zárt szoba rejtélye” a krimiirodalomban?",
+      options: ["A bűntény egy olyan helyszínen történik, ahonnan a tettesnek elvileg lehetetlen volt bejutnia és elmenekülnie", "A nyomozót bezárják a gyanúsítottak", "A regényt kizárólag egy szobában írták", "Nincs áldozat, csak egy ellopott tárgy a széfből"],
+      correctIndex: 0,
+      explanation: "A zárt szoba rejtélye egy klasszikus krimi-toposz, ahol a bűntény látszólag fizikai képtelenség."
+    },
+    {
+      question: "Milyen a klasszikus krimi történetvezetése szerkezetileg?",
+      options: ["Lineáris és kizárólag a jövőbe tekint", "Retrospektív (visszatekintő), a bűnténnyel indul, és a múlt eseményeit rekonstruálja", "Csapongó, nincsenek időbeli kapcsolatok", "Kizárólag a nyomozó gyermekkorát mutatja be"],
+      correctIndex: 1,
+      explanation: "A krimi retrospektív: a végponttal (a bűnténnyel) indul, és a nyomozás során visszafelé haladva tárja fel az okokat."
+    },
+    {
+      question: "Mi a krimi pszichológiai és etikai hatása a befejezésben?",
+      options: ["Kétségbeesést és káoszt hagy maga után", "Visszaállítja a morális világrendet és megnyugvást hoz a bűnös leleplezésével", "Megkérdőjelezi a törvények értelmét", "Ráveszi az olvasót a bűnözésre"],
+      correctIndex: 1,
+      explanation: "A tettes leleplezésével és a bűnhődéssel helyreáll a felborult erkölcsi rend, ami feloldja az olvasó szorongását."
+    },
+    {
+      question: "Melyik híres Agatha Christie-szereplő egy idős, falusi amatőr nyomozónő, aki az emberi természet ismeretére hagyatkozik?",
+      options: ["Miss Marple", "Irene Adler", "Mrs. McGinty", "Jane Eyre"],
+      correctIndex: 0,
+      explanation: "Miss Marple Agatha Christie másik híres, éles eszű nyomozókaraktere Poirot mellett."
     }
   ]
 });

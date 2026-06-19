@@ -75,22 +75,124 @@ window.loadTopicData(16, {
   ],
   quiz: [
     {
-      question: "Hány könyvből áll az Újszövetség?",
-      options: ["39", "27", "46", "150"],
+      question: "Mit jelent a görög „ta biblia” kifejezés eredetileg?",
+      options: ["szent iratok", "könyvecskék, könyvek", "isteni kinyilatkoztatás", "törvénytáblák"],
       correctIndex: 1,
+      explanation: "A Biblia név a görög 'ta biblia' szóból származik, amelynek jelentése: könyvecskék, könyvek."
+    },
+    {
+      question: "Milyen nyelven íródott az Ószövetség döntő többsége?",
+      options: ["görögül", "latinul", "héberül és arámiul", "szanszkritul"],
+      correctIndex: 2,
+      explanation: "Az Ószövetség könyvei eredetileg héberül és néhány részletben arámiul íródtak."
+    },
+    {
+      question: "Milyen nyelven íródtak az Újszövetség könyvei?",
+      options: ["héberül", "görögül", "arámiul", "latinul"],
+      correctIndex: 1,
+      explanation: "Az Újszövetség könyvei a korban elterjedt közös görög nyelven (koiné) íródtak."
+    },
+    {
+      question: "Hány könyvet tartalmaz az Újszövetség a keresztény felekezetek közös kánonja szerint?",
+      options: ["27", "39", "46", "150"],
+      correctIndex: 0,
       explanation: "Az Újszövetség minden keresztény felekezetben egységesen 27 könyvből áll."
     },
     {
-      question: "Melyik könyv a Biblia utolsó irata?",
-      options: ["Máté evangéliuma", "Pál levele a rómaiakhoz", "Jelenések könyve (Apokalipszis)", "Zsoltárok könyve"],
+      question: "Mit nevezünk „kánonnak” a bibliai szóhasználatban?",
+      options: ["Az egyházi ünnepek rendjét", "A bibliai szövegmagyarázatok gyűjteményét", "A vallási közösségek által hitelesnek, istenileg ihletettnek elfogadott iratok jegyzékét", "A zsoltárok éneklési szabályait"],
       correctIndex: 2,
-      explanation: "A Biblia utolsó könyve a János apostolnak tulajdonított Jelenések könyve."
+      explanation: "A kánon a hitelesnek elismert, a szentírás részét képező könyvek hivatalos jegyzéke."
     },
     {
-      question: "Milyen műfajba tartozik az 'Énekek éneke'?",
-      options: ["Törvényszöveg", "Prófétai jóslat", "Szerelmi líra", "Evangélium"],
+      question: "Hogyan nevezzük azokat a vallásos iratokat, amelyeket nem fogadtak be a hivatalos kánonba?",
+      options: ["Zsoltárok", "Apokrifek", "Evangéliumok", "Próféciák"],
+      correctIndex: 1,
+      explanation: "Az apokrifek (rejtett könyvek) olyan vallásos iratok, amelyek nem kerültek be a Biblia hivatalos kánonjába."
+    },
+    {
+      question: "Mit jelent a „Tóra” kifejezés, és a Biblia melyik részében található?",
+      options: ["Jézus tanítása az Újszövetségben", "A zsoltárok gyűjteménye az Ószövetségben", "Törvény; Mózes öt könyve az Ószövetségben", "A próféták könyveinek összefoglalása"],
       correctIndex: 2,
-      explanation: "Az Énekek éneke az Ószövetség tanítói/költői könyvei közé tartozik, egy rendkívül finom, allegorikus szerelmi versciklus."
+      explanation: "A Tóra héber szó, jelentése törvény, tanítás; ez Mózes öt könyvét jelenti az Ószövetség elején."
+    },
+    {
+      question: "Kihez köti a zsidó és keresztény hagyomány a Zsoltárok könyvének szerzőségét?",
+      options: ["Mózeshez", "Dávid királyhoz", "Salamon királyhoz", "Pál apostolhoz"],
+      correctIndex: 1,
+      explanation: "A hagyomány a zsoltárok jelentős részét Dávid királynak tulajdonítja."
+    },
+    {
+      question: "Melyik ószövetségi könyv foglalkozik a szenvedés és az emberi sors értelmével, a hit próbatételével?",
+      options: ["Jób könyve", "Énekek éneke", "Kivonulás könyve", "Teremtés könyve"],
+      correctIndex: 0,
+      explanation: "Jób könyve egy drámai hangvételű tanító könyv, amely az igaz ember ártatlan szenvedésének kérdését járja körül."
+    },
+    {
+      question: "Melyik ószövetségi könyv képviseli a lírai szerelmi költészetet allegorikus formában?",
+      options: ["Zsoltárok könyve", "Énekek éneke", "Dániel könyve", "Bírák könyve"],
+      correctIndex: 1,
+      explanation: "Az Énekek éneke egy rokokó finomságú, a szerelmi vágyat és ragaszkodást megszólaltató szerelmi lírai ciklus."
+    },
+    {
+      question: "Kik a szinoptikus evangélisták?",
+      options: ["Máté, Márk és Lukács", "Máté, Márk és János", "Márk, Lukács és János", "Máté, Lukács és János"],
+      correctIndex: 0,
+      explanation: "Máté, Márk és Lukács evangéliuma szerkezetében és szemléletében nagyon hasonló, ezért nevezzük őket szinoptikusoknak (együttlátóknak)."
+    },
+    {
+      question: "Miben tér el leginkább János evangéliuma a szinoptikusokétól?",
+      options: ["Nem tesz említést Jézus kereszthaláláról", "Héber nyelven íródott", "Filozofikusabb, elvontabb hangvételű és a teológiai mélységekre koncentrál", "Kizárólag példabeszédeket tartalmaz"],
+      correctIndex: 2,
+      explanation: "János evangéliuma teológiailag és filozofikusan mélyebb, egyedi szerkezetű és elvontabb, mint a szinoptikusoké."
+    },
+    {
+      question: "Melyik újszövetségi könyv mutatja be a korai keresztény egyház megalakulását és Pál apostol misszióit?",
+      options: ["Jelenések könyve", "Az apostolok cselekedetei", "Zsidókhoz írt levél", "Lukács evangéliuma"],
+      correctIndex: 1,
+      explanation: "Az apostolok cselekedetei a korai egyház történetét és az apostolok (főként Péter és Pál) térítő útjait beszéli el."
+    },
+    {
+      question: "Ki írta a Biblia újszövetségi leveleinek többségét (szám szerint 14 levelet)?",
+      options: ["Péter apostol", "János apostol", "Pál apostol", "Jakab apostol"],
+      correctIndex: 2,
+      explanation: "Pál apostol nevéhez 14 levél fűződik az Újszövetségben, amelyek a gyülekezeteknek szóló tanításokat és buzdításokat tartalmaznak."
+    },
+    {
+      question: "Hol található a híres Szeretethimnusz a Bibliában?",
+      options: ["A Hegyi beszédben (Máté evangéliuma)", "Pál apostol korinthusiakhoz írt I. levelében", "A Jelenések könyvében", "A Zsoltárok könyvében"],
+      correctIndex: 1,
+      explanation: "A Szeretethimnusz Pál apostol korinthusiakhoz írt első levelének 13. fejezetében található (1Kor 13)."
+    },
+    {
+      question: "Mit jelent a „parabola” (példabeszéd) műfaja?",
+      options: ["Rövid, erkölcsi tanulságot hordozó történet, amely hétköznapi képekkel ábrázol szellemi igazságokat", "Kizárólag verses formájú, lírai dicsőítő ének", "Apokaliptikus jövőképet bemutató prófécia", "Jogi szabályokat és szertartásokat rögzítő törvényszöveg"],
+      correctIndex: 0,
+      explanation: "A parabola (példabeszéd) olyan szemléltető történet, amelynek mindennapi eseményei mögött mélyebb erkölcsi vagy vallási jelentés rejlik."
+    },
+    {
+      question: "Melyik híres példabeszéd található meg az Újszövetségben?",
+      options: ["A vízözön története", "A tékozló fiú története", "Jób próbatétele", "Dávid és Góliát harca"],
+      correctIndex: 1,
+      explanation: "A tékozló fiú (valamint az irgalmas szamaritánus) Jézus egyik legismertebb újtestamentumi példabeszéde."
+    },
+    {
+      question: "Melyik könyv zárja az Újszövetséget, amely látomásszerű képekben beszél a világ végéről?",
+      options: ["Dániel könyve", "Jelenések könyve (Apokalipszis)", "Apostolok cselekedetei", "Rómaiakhoz írt levél"],
+      correctIndex: 1,
+      explanation: "Az Újszövetséget a János apostolnak tulajdonított Jelenések könyve (Apokalipszis) zárja le, amely a végidőkről szól."
+    },
+    {
+      question: "Mi a „gondolatritmus” (parallelizmus) lényege, amely a bibliai szövegek sajátossága?",
+      options: ["A szavak rímelése a sorok végén", "A mondatok egyforma szótagszáma", "A gondolatok párhuzamos ismétlése, variálása vagy szembeállítása a szövegben", "A zenei kíséret ritmusának követése"],
+      correctIndex: 2,
+      explanation: "A gondolatritmus vagy parallelizmus a bibliai költészet alapvető stíluseszköze, ahol a sorok tartalmi és szerkezeti párhuzamossága adja a ritmust."
+    },
+    {
+      question: "Melyik fogalom írja le a Biblia kulturális szerepét, mint a nyugati kultúra alapvető motívumkincsét és utalásrendszerét?",
+      options: ["Kulturális kód", "Apokrif hagyomány", "Dogmatika", "Szinopszis"],
+      correctIndex: 0,
+      explanation: "A Biblia az európai kultúra alapvető kódrendszere (kulturális kód), amelynek történetei, szimbólumai és toposzai áthatják az irodalmat és művészetet."
     }
   ]
 });

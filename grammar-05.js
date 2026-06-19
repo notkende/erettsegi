@@ -63,6 +63,28 @@ window.loadGrammarData(5, {
   ],
   quiz: [
     {
+      question: "Mit nevezünk nyelvemléknek a nyelvtudományban?",
+      options: [
+        "Minden olyan tárgyi emléket, amelyet a honfoglalók használtak",
+        "A múltból fennmaradt írott vagy szóbeli forrást, amely a nyelv korábbi állapotát dokumentálja",
+        "Kizárólag a 18. század után nyomtatott nyelvészeti könyveket",
+        "A rovásírással írt modern emléktáblákat"
+      ],
+      correctIndex: 1,
+      explanation: "A nyelvemlék minden olyan írott (oklevél, kódex, glossza) vagy szóbeli forrás, amelyből megismerhetjük a nyelv korábbi korszakainak hang- és nyelvtanát."
+    },
+    {
+      question: "Melyik a legfontosabb és legrégebbi latin betűs magyar szórványemlékünk?",
+      options: [
+        "A tihanyi apátság alapítólevele (1055)",
+        "A Halotti Beszéd és Könyörgés",
+        "Az Ómagyar Mária-siralom",
+        "A Jókai-kódex"
+      ],
+      correctIndex: 0,
+      explanation: "A tihanyi apátság alapítólevele 1055-ből a legrégebbi latin oklevél, amely magyar szavakat és egy mondattöredéket őrzött meg."
+    },
+    {
       question: "Melyik híres mondattöredék szerepel a tihanyi apátság alapítólevelében?",
       options: [
         "latiatuc feleym zumtuhel",
@@ -74,10 +96,71 @@ window.loadGrammarData(5, {
       explanation: "A tihanyi alapítólevél leghíresebb magyar nyelvű része a 'feheruuaru rea meneh hutu queriesu' (Fehérvárra menő hadi útra) mondattöredék."
     },
     {
-      question: "Ki fedezte fel és ismertette először a Halotti Beszédet tartalmazó Pray-kódexet 1770-ben?",
-      options: ["Kazinczy Ferenc", "Pray György", "Toldy Ferenc", "Károlyi Gáspár"],
+      question: "Hány magyar szót és mondattöredéket tartalmaz a tihanyi apátság alapítólevele?",
+      options: [
+        "Pontosan egyet",
+        "58 magyar szót és 33 ragos kifejezést (köztük a leghíresebb mondattöredéket)",
+        "Több mint ezer oldalas magyar nyelvű szöveget",
+        "Kizárólag a király nevét"
+      ],
       correctIndex: 1,
-      explanation: "Pray György jezsuita történetíró talált rá és írta le a kódexet, amelyet róla neveztek el Pray-kódexnek."
+      explanation: "Az oklevél latin nyelvű szövegében 58 önálló magyar szó és 33 ragos kifejezés (tulajdonnevek, helynevek és a fehérvári hadi út leírása) található."
+    },
+    {
+      question: "Melyik a legelső összefüggő magyar nyelvű szövegemlékünk?",
+      options: [
+        "A tihanyi apátság alapítólevele",
+        "Az Ómagyar Mária-siralom",
+        "A Halotti Beszéd és Könyörgés (kb. 1192–1195)",
+        "A Vizsolyi Biblia"
+      ],
+      correctIndex: 2,
+      explanation: "A Halotti Beszéd és Könyörgés a 12. század végéről származó temetési prédikáció és ima, a legelső összefüggő szövegemlékünk."
+    },
+    {
+      question: "Melyik latin nyelvű kódexben maradt fenn a Halotti Beszéd és Könyörgés?",
+      options: ["Leuveni kódex", "Pray-kódex", "Jókai-kódex", "Müncheni kódex"],
+      correctIndex: 1,
+      explanation: "A Halotti Beszéd szövegét a Pray-kódex őrizte meg, amely egy latin nyelvű liturgikus könyv (szertartáskönyv)."
+    },
+    {
+      question: "Hány részből áll a Halotti Beszéd és Könyörgés szerkezetileg?",
+      options: [
+        "Egyetlen összefüggő bekezdésből",
+        "Két részből: egy 26 soros temetési beszédből és egy 6 soros latinból fordított könyörgésből",
+        "Három különböző költeményből",
+        "Tizenkét fejezetből"
+      ],
+      correctIndex: 1,
+      explanation: "A nyelvemlék egy magyarul szabadon megfogalmazott szónoklatból (prédikáció) és egy latin szertartásszöveg fordításából (könyörgés) áll."
+    },
+    {
+      question: "Melyik a legkorábbi magyar nyelvű vers- és szépirodalmi nyelvemlékünk?",
+      options: [
+        "Az Ómagyar Mária-siralom (13. század közepe)",
+        "A Halotti Beszéd",
+        "A Tihanyi alapítólevél",
+        "A Jókai-kódex"
+      ],
+      correctIndex: 0,
+      explanation: "Az Ómagyar Mária-siralom az első magyar nyelven íródott vers, amely művészi rímekkel és alliterációkkal fejezi ki Mária fájdalmát."
+    },
+    {
+      question: "Melyik kódexben maradt fenn az Ómagyar Mária-siralom?",
+      options: ["Pray-kódex", "Leuveni kódex", "Müncheni kódex", "Keszthelyi kódex"],
+      correctIndex: 1,
+      explanation: "A verset a Leuveni kódexben találták meg, amelyet jelenleg Magyarországon (az Országos Széchényi Könyvtárban) őriznek."
+    },
+    {
+      question: "Mit jelent a 'szórványemlék' fogalma?",
+      options: [
+        "Olyan szöveg, amelyből sok lap elveszett az évszázadok alatt",
+        "Más nyelvek elszórt szavait a magyar kódexekben",
+        "Idegen (többnyire latin vagy görög) nyelvű szövegbe ágyazott magyar szavakat, neveket",
+        "A nyelvjárásokból származó tájszavakat"
+      ],
+      correctIndex: 2,
+      explanation: "A szórványemlékekben a magyar szavak elszórtan (szórványosan) jelennek meg egy idegen nyelvű oklevélben, többnyire birtokhatárok leírásaként vagy nevekként."
     },
     {
       question: "Mi az a 'glossza'?",
@@ -89,6 +172,80 @@ window.loadGrammarData(5, {
       ],
       correctIndex: 1,
       explanation: "A glosszák a latin szövegek megértését segítő, a margóra vagy a sorok közé beszúrt magyar fordítások, széljegyzetek."
+    },
+    {
+      question: "Melyik nyelvemlékcsoportba tartoznak a témák szerint rendezett szójegyzékek (pl. Besztercei szójegyzék)?",
+      options: [
+        "Szórványemlékek",
+        "Glosszák és szójegyzékek",
+        "Összefüggő szövegemlékek",
+        "Kódexirodalom"
+      ],
+      correctIndex: 1,
+      explanation: "A szójegyzékek a glosszák rokonai; olyan szólisták, amelyek latin szavak mellé csoportosítva adják meg a magyar megfelelőket."
+    },
+    {
+      question: "Melyik a legkorábbi teljes egészében magyar nyelvű kódexünk, amely Assisi Szent Ferenc életét tartalmazza?",
+      options: ["Jókai-kódex (15. század)", "Müncheni kódex", "Leuveni kódex", "Pray-kódex"],
+      correctIndex: 0,
+      explanation: "A Jókai-kódex (korábbi nevén Ehrenfeld-kódex) a legrégebbi kézzel írt magyar nyelvű könyvünk, amely Assisi Szent Ferenc legendáját tartalmazza."
+    },
+    {
+      question: "Melyik kódexünk tartalmazza a legelső magyar nyelvű bibliafordítást (a huszita Biblia újszövetségi részét)?",
+      options: ["Jókai-kódex", "Müncheni kódex (1466)", "Leuveni kódex", "Bécsi kódex"],
+      correctIndex: 1,
+      explanation: "A Müncheni kódex tartalmazza az úgynevezett huszita Biblia újszövetségi részét, benne a négy evangélium fordításával."
+    },
+    {
+      question: "Ki fedezte fel és ismertette először a Halotti Beszédet tartalmazó Pray-kódexet 1770-ben?",
+      options: ["Kazinczy Ferenc", "Pray György", "Toldy Ferenc", "Károlyi Gáspár"],
+      correctIndex: 1,
+      explanation: "Pray György jezsuita történetíró talált rá és írta le a kódexet, amelyet róla neveztek el Pray-kódexnek."
+    },
+    {
+      question: "Melyik állítás igaz a korai magyar nyelvemlékek helyesírására vonatkozóan?",
+      options: [
+        "Azonnal bevezették a modern magyar helyesírás szabályait",
+        "A latin ábécét használták, de mivel a latinban nem voltak meg a magyar hangok (pl. ö, ü, cs, gy, sz), így egy latin betű több magyar hangot is jelölhetett",
+        "Kizárólag rovásírással jegyezték le a kódexeket",
+        "A görög ábécét használták a kódexekben"
+      ],
+      correctIndex: 1,
+      explanation: "A korabeli írnokok a latin betűkészletet próbálták alkalmazni a magyar hangokra, ami sok következetlenséget és olvasati nehézséget okozott (pl. az 'u' jelölhetett o-t, u-t, ü-t, v-t)."
+    },
+    {
+      question: "Melyik nyelvtörténeti tényt bizonyítja a Halotti Beszéd 'látjátok feleim szümtükhel' mondatában a 'szümtükhel' szó?",
+      options: [
+        "Azt, hogy a középkorban nem volt magánhangzó-illeszkedés",
+        "A szóvégi tővéghangzók (itt: 'ü') meglétét, amelyek később lekoptak (ma: szemetekkel)",
+        "A latin szavak közvetlen átvételét",
+        "A rovásírás közvetlen hatását"
+      ],
+      correctIndex: 1,
+      explanation: "A szümtükhel (szemetekkel) szóban látható az ómagyar kori szóvégi rövid magánhangzó, amely később kikopott a nyelvből."
+    },
+    {
+      question: "Melyik században keletkezhetett az Ómagyar Mária-siralom a Leuveni kódexben?",
+      options: ["A 10. században", "A 13. században (kb. 1250 körül)", "A 15. század végén", "A 17. században"],
+      correctIndex: 1,
+      explanation: "A vers keletkezését a kutatók a 13. század közepére (kb. 1250-re) teszik, így ez a legkorábbi lírai emlékünk."
+    },
+    {
+      question: "Mi volt a kódexek elsődleges funkciója a középkorban?",
+      options: [
+        "A parasztság általános iskolai oktatása",
+        "A kolostorokban élő szerzetesek és apácák számára vallási szövegek, legendák, imák kézzel írt megőrzése és terjesztése",
+        "A királyi udvar gazdasági elszámolásainak vezetése",
+        "A szórakoztató regényolvasás népszerűsítése"
+      ],
+      correctIndex: 1,
+      explanation: "A kódexek kézzel írt, drága vallási könyvek voltak, amelyeket kolostorokban másoltak a szerzetesek liturgikus és lelki használatra."
+    },
+    {
+      question: "Melyik tudományterület foglalkozik a régi kéziratok, kódexek betűhű leírásával, olvasásával és datálásával?",
+      options: ["Szemantika", "Paleográfia (és szövegfilológia)", "Fonetika", "Szociolingvisztika"],
+      correctIndex: 1,
+      explanation: "A paleográfia a régi írások történetével, olvasásával és fejlődésével foglalkozó tudományág, amely nélkülözhetetlen a nyelvemlékek feldolgozásához."
     }
   ]
 });

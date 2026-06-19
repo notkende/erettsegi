@@ -72,32 +72,124 @@ window.loadTopicData(18, {
   ],
   quiz: [
     {
-      question: "Melyik nemzetiségű költő Faustjához szokták hasonlítani a Tragédiát műfajilag?",
-      options: ["Angol (Shakespeare)", "Német (Goethe)", "Francia (Hugo)", "Olasz (Dante)"],
+      question: "Ki volt az a híres magyar író, aki stilisztikailag átdolgozta és segített kiadni Az ember tragédiáját?",
+      options: ["Vörösmarty Mihály", "Arany János", "Petőfi Sándor", "Jókai Mór"],
       correctIndex: 1,
-      explanation: "A drámai költemény műfaját a világirodalomban leginkább Goethe Faustja képviseli, amelyhez Madách műve is kapcsolódik."
+      explanation: "Arany János ismerte fel a kézirat zsenialitását, stilisztikailag csiszolta a szöveget, és segítette a kiadást."
     },
     {
-      question: "Ki Kepler a regényben (a 8. és 10. színben)?",
-      options: [
-        "A fáraó írnoka",
-        "Prágai csillagász, a megalkuvó tudós alakja",
-        "A párizsi forradalom vezére",
-        "Egy római patrícius"
-      ],
+      question: "Milyen műfajba tartozik Madách Imre főműve?",
+      options: ["Nemzeti eposz", "Emberiségköltemény / drámai költemény", "Polgári dráma", "Lírai ballada"],
       correctIndex: 1,
-      explanation: "Kepler a prágai szín főhőse, a megélhetésért horoszkópokat készítő csillagász, aki Madách saját megalkuvó, vívódó értelmiségi énjét vetíti ki."
+      explanation: "A Tragédia műfaja emberiségköltemény (vagy drámai költemény, világdráma), melynek központjában az emberiség sorsa áll."
     },
     {
-      question: "Mi az Ember tragédiájának híres zárómondata Isten szájából?",
-      options: [
-        "Nincs remény az ember számára.",
-        "Mondottam, ember: küzdj és bízva bízzál!",
-        "A tudás a legnagyobb bűn.",
-        "Menjetek és népesítsétek be a földet!"
-      ],
+      question: "Hány keretszíne és hány történelmi (álom)színe van a műnek?",
+      options: ["3 keretszín és 12 történelmi szín", "4 keretszín (1-3. és 15.) és 11 történelmi szín (4-14.)", "2 keretszín és 13 történelmi szín", "5 keretszín og 10 történelmi szín"],
       correctIndex: 1,
-      explanation: "Isten utolsó, híres szavai zárják le a drámát: 'Mondottam, ember: küzdj és bízva bízzál!'."
+      explanation: "A műben 4 keretszín van (1-3. a teremtés és a bűnbeesés, a 15. a felébredés) és a középső 11 történelmi szín alkotja az álomutazást."
+    },
+    {
+      question: "Mit jelképez Lucifer alakja Madách művében?",
+      options: ["Az abszolút, irracionális gonoszságot", "A hideg értelmet, a kételyt és a tagadást", "A vak hitet és engedelmességet", "Az emberi érzelmek melegségét"],
+      correctIndex: 1,
+      explanation: "Lucifer a tagadás szelleme, a hideg és racionális ész megtestesítője, aki Ádámot akarja kiábrándítani."
+    },
+    {
+      question: "Melyik szereplő képviseli a műben a folyton megújuló érzelmet, a költészetet és a természetet?",
+      options: ["Ádám", "Lucifer", "Éva", "A Föld szelleme"],
+      correctIndex: 2,
+      explanation: "Éva az érzelem, a szépség, a szerelem és a természet hordozója, aki képes Ádámot megmenteni a teljes kétségbeeséstől."
+    },
+    {
+      question: "Melyik eszme kudarca jelenik meg az Athén színben (5. szín)?",
+      options: ["A rabszolgatartó zsarnokság", "A tiszta demokrácia és a népakarat manipulálhatósága", "A keresztény hit szigorúsága", "A rideg tudományos racionalizmus"],
+      correctIndex: 1,
+      explanation: "Athénban Ádám mint Miltiadész csalódik a demokráciában, mert a demagógok által befolyásolt néptömeg halálra ítéli őt."
+    },
+    {
+      question: "Hogyan menekül meg Ádám a Róma szín (6. szín) erkölcsi ürességéből és halálhangulatából?",
+      options: ["Lucifer repíti el új helyszínre", "Péter apostol szavai mutatnak kiutat a kereszténység eszméjével", "Öngyilkosságot követ el a mulatóban", "Éva segítségével elszökik a városból"],
+      correctIndex: 1,
+      explanation: "Róma hedonista pusztulásában Péter apostol hirdeti meg a korai kereszténység szeretet- és testvériség-eszméjét."
+    },
+    {
+      question: "Milyen dogmatikai vita miatt égetnek el eretnekeket a Konstantinápoly színben (7. szín)?",
+      options: ["A szentháromság egyetlen betűje (homousion - homoiusion) miatt", "A tized fizetésének elutasítása miatt", "A Biblia nyelve miatt", "A pápai hatalom elismerése miatt"],
+      correctIndex: 0,
+      explanation: "A Konstantinápoly színben Ádám Tankrédként szembesül azzal, hogy az emberek hitvitákban ölnek egyetlen betű miatt."
+    },
+    {
+      question: "Melyik színben jelenik meg Ádám mint Kepler csillagász?",
+      options: ["Párizs", "London", "Prága", "Falanszter"],
+      correctIndex: 2,
+      explanation: "Ádám Kepler alakját a két prágai színben (8. és 10. szín) ölti magára."
+    },
+    {
+      question: "Miért kivételes a Párizs szín (9. szín) Ádám történelmi álomutazásában?",
+      options: ["Mert ez az egyetlen szín, ahol Lucifer nem kíséri el Ádámot", "Mert ebből a színből Ádám nem csalódottan, hanem lelkesen ébred fel", "Mert itt Ádám egyáltalán nem találkozik Évával", "Mert ez a leghosszabb és legbékésebb szín"],
+      correctIndex: 1,
+      explanation: "A Párizs szín egy álom az álomban (Kepler álma). Bár véres a forradalom, Ádám nem csalódik az eszmékben (Szabadság, Egyenlőség, Testvériség)."
+    },
+    {
+      question: "Mit szimbolizál a London szín (11. szín) Madách korának jelenét ábrázolva?",
+      options: ["A feudalizmus végnapjait", "A szabadversenyes kapitalizmust és a piac mindent eldöntő uralmát", "A szocialista egyenlőséget", "Az egyházi cenzúrát"],
+      correctIndex: 1,
+      explanation: "London a kapitalizmus allegóriája, ahol minden (a tudás, a művészet és a szerelem is) áruvá válik."
+    },
+    {
+      question: "Melyik szín mutatja be a Fourier-féle szocialista utópia rideg, tudományos megvalósulását?",
+      options: ["London", "Falanszter", "Űr", "Eszkimó szín"],
+      correctIndex: 1,
+      explanation: "A Falanszter színben (12. szín) a tudomány hideg észérvei uralkodnak, az egyéniséget teljesen elnyomják."
+    },
+    {
+      question: "Miért kell a Falanszterben a híres történelmi személyiségeknek (pl. Michelangelo, Luther) büntetést elszenvedniük?",
+      options: ["Mert fellázadtak az állam ellen", "Mert egyéniségük, tehetségük nem illik a falanszter sablonos munkamegosztásába", "Mert eltitkolták a tudományos eredményeket", "Mert loptak az állami javakból"],
+      correctIndex: 1,
+      explanation: "Michelangelónak széklábakat kell faragnia, Luthernek kazánt fűtenie, mert a falanszterben a tehetség és az egyéniség haszontalan és veszélyes."
+    },
+    {
+      question: "Mi történik Ádámmal az Űr színben (13. szín)?",
+      options: ["Meghal és a lelke a túlvilágra kerül", "Megpróbál elszakadni a Földtől, de a Föld szelleme visszakényszeríti, jelezve fizikai korlátait", "Találkozik a Teremtővel", "Eléri a Napot és elég"],
+      correctIndex: 1,
+      explanation: "Ádám ki akar szakadni a földi létből, de a Föld szelleme figyelmezteti: teste a Földhöz van kötve, az ember csak a Földön küzdhet."
+    },
+    {
+      question: "Milyen természettudományos elmélet ihlette a 14., úgynevezett Eszkimó színt?",
+      options: ["A Darwin-féle evolúcióelmélet", "A Nap kihűlésének (entrópia) elmélete", "A kontinensvándorlás elmélete", "A relativitáselmélet"],
+      correctIndex: 1,
+      explanation: "A 19. században népszerű elmélet szerint a Nap fokozatosan kihűl, és a Föld jégkorszakká válik; ez jelenik meg az Eszkimó szín."
+    },
+    {
+      question: "Hogyan ábrázolja Madách az embert az Eszkimó színben?",
+      options: ["Magas szintű gépekkel rendelkező társadalomként", "Állati szintre lealacsonyodott, a puszta túlélésért küzdő lényként", "Békés, természeti törzsként", "Vallásos közösségként"],
+      correctIndex: 1,
+      explanation: "A fagyos Földön az eszkimó (Ádám) már csak a fizikai túlélésre koncentrál, a morális értékek teljesen elvesztek."
+    },
+    {
+      question: "Miért akar Ádám öngyilkos lenni a 15. színben, miután felébred az álomból?",
+      options: ["Mert meg akarja akadályozni a látott szörnyű jövő beteljesülését", "Mert Lucifer erre kényszeríti varázslattal", "Mert Isten elfordult tőlle", "Mert Éva elhagyta őt"],
+      correctIndex: 0,
+      explanation: "Ádám szabad akaratából akar a szikláról a mélybe ugrani, hogy véget vessen az emberiség történetének még a kezdetén."
+    },
+    {
+      question: "Mi hiúsítja meg Ádám öngyilkossági szándékát?",
+      options: ["Isten közvetlen villámcsapása", "Éva bejelentése, hogy gyermeket vár, így a történelem már elindult", "Lucifer megbánása", "A Föld szellemének könyörgése"],
+      correctIndex: 1,
+      explanation: "Éva szavai („Anyának érzem, Ádám, magamat”) tudatják Ádámmal, hogy az élet folytatása már biztosított, az öngyilkosság értelmetlen."
+    },
+    {
+      question: "Milyen formájú a mű verselése döntő részben?",
+      options: ["Blank verse (drámai jambus)", "Nibelung-sor", "Hexameter", "Szabadvers"],
+      correctIndex: 0,
+      explanation: "A Tragédia blank verse formában íródott: tíz- és tizenegyszótagos rímtelen jambusi sorokban."
+    },
+    {
+      question: "Mi a Tragédia legfőbb üzenete Isten híres zárómondatának értelmében?",
+      options: ["Az ember sorsa elkerülhetetlenül a pusztulás", "Az embernek vakon kell bíznia Luciferben", "Az élet igazi értéke és értelme maga a küzdés és a remény", "A tudás megszerzése a legnagyobb boldogság"],
+      correctIndex: 2,
+      explanation: "A „küzdj és bízva bízzál” üzenete szerint a történelmi bukások ellenére magában a küzdelemben rejlik az ember méltósága."
     }
   ]
 });

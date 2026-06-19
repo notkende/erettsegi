@@ -1016,6 +1016,15 @@ function renderFlashcard() {
 // -------------------------------------------------------------
 // 8. KVÍZ LOGIKA
 // -------------------------------------------------------------
+function shuffleArray(array) {
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
 function resetQuizState(questions) {
   state.quizState = {
     active: false,
@@ -1031,6 +1040,30 @@ function resetQuizState(questions) {
 }
 
 function startQuiz() {
+  const topicData = state.loadedTopicsData[state.currentSubject][state.currentTopicId];
+  const allQuestions = (topicData && topicData.quiz && topicData.quiz.length > 0) ? topicData.quiz : state.quizState.questions;
+  
+  if (allQuestions && allQuestions.length > 0) {
+    // 1. Kérdések számának meghatározása
+    let chosenCount = 5;
+    if (state.activeChallenge && state.activeChallenge.topicId === state.currentTopicId && state.activeChallenge.subject === state.currentSubject) {
+      chosenCount = state.activeChallenge.senderTotal;
+    } else {
+      const countSelect = document.getElementById('quiz-question-count');
+      chosenCount = countSelect ? parseInt(countSelect.value) : 5;
+    }
+    
+    // 2. Kérdések összekeverése és méretének korlátozása (max 20)
+    const shuffled = shuffleArray(allQuestions);
+    const maxLimit = Math.min(shuffled.length, chosenCount, 20);
+    const selectedQuestions = shuffled.slice(0, maxLimit);
+    
+    state.quizState.questions = selectedQuestions;
+    state.quizState.currentIndex = 0;
+    state.quizState.score = 0;
+    state.quizState.answered = false;
+  }
+
   state.quizState.active = true;
   DOM.quizStartView.style.display = 'none';
   DOM.quizQuestionView.style.display = 'block';

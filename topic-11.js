@@ -79,32 +79,124 @@ window.loadTopicData(11, {
   ],
   quiz: [
     {
-      question: "Melyik város Református Kollégiumából csapták ki Csokonait?",
-      options: ["Sárospatak", "Pápa", "Debrecen", "Kecskemét"],
+      question: "Melyik stílusirányzathoz kötődik a kecsesség, könnyedség, a bor és a játékos szerelem dicsérete Csokonai költészetében?",
+      options: ["Klasszicizmus", "Rokokó", "Szentimentalizmus", "Barokk"],
+      correctIndex: 1,
+      explanation: "A rokokó jellemzői a játékosság, a miniatűr képek és az életöröm (bor, szerelem) dicsérete."
+    },
+    {
+      question: "Melyik város Kollégiumából bocsátották el Csokonait szabadelvű gondolatai miatt?",
+      options: ["Sárospatak", "Pápa", "Debrecen", "Nagyenyed"],
       correctIndex: 2,
-      explanation: "Csokonai a Debreceni Református Kollégium diákja és tanára volt, ahonnan szabadelvűsége miatt bocsátották el."
+      explanation: "Csokonai a Debreceni Református Kollégium diákja és tanára volt, ahonnan szabadelvű nézetei miatt zárták ki."
     },
     {
-      question: "Melyik állítás igaz 'A Reményhez' című versre?",
-      options: [
-        "Vidám hangulatú rokokó dal",
-        "Szentimentalista elégia, amely a teljes lemondással és halálvággyal zárul",
-        "Török harci dal",
-        "Politikai röpirat"
-      ],
+      question: "Ki volt Csokonai nagy szerelme, akit a költészetében Lillának nevezett?",
+      options: ["Boncza Berta", "Vajda Julianna", "Gyarmati Fanni", "Brüll Adél"],
       correctIndex: 1,
-      explanation: "A vers elégia, amely a Lilla-szerelem elvesztése miatti mély fájdalmat és a reményvesztettséget fejezi ki."
+      explanation: "Csokonai nagy szerelme és múzsája Vajda Julianna komáromi polgárlány volt."
     },
     {
-      question: "Hogyan személyesíti meg Csokonai a kulacsot a 'Szerelemdal a csikóbőrös kulacshoz' c. versben?",
-      options: [
-        "Mint egy félelmetes fegyvert",
-        "Mint egy kedves menyecskét / feleséget",
-        "Mint egy szigorú tanárt",
-        "Mint egy bölcs királyt"
-      ],
+      question: "Melyik Csokonai-vers képviseli a felvilágosult gondolati költészetet és a vallási fanatizmus kritikáját?",
+      options: ["Szerelemdal a csikóbőrös kulacshoz", "A Reményhez", "Konstancinápoly", "Zsugori uram"],
+      correctIndex: 2,
+      explanation: "A Konstancinápoly a felvilágosodás szellemében íródott filozófiai-gondolati költemény, amely az Ész diadalát hirdeti a babonák felett."
+    },
+    {
+      question: "Milyen műfaji meghatározás illik a legjobban A Reményhez című versre?",
+      options: ["Elégiko-óda", "Hősköltemény", "Epigramma", "Daljáték"],
+      correctIndex: 0,
+      explanation: "A Reményhez egy elégiko-óda, amely a szentimentalizmus bánatát és a klasszicista formát ötvözi."
+    },
+    {
+      question: "Hogyan épül fel A Reményhez című elégia belső két versszakának képi párhuzama?",
+      options: ["A háború és a béke szembeállítására", "A tavaszi virágzó múlt és a téli fagyos jelen kontrasztjára", "A városi és a vidéki élet különbségére", "Az isteni és az emberi világ ellentétére"],
       correctIndex: 1,
-      explanation: "A költő a kulacsot női tulajdonságokkal ruházza fel, kedvesként öleli magához ('Gyakran veszlek a kezembe, Gyakran nyomlak a mellembe')."
+      explanation: "A 2. versszak a boldog múltat idézi tavaszi képekkel, míg a 3. versszak a jelen pusztulását mutatja be téli tájjal."
+    },
+    {
+      question: "Melyik versében ötvözi legszembetűnőbben Csokonai a rokokó hangvételt a népies stílussal?",
+      options: ["Konstancinápoly", "A Reményhez", "Szerelemdal a csikóbőrös kulacshoz", "Az estve"],
+      correctIndex: 2,
+      explanation: "A Szerelemdal a csikóbőrös kulacshoz a rokokó életérzést (bor, szerelem) vegyíti a közvetlen, népi kifejezésekkel."
+    },
+    {
+      question: "Milyen hangulat/világkép jellemzi A Reményhez című vers zárlatát?",
+      options: ["Lelkes optimizmus", "A sorssal való harcos szembenézés", "Teljes lemondás és halálvágy", "Vallásos megnyugvás"],
+      correctIndex: 2,
+      explanation: "A költemény végén a lírai én teljesen lemond a boldogságról, és a halált mint megváltást várja."
+    },
+    {
+      question: "Hol vállalt Csokonai helyettes tanári állást, miután elbocsátották Debrecenből és elhagyta Pozsonyt?",
+      options: ["Komáromban", "Csurgón", "Keszthelyen", "Sopronban"],
+      correctIndex: 1,
+      explanation: "Csokonai a Somogy megyei Csurgón volt helyettes tanár egy rövid, de alkotásban gazdag ideig."
+    },
+    {
+      question: "Mit jelent a 'stílusszintézis' kifejezés Csokonai lírájával kapcsolatban?",
+      options: ["Csak egyetlen stílusirányzat merev követését", "A klasszicizmus, rokokó, szentimentalizmus és népiesség elemeinek együttes jelenlétét", "A középkori egyházi énekek lemásolását", "A külföldi versek egy az egyben való lefordítását"],
+      correctIndex: 1,
+      explanation: "A stílusszintézis Csokonai azon képessége, hogy kora különböző irányzatait harmonikusan olvasztotta össze sajátos költészetében."
+    },
+    {
+      question: "Hogyan jelenik meg a kulacs a 'Szerelemdal a csikóbőrös kulacshoz' című versben?",
+      options: ["Mint egy értéktelen, eldobandó tárgy", "Megszemélyesítve, mint egy kedves menyecske", "Mint egy félelmetes fegyver", "Mint az uralkodói hatalom jelképe"],
+      correctIndex: 1,
+      explanation: "Csokonai a kulacsot női tulajdonságokkal ruházza fel, kedveseként öleli magához."
+    },
+    {
+      question: "Melyik lapot szerkesztette Csokonai Pozsonyban az országgyűlés idején?",
+      options: ["Tudományos Gyűjtemény", "Diarium", "Magyar Hírmondó", "A Magyar Nyelvőr"],
+      correctIndex: 1,
+      explanation: "Csokonai Pozsonyban az országgyűlési Diarium szerkesztőjeként tevékenykedett."
+    },
+    {
+      question: "Melyik eszmeiség jelenik meg a 'Konstancinápoly' című vers hátterében?",
+      options: ["A barokk ellenreformáció", "A felvilágosodás racionalizmusa és egyházkritikája", "A romantikus nemzetféltés", "A realizmus társadalomrajza"],
+      correctIndex: 1,
+      explanation: "A Konstancinápoly a francia felvilágosodás gondolatvilágát tükrözi, bírálva a vallási vakbuzgóságot."
+    },
+    {
+      question: "Milyen ritmus/verselés jellemzi A Reményhez című verset?",
+      options: ["Kizárólag magyaros ütemhangsúlyos", "Időmértékes (trochaikus lejtésű)", "Szabadvers ritmus nélküli", "Kizárólag hexameter"],
+      correctIndex: 1,
+      explanation: "A Reményhez időmértékes verselésű, dalritmusú trochaikus sorokból épül fel."
+    },
+    {
+      question: "Milyen betegség okozta Csokonai Vitéz Mihály korai halálát?",
+      options: ["Tífusz", "Tüdőbaj (tuberkulózis)", "Pestis", "Köszvény"],
+      correctIndex: 1,
+      explanation: "Csokonai fiatalon, 31 évesen hunyt el tüdőbajban debreceni szülővárosában."
+    },
+    {
+      question: "Melyik ókori görög költő volt a legfőbb mintája Csokonai rokokó életérzést ábrázoló dalainak?",
+      options: ["Homérus", "Szapphó", "Anakreón", "Pindarosz"],
+      correctIndex: 2,
+      explanation: "Az anakreóni dalok a bor, a szerelem és az élet élvezetét dicsőítik, melyek Csokonai rokokó lírájának is közvetlen mintái voltak."
+    },
+    {
+      question: "Melyik állítás HAMIS Csokonai Vitéz Mihály pályájával kapcsolatban?",
+      options: ["Kiválóan beszélt és olvasott több idegen nyelven is", "Közeli barátja és munkatársa volt Petőfi Sándornak", "Debrecenben született és ott is halt meg", "Írt verses eposzparódiát is (Dorottya)"],
+      correctIndex: 1,
+      explanation: "Csokonai 1805-ben halt meg, míg Petőfi Sándor csak 1823-ban született, így nem találkozhattak."
+    },
+    {
+      question: "Mit szimbolizál a Remény megszemélyesítése A Reményhez című vers elején?",
+      options: ["Egy segítőkész földi barátot", "Egy csalfa, megbízhatatlan istenséget", "A haza felemelkedését", "A keresztény hit szilárdságát"],
+      correctIndex: 1,
+      explanation: "A Reményt a költő csalfa, vak istenségnek nevezi, aki először kecsegtet, majd mindent elvesz."
+    },
+    {
+      question: "Melyik műfajba tartozik Csokonai 'Az estve' című alkotása?",
+      options: ["Rokokó dal", "Pikáns vígjáték", "Gondolati-filozófiai költemény (elégiko-óda)", "Történelmi ballada"],
+      correctIndex: 2,
+      explanation: "Az estve Rousseau-i gondolatokat közvetítő filozófiai-gondolati költemény az emberrontó társadalomról."
+    },
+    {
+      question: "Melyik stílusirányzat sajátossága a szomorúság, a melankólia, a magány és a természetbe menekülés, amely A Reményhez című verset is áthatja?",
+      options: ["Klasszicizmus", "Szentimentalizmus", "Realizmus", "Avantgárd"],
+      correctIndex: 1,
+      explanation: "A szentimentalizmus az érzelmek előtérbe helyezését, a melankóliát és a lemondást állítja a középpontba."
     }
   ]
 });

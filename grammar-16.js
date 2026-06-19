@@ -65,27 +65,124 @@ window.loadGrammarData(16, {
   ],
   quiz: [
     {
-      question: "Melyik beszédtípusba tartozik egy március 15-i ünnepi megemlékezésen elhangzó szónoklat?",
-      options: ["Törvényszéki beszéd", "Tanácskozó beszéd", "Bemutató (ünnepi) beszéd", "Metanyelvi beszéd"],
+      question: "Melyik tudományterület foglalkozik a nyilvános beszéd, a meggyőzés és az érvelés elméletével és művészetével?",
+      options: ["Szemantika", "Szintaxis", "Retorika", "Lexikológia"],
       correctIndex: 2,
-      explanation: "Az ünnepi alkalmakon, évfordulókon tartott beszédek a bemutató (epideiktikus) beszédtípusba tartoznak, melyek célja a közös értékek felmutatása."
+      explanation: "A retorika (szónoklattan) a nyilvános beszéd, a meggyőzés és az érvelés tudománya és művészete."
     },
     {
-      question: "Ki volt a leghíresebb római szónok, a 'szónoki kötelességek' megfogalmazója?",
-      options: ["Arisztotelész", "Quintilianus", "Cicero", "Platón"],
-      correctIndex: 2,
-      explanation: "Marcus Tullius Cicero a római köztársaság korának legnagyobb szónoka volt, akinek beszédei és retorikai elméleti munkái máig alapművek."
+      question: "Melyik történelmi korszakban és hol alakult ki a retorika mint önálló tudomány és művészet?",
+      options: ["A középkori Európában", "Az ókori Görögországban", "A reneszánsz Itáliában", "A 19. századi Magyarországon"],
+      correctIndex: 1,
+      explanation: "A retorika az ókori Görögországban alakult ki a demokrácia térnyerésével és a nyilvános viták fontossá válásával."
     },
     {
-      question: "Melyik elem tartozik a szónoklat 'Pathosz' (Pathos) dimenziójához?",
-      options: [
-        "A statisztikai adatok bemutatása",
-        "A szónok egyetemi diplomáinak felsorolása",
-        "Költői képek, retorikai kérdések használata a hallgatóság érzelmeinek felkorbácsolására",
-        "A pontos törvényi hivatkozások"
-      ],
+      question: "Ki volt az az ókori görög filozófus, aki a \"Retorika\" című művében lerakta a tudományág alapjait?",
+      options: ["Szókratész", "Platón", "Arisztotelész", "Hérodotosz"],
       correctIndex: 2,
-      explanation: "A Pathosz a hallgatóság érzelmi befolyásolását jelenti, amelyet stilisztikai eszközökkel, szenvedélyes előadásmóddal lehet elérni."
+      explanation: "Arisztotelész 'Retorika' című művében rendszerezte először tudományos igénnyel a retorika szabályait és eszközeit."
+    },
+    {
+      question: "Melyik nem tartozik a szónoki beszéd három fő típusa közé az arisztotelészi felosztás alapján?",
+      options: ["Tanácskozó beszéd", "Törvényszéki beszéd", "Bemutató beszéd", "Tudományos beszéd"],
+      correctIndex: 3,
+      explanation: "Arisztotelész szerint a három fő beszédtípus a tanácskozó (politikai), a törvényszéki (bírósági) és a bemutató (ünnepi/alkalmi) beszéd."
+    },
+    {
+      question: "Mi a tanácskozó beszéd fő célja és idődimenziója?",
+      options: ["A múltbeli események igazságosságának vizsgálata", "Jövőbeli cselekvések hasznosságának bemutatása, döntésre való ösztönzés", "Jelenbeli értékek felmutatása, dicséret vagy elmarasztalás", "Tudományos tények tárgyilagos bizonyítása"],
+      correctIndex: 1,
+      explanation: "A tanácskozó (politikai) beszéd a jövőre irányul, célja a hallgatóság meggyőzése egy jövőbeli döntés vagy cselekvés hasznosságáról."
+    },
+    {
+      question: "Melyik műfaj sorolható a törvényszéki beszédtípusba?",
+      options: ["Vádbeszéd", "Gyászbeszéd", "Ünnepi megemlékezés", "Parlamenti felszólalás"],
+      correctIndex: 0,
+      explanation: "A törvényszéki beszéd a bíróságon elhangzó vádbeszédet és védőbeszédet foglalja magában, melyek a múltbeli eseményeket vizsgálják."
+    },
+    {
+      question: "Melyik beszédtípusba tartozik egy esküvői köszöntő vagy egy gyászbeszéd?",
+      options: ["Tanácskozó beszéd", "Törvényszéki beszéd", "Bemutató (ünnepi) beszéd", "Meggyőző beszéd"],
+      correctIndex: 2,
+      explanation: "Az alkalmi, ünnepi, gyász- vagy köszöntőbeszédek a bemutató (epideiktikus) beszéd kategóriájába tartoznak."
+    },
+    {
+      question: "Melyek a szónok feladatai Cicero megfogalmazása szerint?",
+      options: ["tanítani, gyönyörködtetni, megindítani", "érvelni, cáfolni, ítélkezni", "írni, olvasni, beszélni", "kérdezni, válaszolni, összefoglalni"],
+      correctIndex: 0,
+      explanation: "Cicero szerint a szónok három alapvető feladata a docere (tanítani, tájékoztatni), a delectare (gyönyörködtetni, szórakoztatni) és a movere (megindítani, meggyőzni)."
+    },
+    {
+      question: "Mit jelent a retorikában a \"Logosz\" (Logos) fogalma?",
+      options: ["A szónok erkölcsi hitelességét", "A hallgatóság érzelmi befolyásolását", "A logikus érvelést, tények és bizonyítékok bemutatását", "A szónok beszédtechnikai felkészültségét"],
+      correctIndex: 2,
+      explanation: "A Logosz a beszéd értelmi és logikai szála: a bizonyítékok, logikus érvek és adatok bemutatása."
+    },
+    {
+      question: "Mit jelent a retorikában az \"Ethosz\" (Ethos) fogalma?",
+      options: ["A szónok jelleméből fakadó személyes hitelességét és erkölcsiségét", "A hallgatóságban felkeltett érzelmi reakciókat", "A beszéd stilisztikai díszítettségét", "A logikus cáfolat folyamatát"],
+      correctIndex: 0,
+      explanation: "Az Ethosz a szónok jelleme, erkölcsi tartása és felkészültsége, amely a személyes hitelességet biztosítja a hallgatóság előtt."
+    },
+    {
+      question: "Mit fejez ki a retorikában a \"Pathosz\" (Pathos) fogalma?",
+      options: ["A logikai következtetések pontosságát", "A hallgatóság érzelmi megérintését és befolyásolását", "A szónok beszéde közben tartott szüneteket", "A beszéd szerkezeti tagolását"],
+      correctIndex: 1,
+      explanation: "A Pathosz a hallgatóság érzelmi befolyásolását, az empátia, felháborodás vagy lelkesedés felkeltését jelenti az előadásmód és a stílus révén."
+    },
+    {
+      question: "Ki írta a szónok képzését és nevelését összefoglaló, \"Szónoklattan\" (Institutio oratoria) című nagyszabású ókori művet?",
+      options: ["Platón", "Cicero", "Quintilianus", "Tacitus"],
+      correctIndex: 2,
+      explanation: "Marcus Fabius Quintilianus római retorikatanár írta az Institutio oratoria című 12 kötetes művet a szónoknevelésről."
+    },
+    {
+      question: "Melyik nonverbális eszköz játszik kulcsszerepet a hallgatósággal való kapcsolat megteremtésében és fenntartásában?",
+      options: ["A monoton hangszín", "A folyamatos szemkontaktus", "A zsebre tett kézzel való beszéd", "A merev testtartás"],
+      correctIndex: 1,
+      explanation: "A folyamatos szemkontaktus a hallgatósággal elengedhetetlen a bizalom megteremtéséhez és a figyelem fenntartásához."
+    },
+    {
+      question: "Mit nevezünk retorikában a szónok és a beszédhelyzet / hallgatóság közötti összhang elvének?",
+      options: ["Aptum (alkalmasság, illőség)", "Inventio", "Elocutio", "Logos"],
+      correctIndex: 0,
+      explanation: "Az aptum az alkalmazkodás és a beszédhelyzetnek való megfelelés elve, vagyis a stílus és az érvek helyes megválasztása a hallgatósághoz mérten."
+    },
+    {
+      question: "Mit jelent a beszédtechnika kongruenciája?",
+      options: ["A beszéd gyorsaságának folyamatos növelését", "A verbális üzenet és a nonverbális jelzések (gesztusok, hangsúly) egymást támogató egyezését", "A latin kifejezések minél gyakoribb használatát", "A hallgatóság véleményének teljes elutasítását"],
+      correctIndex: 1,
+      explanation: "A kongruens előadásmódban a szónok szavai (verbális csatorna) és a testbeszéde, hangsúlya (nonverbális csatorna) összhangban vannak egymással, ami hitelessé teszi a beszédet."
+    },
+    {
+      question: "Melyik stilisztikai eszköz NEM jellemző szónoki beszéd stílusára az érzelmi hatás fokozása érdekében?",
+      options: ["Retorikai kérdés", "Gondolatalakzatok (ellentét, fokozás)", "Személytelen, túlbonyolított jogi szakszövegek kizárólagos alkalmazása", "Ismétlések és párhuzamok"],
+      correctIndex: 2,
+      explanation: "A száraz, személytelen és túlbonyolított szakszövegek rontják a szónoki beszéd érzelmi hatását és követhetőségét; a retorika a képszerű és hatásos alakzatokat preferálja."
+    },
+    {
+      question: "Melyik beszédtípus irányul jellemzően a múlt megítélésére?",
+      options: ["Törvényszéki beszéd", "Tanácskozó beszéd", "Bemutató beszéd", "Politikai beszéd"],
+      correctIndex: 0,
+      explanation: "A törvényszéki (bírósági) beszéd idősíkja a múlt, hiszen múltbeli tetteket kell megítélni a törvény szempontjából (vád és védekezés)."
+    },
+    {
+      question: "Melyik beszédtípus irányul a jelen értékeinek felmutatására?",
+      options: ["Bemutató (ünnepi) beszéd", "Törvényszéki beszéd", "Tanácskozó beszéd", "Vitabeszéd"],
+      correctIndex: 0,
+      explanation: "A bemutató (alkalmi, ünnepi) beszéd idősíkja a jelen, mivel a jelenben fennálló értékeket dicséri vagy hibákat marasztal el."
+    },
+    {
+      question: "Melyik tényező gyengíti leginkább a szónok hitelességét (Ethoszát)?",
+      options: ["A hallgatóság igényeihez való stilisztikai igazodás", "A felkészületlenség és a tények elferdítése", "A pontos logikai levezetés", "A kellemes, tiszta artikuláció"],
+      correctIndex: 1,
+      explanation: "A felkészületlenség, a hazugság vagy a tárgyi tévedések azonnal aláássák a szónok hitelességét (Ethoszát) a hallgatóság előtt."
+    },
+    {
+      question: "Mit jelent az arisztotelészi retorikában a szónok és a hallgatóság érzelmi egymásra hangoltsága?",
+      options: ["Logosz", "Pátosz (Pathosz)", "Retorika", "Törvényszéki helyzet"],
+      correctIndex: 1,
+      explanation: "A Pátosz az a dimenzió, amely a hallgatóság érzelmi megindítását, a szónok által közvetített érzelmek átélését célozza meg."
     }
   ]
 });

@@ -85,27 +85,204 @@ window.loadTopicData(10, {
   ],
   quiz: [
     {
-      question: "Melyik évben írta Vörösmarty a 'Szózat'-ot?",
-      options: ["1825", "1836", "1848", "1850"],
-      correctIndex: 1,
-      explanation: "A Szózat 1836-ban íródott, a reformkori küzdelmek idején."
+      question: "Melyik 1825-ben megjelent eposz hozta meg az első nagy sikert Vörösmarty Mihály számára, beindítva a reformkori nemzetébresztő kultuszt?",
+      options: ["Zalán futása", "Szózat", "Csongor és Tünde", "Két szomszédvár"],
+      correctIndex: 0,
+      explanation: "A Zalán futása című honfoglalási eposz tette Vörösmartyt a reformkor elismert költőjévé."
     },
     {
-      question: "Mi a papír és a könyvek anyaga a 'Gondolatok a könyvtárban' szerint, ami a nyomort szimbolizálja?",
-      options: ["Selyem", "A szegények rongya", "Bőr", "Fakéreg"],
+      question: "Ki volt Vörösmarty korai szerelme és lírájának fő ihletője, akinél házitanítóként dolgozott?",
+      options: ["Kozmutza Flóra", "Perczel Etelka", "Szendrey Júlia", "Brüll Adél"],
       correctIndex: 1,
-      explanation: "Vörösmarty hangsúlyozza, hogy a papír rongyokból készül, amelyek korábban a szegények és elnyomottak testét fedték ('Országok rongya! könyvtár a neved...')."
+      explanation: "A Perczel családnál végzett házitanítóskodás során beleszeretett Perczel Etelkába, s ez a viszonzatlan szerelem ihlette korai szerelmi költészetét."
     },
     {
-      question: "Kihez hasonlítja a költő a fagyos tavaszt az 'Előszó' című vers zárlatában?",
+      question: "Melyik évben írta Vörösmarty Mihály a „Szózat”-ot?",
+      options: ["1825-ben", "1836-ben", "1848-ban", "1850-ben"],
+      correctIndex: 1,
+      explanation: "A Szózat 1836-ban keletkezett, a reformkori politikai küzdelmek és elnyomás időszakában."
+    },
+    {
+      question: "Melyik műfajba sorolható a „Szózat”?",
+      options: ["Elégia", "Hazafias óda / felhívás", "Epigramma", "Dal"],
+      correctIndex: 1,
+      explanation: "A Szózat műfaja óda, azon belül hazafias felhívás/szónoki beszéd."
+    },
+    {
+      question: "Milyen szerkezeti felépítés jellemzi a „Szózat”-ot?",
       options: [
-        "Egy dicső katonához",
-        "Egy kacér, ősz hajú nőhöz (dívához), aki virágokkal díszíti magát",
-        "Egy haragos Istenhez",
-        "Egy síró gyermekhez"
+        "Három egyenlő részre tagolódik",
+        "Keretes szerkezetű: a hazához való feltétlen hűségre felszólító első két és utolsó két versszak fogja közre a történelmi érvelést",
+        "Szonettkoszorú formájú",
+        "Laza, csapongó anekdotikus szerkezetű"
       ],
       correctIndex: 1,
-      explanation: "A vers végén a tavasz olyan, mint egy elmebeteg, vén, ősz nő, aki virágokat aggat magára, hazug békét hirdetve a pusztulás felett."
+      explanation: "A Szózat keretes szerkezetű; az 1-2. és a 13-14. versszakok megegyeznek/összecsengenek, megerősítve a hűség parancsát."
+    },
+    {
+      question: "Milyen verselésben íródott a „Szózat”?",
+      options: [
+        "Időmértékes, nibelungi (skót ballada) sorokban: jambikus lejtésű, váltakozó 8 és 6 szótagos sorokkal",
+        "Hangsúlyos magyaros felező nyolcasokban",
+        "Antik hexameterben",
+        "Kötött rímek nélküli modern szabadversben"
+      ],
+      correctIndex: 0,
+      explanation: "A Szózat nibelungi sorokban (skót ballada-sorok) íródott, amelyek drámai és ünnepélyes ritmust költöznek a műnek."
+    },
+    {
+      question: "Mi a Herder-jóslat lényege, amely a Szózat nemzethalál-vízióját ihlette?",
+      options: [
+        "Hogy a törökök újra el fogják foglalni Magyarországot",
+        "A német filozófus jóslata, miszerint a magyarság fel fog szívódni a szláv és germán népek tengerében",
+        "Hogy a magyar nyelv a világ vezető nyelve lesz",
+        "Hogy a Habsburg-ház örökre uralkodni fog Magyarországon"
+      ],
+      correctIndex: 1,
+      explanation: "Johann Gottfried Herder jóslata a kis nyelvek és nemzetek (köztük a magyar) pusztulását jövendölte, ami mélyen aggasztotta a reformkori költőket."
+    },
+    {
+      question: "Melyik két alternatív jövőképet vázolja fel Vörösmarty a „Szózat”-ban?",
+      options: [
+        "A bécsi udvarral való kiegyezés vagy az örökös háború",
+        "Egy „jobb kor” eljövetele (igazságosság) vagy a hősies nemzethalál („a nagyszerű halál”)",
+        "A polgári jólét vagy a feudális elmaradottság",
+        "Az elvándorlás vagy az asszimiláció"
+      ],
+      correctIndex: 1,
+      explanation: "Vörösmarty szerint a küzdelem a jövőben vagy meghozza a jobb kort, vagy ha el kell vesznünk, az legyen a világ tiszteletét kiváltó nagyszerű nemzethalál."
+    },
+    {
+      question: "Milyen alkalomra írta Vörösmarty a „Gondolatok a könyvtárban” című filozofikus ódáját?",
+      options: [
+        "Az Akadémia könyvtárának megnyitására 1844-ben",
+        "A Nemzeti Színház alapkőletételére",
+        "A Lánchíd építésének befejezésére",
+        "Kölcsey Ferenc halálának emlékére"
+      ],
+      correctIndex: 0,
+      explanation: "A vers 1844-ben, a Magyar Tudományos Akadémia könyvtárának megnyitása alkalmából született."
+    },
+    {
+      question: "Miért nevezi Vörösmarty a könyvtárat „országok rongyának” a „Gondolatok a könyvtárban” kezdetén?",
+      options: [
+        "Mert a könyvek tartalma haszontalan és értéktelen",
+        "Mert a könyvek lapjait alkotó papír a szegények és elnyomottak rongyaiból készült",
+        "Mert a könyvtár épülete romos állapotban volt",
+        "Mert a külföldi irodalmat elavultnak tartotta"
+      ],
+      correctIndex: 1,
+      explanation: "A korabeli papírgyártás rongyokat használt alapanyagként; a költő így mutat rá arra, hogy a kultúra az emberi nyomor és szenvedés alapjaira épül."
+    },
+    {
+      question: "Mi a mű kezdetén felvetett alapkérdés a „Gondolatok a könyvtárban” című költeményben?",
+      options: [
+        "Hogyan lehet minél több könyvet eladni?",
+        "Van-e értelme a tudománynak és a könyvírásnak egy olyan világban, ahol ennyi igazságtalanság és nyomor létezik?",
+        "Melyik nyelven érdemes írni a tudományos munkákat?",
+        "Hogyan kell rendszerezni a könyveket a könyvtárban?"
+      ],
+      correctIndex: 1,
+      explanation: "Vörösmarty kétségbe vonja a könyvek értékét („Írjunk hát könyvet? s miért?”), látva a társadalmi elnyomást és a szegénységet."
+    },
+    {
+      question: "Melyik híres sor fogalmazza meg a költő válaszát és az emberi kötelességet a „Gondolatok a könyvtárban” című műben?",
+      options: [
+        "„Légy, ami lennél: férfi.”",
+        "„Mi dolgunk a világon? küzdeni, / És a legszebb célt megközelíteni.”",
+        "„Hazádnak rendületlenül / Légy híve, oh magyar;”",
+        "„Nem ilyennek képzeltem a rendet.”"
+      ],
+      correctIndex: 1,
+      explanation: "A vers kulcsmondata elutasítja a pesszimista passzivitást, s a küzdést, a haladást nevezi meg az emberiség legfőbb feladataként."
+    },
+    {
+      question: "Mi a magyarok feladata a világon a „Gondolatok a könyvtárban” szerint?",
+      options: [
+        "A többi nemzet leigázása",
+        "A hazájuk felemelése és a nemzeti sors jobbítása révén hozzájárulni az egyetemes emberiség haladásához",
+        "A külföldi minták szolgaian pontos másolása",
+        "Elzárkózás a világ történéseitől"
+      ],
+      correctIndex: 1,
+      explanation: "Vörösmarty összekapcsolja a hazafiságot az egyetemes haladással: az emberiséget csak úgy szolgálhatjuk, ha saját nemzetünket emeljük fel."
+    },
+    {
+      question: "Mikor és milyen történelmi helyzetben született az „Előszó” című vers?",
+      options: [
+        "A reformkor kezdetén, nagy lelkesedéssel",
+        "A szabadságharc bukása után, a Bach-korszak megtorlásai idején (1850-ben)",
+        "A kiegyezés megkötésekor, megnyugvással",
+        "Az első világháború kitörése előtt"
+      ],
+      correctIndex: 1,
+      explanation: "Az Előszó 1850-ben íródott, a szabadságharc bukása utáni dermedtség, csalódottság és terror légkörében."
+    },
+    {
+      question: "Milyen hangvétel jellemzi az „Előszó” című költeményt?",
+      options: [
+        "Játékos, ironikus, távolságtartó",
+        "Apokaliptikus, kozmikus látomású, mélyen tragikus és gyászos",
+        "Lelkesítő, harcra buzdító",
+        "Vallásos, megbékélő, hálát adó"
+      ],
+      correctIndex: 1,
+      explanation: "Az Előszó a magyar líra egyik legmegrázóbb gyászverse, amely a nemzeti katasztrófát kozmikus pusztulásként ábrázolja."
+    },
+    {
+      question: "Hogyan jelenik meg a múlt (a reformkor) az „Előszó” első szakaszában?",
+      options: [
+        "Sötét, háborús pusztulásként",
+        "Békés, teremtő, idillikus tavaszként, ahol a nemzet a szebb jövőn dolgozott",
+        "Elmaradott, feudalista korszakként",
+        "A költő gyermekkori csínytevéseiként"
+      ],
+      correctIndex: 1,
+      explanation: "A mű a reformkort a teremtés, a remény és a zöldellő természet harmonikus tavaszaként idézi fel („Midőn ezt íram, tiszta volt az ég...”)."
+    },
+    {
+      question: "Mi a szabadságharc és a háború metaforája az „Előszó”-ban?",
+      options: [
+        "Egy játékos nyári zápor",
+        "Egy apokaliptikus, kozmikus méretű vihar (vészözön, földrengés, zöld vész)",
+        "Egy csendes, őszi elmúlás",
+        "Egy száraz, forró sivatag"
+      ],
+      correctIndex: 1,
+      explanation: "A háború és a megtorlás kozmikus pusztításként, mindent elsöprő viharként jelenik meg, amelyet a haragos Isten küldött a világra."
+    },
+    {
+      question: "Miért tragikus és cinikus az „Előszó” végén ábrázolt új tavasz (a bukás utáni jelen)?",
+      options: [
+        "Mert a természet nem hajlandó kizöldülni",
+        "Mert a természet érzéketlenül virágba borul a hősök sírja felett, de ez a tavasz hazug és fagyos",
+        "Mert a tavasz túl korán érkezik",
+        "Mert az új tavasz elhozza a szabadságot"
+      ],
+      correctIndex: 1,
+      explanation: "A zárlatban a természet újjáéledése hazug és hideg, nem hoz igazi megváltást a nemzet pusztulása után."
+    },
+    {
+      question: "Kihez hasonlítja a költő az érzéketlen, hideg tavaszt az „Előszó” utolsó soraiban?",
+      options: [
+        "Egy dicső hadvezérhez",
+        "Egy kacér, ősz hajú nőhöz, aki virágokat aggat magára",
+        "Egy síró, árva gyermekhez",
+        "Egy igazságos bíróhoz"
+      ],
+      correctIndex: 1,
+      explanation: "Vörösmarty a tavaszt egy megőrült, ősz hajú nőhöz hasonlítja, aki virágokat tesz a hajába, hogy elfedje a pusztulást."
+    },
+    {
+      question: "Hogyan hatott a szabadságharc bukása Vörösmarty Mihály személyes sorsára és lelkiállapotára?",
+      options: [
+        "Külföldre emigrált és ott gazdagodott meg",
+        "Lelkileg teljesen összeroppant, bujdosni kényszerült, és kései éveit mély depresszióban töltötte",
+        "A bécsi udvar hűséges kiszolgálója lett",
+        "Elfelejtette a politikát és csak szerelmi dalokat írt"
+      ],
+      correctIndex: 1,
+      explanation: "A nemzeti katasztrófa Vörösmartyt lelkileg romba döntötte, bujkálása után elszegényedve, melankóliában élte le élete utolsó éveit."
     }
   ]
 });

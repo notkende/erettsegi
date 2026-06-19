@@ -74,32 +74,194 @@ window.loadTopicData(4, {
   ],
   quiz: [
     {
+      question: "Mikor élt Babits Mihály?",
+      options: ["1823–1849", "1817–1882", "1877–1919", "1883–1941"],
+      correctIndex: 3,
+      explanation: "Babits Mihály 1883-ban született Szekszárdon és 1941-ben hunyt el Budapesten."
+    },
+    {
+      question: "Hogyan nevezi az irodalomtörténet Babitsot rendkívüli műveltsége, klasszikus tájékozottsága miatt?",
+      options: [
+        "Poeta ludens (játékos költő)",
+        "Poeta doctus (tudós költő)",
+        "Poeta natus (született költő)",
+        "Poeta vates (próféta költő)"
+      ],
+      correctIndex: 1,
+      explanation: "Babits a magyar irodalom legjelentősebb 'poeta doctus'-a (tanult, tudós költője)."
+    },
+    {
       question: "Melyik évben jelent meg a Jónás könyve?",
-      options: ["1931", "1938", "1941", "1945"],
-      correctIndex: 1,
-      explanation: "A Jónás könyve 1938-ban jelent meg, közvetlenül a II. világháború kitörése előtt."
+      options: ["1919", "1931", "1938", "1941"],
+      correctIndex: 2,
+      explanation: "A Jónás könyve 1938-ban jelent meg, a költő kései korszakának csúcspontjaként."
     },
     {
-      question: "Hogyan bünteti Isten Jónást a parancsmegtagadásért a mű elején?",
-      options: [
-        "Azonnali villámcsapással",
-        "Viharral sújtja a hajóját, majd a cethal gyomrába juttatja",
-        "Elveszi a beszédkészségét",
-        "Ninive királyává teszi"
-      ],
+      question: "Milyen súlyos betegséggel küzdött Babits a mű írásakor, amely a hangja elvesztéséhez vezetett?",
+      options: ["TBC (tüdőbaj)", "Gégerák", "Spanyolnátha", "Szklerózis multiplex"],
       correctIndex: 1,
-      explanation: "Isten nagy vihart bocsát a tengerre, emiatt a hajósok a vízbe vetik Jónást, akit elnyel egy cethal."
+      explanation: "Babits gégerákban szenvedett, gégeműtétje után csak beszélgetőfüzetek segítségével tudott kommunikálni."
     },
     {
-      question: "Mit jelképez Ninive városa Isten válaszában a Jónás könyve végén?",
+      question: "Milyen történelmi események adták a Jónás könyve megírásának külső, fenyegető hátterét?",
       options: [
-        "A bűnös és javíthatatlan világot",
-        "Az emberi kultúrát és a teremtett értékeket",
-        "A pusztulásra ítélt gonoszságot",
-        "A mennyei birodalmat"
+        "Az 1848-as forradalmak",
+        "Az első világháború kitörése",
+        "A fasizmus és a nácizmus európai térnyerése, a II. világháború előszele",
+        "A kiegyezés tárgyalásai"
+      ],
+      correctIndex: 2,
+      explanation: "A nácizmus előretörése és az európai humanista értékek veszélybe kerülése inspirálta a mű megírását."
+    },
+    {
+      question: "Hány részből áll a Jónás könyve című verses elbeszélő költemény?",
+      options: ["Két részből", "Három részből", "Négy részből", "Öt részből"],
+      correctIndex: 2,
+      explanation: "A mű szerkezetileg négy számozott részre tagolódik."
+    },
+    {
+      question: "Hová menekül Jónás a kapott isteni küldetés elől a mű kezdetén?",
+      options: ["Ninivébe", "Tarziszba", "Jeruzsálembe", "Rómába"],
+      correctIndex: 1,
+      explanation: "Jónás meg akar szökni a prófétai hivatás elől, ezért Tarzisz felé hajózik."
+    },
+    {
+      question: "Miért utasítja el Jónás kezdetben a prófétálást?",
+      options: [
+        "Mert nem hisz Istenben",
+        "Mert békére vágyik, és nem akar a gúny és a nevetség tárgya lenni",
+        "Mert túl szegénynek tartja magát a feladathoz",
+        "Mert ő maga is Ninive bűneit támogatja"
       ],
       correctIndex: 1,
-      explanation: "Isten válasza szerint Ninive a kultúra és az alkotás helye, amit nem szabad elpusztítani néhány bűnös miatt ('Ninive kapui nyitva állnak...')."
+      explanation: "Jónás kerüli a konfliktust, nyugalmat és kényelmet szeretne a nehéz küldetés helyett."
+    },
+    {
+      question: "Hogyan szabadul meg Jónás a cethal gyomrából?",
+      options: [
+        "Karddal kivágja magát a hal oldalán",
+        "Isten parancsára a cet partra okádja őt, miután Jónás bűnbánatot tart",
+        "A matrózok kimentik a vízből",
+        "A cethalat kifogják a halászok"
+      ],
+      correctIndex: 1,
+      explanation: "Jónás a cet sötét gyomrában felismeri engedetlenségét, fohászkodik Istenhez, aki megkönyörül rajta."
+    },
+    {
+      question: "Miben tér el leginkább Babits műve a bibliai Jónás-történettől Ninive lakóinak reakciójában?",
+      options: [
+        "A Bibliában Ninive lakói nem térnek meg, míg Babitsnál azonnal bűnbánatot tartanak",
+        "A Bibliában Ninive népe azonnal megtér, Babitsnál viszont kinevetik és színházi látványosságnak tekintik Jónás szavait",
+        "Babitsnál Ninive lakói megölik Jónást",
+        "Nincs eltérés a bibliai leíráshoz képest"
+      ],
+      correctIndex: 1,
+      explanation: "A bibliai történetben a király és a nép azonnal hamut szór a fejére, míg Babits ironikusan ábrázolja a modern hitetlenséget és közönyt."
+    },
+    {
+      question: "Hol várja Jónás dühösen Ninive pusztulását a mű IV. részében?",
+      options: [
+        "A királyi palotában",
+        "A város falain belül, a főtéren",
+        "A városon kívül, egy tökleveles kunyhóban",
+        "Egy közeli hegytetőn lévő barlangban"
+      ],
+      correctIndex: 2,
+      explanation: "Jónás a városon kívül készít magának árnyékot adó kunyhót, s várja a tüzes esőt."
+    },
+    {
+      question: "Mi a legfőbb erkölcsi tanítása Istennek a tökfa elszáradása kapcsán a IV. részben?",
+      options: [
+        "A természetet minden körülmények között óvni kell",
+        "Jónás sajnál egy olyan növényt, aminek növekedéséért nem dolgozott, de elpusztítana egy egész várost a benne lakó ártatlanokkal és kultúrával együtt",
+        "A növények fontosabbak az embereknél",
+        "Ninive elpusztítása elkerülhetetlen volt"
+      ],
+      correctIndex: 1,
+      explanation: "Isten rávilágít Jónás önző és kicsinyes igazságérzetére, s a teremtett világ értékeinek védelmét hangsúlyozza."
+    },
+    {
+      question: "Melyik híres szállóige fejezi ki a prófétai felelősség elkerülhetetlenségét a Jónás könyvében?",
+      options: [
+        "„Lent az Alföld tengersík vidéke...”",
+        "„mert vétkesek közt cinkos aki néma. / Atyafiért felelős a testvér.”",
+        "„Általam vagy, mert meg én láttalak...”",
+        "„Oh! irgalom atyja, ne hagyj el.”"
+      ],
+      correctIndex: 1,
+      explanation: "Ez a kulcsmondat fejezi ki Babits hitvallását a fasizmus előretörése és a hallgatás bűne ellen."
+    },
+    {
+      question: "Melyik évben született a „Jónás imája” című költemény?",
+      options: ["1931", "1938", "1939", "1941"],
+      correctIndex: 2,
+      explanation: "A Jónás imája 1939-ben keletkezett, a Jónás könyve verses elbeszélés lírai függelékeként."
+    },
+    {
+      question: "Mi a „Jónás imája” műfaja és szerkezeti szerepe?",
+      options: [
+        "Groteszk paródia a végén",
+        "Egy önálló drámai jelenet",
+        "Személyes hangvételű, lírai fohász és a mű szellemi végrendelete",
+        "Egy népdal átirata"
+      ],
+      correctIndex: 2,
+      explanation: "Ez egy közvetlen lírai ima, amelyben a beteg költő közvetlenül Istenhez fordul segítségért."
+    },
+    {
+      question: "Hogyan válik áttetszővé a Jónás-allegória a „Jónás imájában”?",
+      options: [
+        "Jónás alakja mögött teljesen egyértelműen maga a nagybeteg, haldokló Babits szólal meg",
+        "Babits elutasítja, hogy Jónással azonosítsák",
+        "A versben Ninive királya imádkozik",
+        "Isten maga mondja el az imát"
+      ],
+      correctIndex: 0,
+      explanation: "A költő a saját elcsukló hangját, testi gyötrelmeit és írói küldetését vetíti Jónás alakjára."
+    },
+    {
+      question: "Milyen verselés és ritmus jellemzi a Jónás könyvét?",
+      options: [
+        "Klasszikus hexameter",
+        "Páros rímű tizenegyesek",
+        "Középkori szabadvers",
+        "Népdalos felező nyolcasok"
+      ],
+      correctIndex: 1,
+      explanation: "A mű páros rímű tizenegyesekben íródott (a-a-b-b), ami a régi magyar epikai hagyományt idézi."
+    },
+    {
+      question: "Melyik régi magyar énekmondó stílusát, versformáját idézi fel Babits a Jónás könyvében?",
+      options: [
+        "Balassi Bálintét",
+        "Tinódi Lantos Sebestyénét",
+        "Zrínyi Miklósét",
+        "Csokonai Vitéz Mihályét"
+      ],
+      correctIndex: 1,
+      explanation: "A naiv és emelkedett epikai hang Tinódi históriás énekeinek formáját idézi."
+    },
+    {
+      question: "Melyik stílusréteg keveredik leginkább a Jónás könyve emelkedett, biblikus nyelvezetében?",
+      options: [
+        "Kizárólag tudományos szakszavak",
+        "Groteszk, mindennapi vagy épp ironikus, humoros elemek",
+        "Kortárs szleng és utcai beszéd",
+        "Idegen nyelvű idézetek"
+      ],
+      correctIndex: 1,
+      explanation: "A bibliai pátoszt finoman ellenpontozzák a köznapi és groteszk leírások (pl. a cet gyomra, Jónás testi gyengesége)."
+    },
+    {
+      question: "Mit üzen a Jónás könyve az értelmiségiek, alkotók felelősségéről a vészterhes időkben?",
+      options: [
+        "A művésznek vissza kell vonulnia a politikától és a közélettől",
+        "Nincs joga a hallgatásba menekülni, a humánus értékeket a végsőkig képviselni kell",
+        "A művészet csupán játék, nincs társadalmi hatása",
+        "A próféta feladata a hatalom feltétlen kiszolgálása"
+      ],
+      correctIndex: 1,
+      explanation: "A mű alapvető humanista tanulsága, hogy a pusztulás láttán sem szabad némának maradnunk."
     }
   ]
 });

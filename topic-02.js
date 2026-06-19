@@ -75,37 +75,199 @@ window.loadTopicData(2, {
   ],
   quiz: [
     {
-      question: "Melyik műnem sajátosságait egyesíti a ballada?",
-      options: [
-        "Csak a lírát és az epikát",
-        "Csak az epikát és a drámát",
-        "Mindhárom műnem (líra, epika, dráma) jellemzőit",
-        "Egyik műnembe sem sorolható"
-      ],
-      correctIndex: 2,
-      explanation: "A ballada lírai formájú (vers, rímek), epikus tartalmú (történetet mesél el) és drámai szerkezetű (konfliktus és párbeszédek)."
+      question: "Mikor született és halt meg Arany János?",
+      options: ["1817–1882", "1823–1849", "1877–1919", "1883–1941"],
+      correctIndex: 0,
+      explanation: "Arany János 1817-ben született Nagyszalontán és 1882-ben hunyt el Budapesten."
     },
     {
-      question: "Mi Ágnes asszony büntetése a bíróságtól az 'Ágnes asszony' balladában?",
-      options: [
-        "Halálbüntetés akasztással",
-        "Örökös börtönbüntetés",
-        "Szabadon engedik, mert látják, hogy megőrült",
-        "Korbácsolás a főtéren"
-      ],
-      correctIndex: 2,
-      explanation: "A bírák látják, hogy Ágnes elméje megbomlott ('Félre a törvényt, a vádat! / Eredj haza, szegény asszony...'), ezért elengedik."
+      question: "Kinek a nevéhez fűződik a ballada híres meghatározása: „tragédia dalban elbeszélve”?",
+      options: ["Arany János", "Greguss Ágost", "Gyulai Pál", "Vörösmarty Mihály"],
+      correctIndex: 1,
+      explanation: "Greguss Ágost esztéta határozta meg így a műfajt, utalva annak műnemi összetettségére."
     },
     {
-      question: "Melyik ballada alapul középkori babonán, miszerint a halott sebe vérezni kezd a gyilkos jelenlétében?",
+      question: "Melyik állítás igaz a ballada műfajára a műnemek szerint?",
       options: [
-        "V. László",
-        "Tetemre hívás",
-        "Pázmán lovag",
-        "Híd-avatás"
+        "Kizárólag lírai és epikus elemeket tartalmaz",
+        "Csak drámai konfliktusra épül, formája próza",
+        "Mindhárom műnem (líra, epika, dráma) sajátosságait egyesíti",
+        "Nem sorolható egyik műnemse sem"
+      ],
+      correctIndex: 2,
+      explanation: "A ballada lírai (dalolható forma), epikus (történetet mesél) és drámai (konfliktus és párbeszédek)."
+    },
+    {
+      question: "Melyik évtized és melyik város köthető Arany balladaköltészetének első virágkorához?",
+      options: [
+        "Az 1840-es évek, Nagyszalonta",
+        "Az 1850-es évek, Nagykőrös",
+        "Az 1870-es évek, Budapest",
+        "Az 1880-as évek, Geszt"
       ],
       correctIndex: 1,
-      explanation: "Ez a babona a 'Tetemre hívás' című ballada cselekményének mozgatórugója."
+      explanation: "Az 1850-es években Nagykőrösön töltött tanári évei alatt írta Arany a legjelentősebb balladáit."
+    },
+    {
+      question: "Milyen történelmi-politikai korszak szolgált háttérül Arany nagykőrösi balladáihoz?",
+      options: [
+        "A reformkor virágzása",
+        "A Bach-korszak elnyomása",
+        "Az első világháború időszaka",
+        "A kiegyezést követő boldog békeidők"
+      ],
+      correctIndex: 1,
+      explanation: "A szabadságharc bukása utáni elnyomás (Bach-korszak) mély válsága inspirálta a burkolt üzenetű balladákat."
+    },
+    {
+      question: "Miért volt a ballada ideális műfaj Arany számára a Bach-korszakban?",
+      options: [
+        "Mert könnyen és gyorsan lehetett publikálni a napilapokban",
+        "Mert a sűrített, burkolt kifejezésmód alkalhidat nyújtott a nemzeti gyász és ellenállás kifejezésére",
+        "Mert a cenzúra nem ellenőrizte a verses műveket",
+        "Mert ez volt a legnépszerűbb szórakoztató műfaj a parasztság körében"
+      ],
+      correctIndex: 1,
+      explanation: "A balladák homályossága és többszólamúsága lehetővé tette a politikai allegóriák elrejtését a cenzúra elől."
+    },
+    {
+      question: "Melyik évben keletkezett az „Ágnes asszony” című ballada?",
+      options: ["1848", "1853", "1856", "1877"],
+      correctIndex: 1,
+      explanation: "Az Ágnes asszony 1853-ban keletkezett, a nagykőrösi korszakban."
+    },
+    {
+      question: "Mi az „Ágnes asszony” című ballada központi témája?",
+      options: [
+        "A falusi élet idillje és a paraszti szokások",
+        "A bűn és a bűnhődés, a bűntudat miatti megőrülés folyamata",
+        "A nemesi réteg kapzsiságának bírálata",
+        "Egy történelmi csata hősies ábrázolása"
+      ],
+      correctIndex: 1,
+      explanation: "A ballada fókuszában Ágnes asszony belső lelki vívódása és megőrülése áll a gyilkosságban való bűnrészessége miatt."
+    },
+    {
+      question: "Hogyan tagolódik szimmetrikusan az „Ágnes asszony” szerkezete?",
+      options: [
+        "Négy különböző évszakra tagolódik",
+        "Egyetlen hosszú, megszakítás nélküli monológ",
+        "Három részre: patakparti lepedőmosás, börtön és bírósági tárgyalás, majd visszatérés a patakpartra",
+        "Két részre: a bűntény eltervezése és a gyilkosság végrehajtása"
+      ],
+      correctIndex: 2,
+      explanation: "A szerkezet 3 részre oszlik: 1-4. vsz. patakpart, 5-19. vsz. börtön és tárgyalás, 20-26. vsz. ismét a patakpart."
+    },
+    {
+      question: "Miért engedik szabadon a bírák Ágnes asszonyt a tárgyaláson?",
+      options: [
+        "Mert bebizonyosodik, hogy teljesen ártatlan",
+        "Mert megvesztegette a bíróságot",
+        "Mert látva elmeállapotát, az emberi humanizmus nevében elengedik",
+        "Mert a férje valójában életben maradt"
+      ],
+      correctIndex: 2,
+      explanation: "A bírák látják, hogy Ágnes megőrült, és a börtönben csak még jobban szenvedne, ezért hazaküldik."
+    },
+    {
+      question: "Mi a szerepe az „Ágnes asszony”-ban visszatérő refrénnek („Oh! irgalom atyja, ne hagyj el.”)?",
+      options: [
+        "A gyilkos szerető gúnyolódása",
+        "A lírai én könyörgése, amely az egyéni tragédiát egyetemes szintre emeli",
+        "A bíróság ítéletének kihirdetése",
+        "Egy népdal vidám dallamának utánzása"
+      ],
+      correctIndex: 1,
+      explanation: "A refrén a költő/befogadó érzelmi reakciója, a könyörgés az emberi esendőségért."
+    },
+    {
+      question: "Melyik évben írta Arany a „Szondi két apródja” című balladáját?",
+      options: ["1850", "1853", "1856", "1877"],
+      correctIndex: 2,
+      explanation: "A Szondi két apródja 1856-ben született."
+    },
+    {
+      question: "Milyen szerkezeti megoldás jellemzi a „Szondi két apródja” című balladát?",
+      options: [
+        "Egyszólamú, lineáris történetmesélés",
+        "Kétszólamúság (a két apród éneke és a török szolga csábítása váltakozik)",
+        "Kizárólag kérdésekből álló dialógus",
+        "Keretes szerkezet, amelyben a szerző maga is megszólal"
+      ],
+      correctIndex: 1,
+      explanation: "A páratlan versszakokban a török szolga beszél, a páros versszakokban a két apród emlékezik Szondira."
+    },
+    {
+      question: "Mit jelképez az apródok hűsége a „Szondi két apródja” című balladában?",
+      options: [
+        "A török kultúra iránti tiszteletet",
+        "A Bach-korszakbeli passzív nemzeti ellenállást és a megalkuvás elutasítását",
+        "A fiatalság lázadását az idősebb generációk ellen",
+        "A katonai fegyelem fontosságát"
+      ],
+      correctIndex: 1,
+      explanation: "Az apródok ellenállása a császári udvarnak való behódolás elutasításának allegóriája volt a korabeli magyarság számára."
+    },
+    {
+      question: "Melyik késői balladakorszakhoz (Őszikék) tartozik a „Tetemre hívás”?",
+      options: [
+        "A nagykőrösi korszakhoz",
+        "A Margitszigeten írt kései korszakhoz (1877)",
+        "A szabadságharc előtti korszakhoz",
+        "A debreceni diákévekhez"
+      ],
+      correctIndex: 1,
+      explanation: "A Tetemre hívás 1877-ben keletkezett, az Őszikék-ciklus darabja, melyet a Margitszigeten írt."
+    },
+    {
+      question: "Mi a „Tetemre hívás” alapjául szolgáló középkori babona?",
+      options: [
+        "A boszorkányok éjféli tánca",
+        "A halott sebe újra vérezni kezd, ha a gyilkos a holttest közelébe lép",
+        "A farkasemberré változás teliholdkor",
+        "A kísértetek megjelenése a várromoknál"
+      ],
+      correctIndex: 1,
+      explanation: "A 'tetemre hívás' ítéletalkotási mód volt, amely szerint a gyilkos jelenlétében a seb vérezni kezd."
+    },
+    {
+      question: "Ki bizonyul Bárczi Benő gyilkosának a „Tetemre hívás” című balladában?",
+      options: [
+        "Az apja, Bárczi Radivaj",
+        "A húga",
+        "A szerelmese, Kund Abigél",
+        "Egy idegen rabló"
+      ],
+      correctIndex: 2,
+      explanation: "A seb Kund Abigél belépésekor kezd vérezni, aki tréfából tőrt adott Benőnek, bizonyítandó a bátorságát."
+    },
+    {
+      question: "Mi a sorsa Kund Abigélnek a „Tetemre hívás” végén?",
+      options: [
+        "Börtönbe zárják és lefejezik",
+        "Feleségül megy Benő apjához",
+        "A bűntudat és a döbbenet súlya alatt megőrül",
+        "Elmenekül az országból"
+      ],
+      correctIndex: 2,
+      explanation: "Abigél a felismerés hatására azonnal megőrül, magát vádolva a fiú haláláért."
+    },
+    {
+      question: "Mi a „balladai homály” lényege Arany János költészetében?",
+      options: [
+        "A versek rossz olvashatósága, elmosódott nyomtatása",
+        "A cselekmény bizonyos részleteinek, előzményeinek elhallgatása a feszültségkeltés érdekében",
+        "A kizárólag éjszakai helyszínek alkalmazása",
+        "A költő bizonytalansága a történet befejezését illetően"
+      ],
+      correctIndex: 1,
+      explanation: "A balladai homály az olvasót aktív befogadásra készteti, mivel ki kell egészítenie az elhallgatott részeket."
+    },
+    {
+      question: "Melyik drámaíró hatása érezhető leginkább Arany balladáinak lélekábrázolásán?",
+      options: ["Molière", "Shakespeare", "Sophokles", "Brecht"],
+      correctIndex: 1,
+      explanation: "Arany balladáit gyakran nevezik Shakespeare-i mélységűnek a lelkiismeret és a bűntudat ábrázolása miatt."
     }
   ]
 });

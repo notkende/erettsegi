@@ -72,27 +72,124 @@ window.loadGrammarData(18, {
   ],
   quiz: [
     {
-      question: "Melyik szókép szerepel Radnóti Miklós következő sorában: 'Sűrű sötét lombú vadgesztenyék hangja morajlott'?",
-      options: ["Hasonlat", "Szinesztézia", "Szimbólum", "Metonímia"],
+      question: "Mi a szóképek (trópusok) alapvető stilisztikai jellemzője?",
+      options: ["A szavak szószerinti jelentésének kizárólagos alkalmazása", "Egy szó vagy kifejezés átvitt (nem szószerinti) jelentésben való használata valamilyen összefüggés alapján", "A szavak hangalakjának megváltoztatása", "A mondatok helyesírási szabályainak áthágása"],
       correctIndex: 1,
-      explanation: "A 'sűrű sötét lombú vadgesztenyék hangja' képben a sűrűség (tapintás), a sötét (látás) és a hang morajlása (hallás) érzékterületei mosódnak össze, ami szinesztézia."
+      explanation: "A szóképek lényege, hogy egy kifejezést átvitt jelentésben használunk, egy másik fogalommal való hasonlósági vagy érintkezési kapcsolat alapján."
     },
     {
-      question: "Milyen típusú metonímia szerepel a 'Megiszom egy pohár vizet' mondatban?",
-      options: [
-        "Térbeli érintkezésen alapuló (edény és tartalom cseréje)",
-        "Ok-okozati érintkezés",
-        "Anyagbeli érintkezés",
-        "Rész-egész viszony (szinekdoché)"
-      ],
+      question: "Melyik szókép alapul két fogalom azonosításán valamilyen közös tulajdonság (hasonlóság) alapján?",
+      options: ["Metonímia", "Metafora", "Szinekdoché", "Eufemizmus"],
+      correctIndex: 1,
+      explanation: "A metafora hasonlóságon alapuló szókép, amely két fogalmat azonosít egy vagy több közös tulajdonságuk alapján."
+    },
+    {
+      question: "Milyen metaforáról beszélünk, ha mind a kiinduló fogalom (azonosított), mind az átvitt kép (azonosító) megjelenik a szövegben?",
+      options: ["Egytagú (csonka) metafora", "Kéttagú (teljes) metafora", "Szinesztézia", "Szinekdoché"],
+      correctIndex: 1,
+      explanation: "A kéttagú (teljes) metaforában mindkét tag jelen van (pl. „Petőfi: királyom, te napom” – ahol a király a naphoz van hasonlítva-azonosítva)."
+    },
+    {
+      question: "Milyen stilisztikai eszköz szerepel József Attila „alszik a szív és alszik a föld” sorában?",
+      options: ["Megszemélyesítés", "Metonímia", "Szinesztézia", "Szinekdoché"],
       correctIndex: 0,
-      explanation: "Az edény (pohár) nevét használjuk a benne lévő folyadék (víz) helyett, ami térbeli érintkezésen alapuló metonímia."
+      explanation: "A megszemélyesítés (personificatio) során élettelen dolgokat vagy elvont fogalmakat ruházunk fel emberi tulajdonságokkal (pl. alvás)."
     },
     {
-      question: "Melyik szókép azonosítja az élettelen dolgokat vagy elvont fogalmakat emberi cselekvésekkel, érzésekkel?",
-      options: ["Szinesztézia", "Megszemélyesítés", "Metonímia", "Szinekdoché"],
+      question: "Melyik érzékterületek kapcsolódnak össze a „selymes csend” szinesztéziás képben?",
+      options: ["Látás és hallás", "Tapintás és hallás", "Ízlelés és szaglás", "Tapintás és szaglás"],
       correctIndex: 1,
-      explanation: "A megszemélyesítés (personificatio) során emberi tulajdonságokat vetítünk élettelen tárgyakra vagy jelenségekre (pl. 'sír a szél')."
+      explanation: "A „selymes” a tapintásra, míg a „csend” a hallás (vagy annak hiánya) területére utal, így ezek összekapcsolása szinesztézia."
+    },
+    {
+      question: "Miért NEM minősül a hasonlat (pl. „szalad, mint a nyúl”) a szó szoros értelmében szóképnek (trópusnak)?",
+      options: ["Mert nem tartalmaz költői szavakat", "Mert nincs benne jelentésátvitel, a hasonlított és a hasonló különálló tagként, kötőszóval kapcsolódik össze", "Mert csak a köznyelvben használatos", "Mert túl rövid"],
+      correctIndex: 1,
+      explanation: "A hasonlatban nincs valódi jelentésátvitel (trópus), hanem a két tag külön megmarad, és a „mint”, „mintha” kötőszavak kapcsolják össze őket."
+    },
+    {
+      question: "Milyen kapcsolaton alapulnak az érintkezésen alapuló szóképek, a metonímiák?",
+      options: ["Két fogalom közötti külső vagy belső hasonlóságon", "Két fogalom közötti térbeli, időbeli, anyagbeli vagy ok-okozati kapcsolaton", "Különböző érzékterületek összekeveredésén", "Egy történet végigvitelén"],
+      correctIndex: 1,
+      explanation: "A metonímia (névcsere) lényege, hogy két fogalom közötti valóságos érintkezés (térbeli, időbeli, anyagbeli vagy ok-okozati kapcsolat) révén az egyik nevét a másikra vetítjük."
+    },
+    {
+      question: "Milyen típusú metonímia látható az „alszik a ház” kifejezésben?",
+      options: ["Időbeli érintkezés", "Térbeli érintkezés", "Anyagbeli érintkezés", "Ok-okozati érintkezés"],
+      correctIndex: 1,
+      explanation: "Ez térbeli érintkezésen alapuló metonímia, mivel a hely (ház) nevét használjuk a benne lévő emberek (lakók) helyett."
+    },
+    {
+      question: "Milyen metonímia szerepel a „Végigolvastam Aranyt” mondatban?",
+      options: ["Anyagbeli érintkezés", "Ok-okozati érintkezés (szerző a mű helyett)", "Térbeli érintkezés", "Időbeli érintkezés"],
+      correctIndex: 1,
+      explanation: "Ez ok-okozati (szerző-mű) metonímia, ahol az alkotó (Arany) nevét használjuk az általa létrehozott művek helyett."
+    },
+    {
+      question: "Mi a szinekdoché lényege?",
+      options: ["Érzéki benyomások összekapcsolása", "A rész-egész vagy a nem-faj viszonyán alapuló jelentésátvitel", "Egy elvont eszme képsora", "A hasonlóságon alapuló azonosítás"],
+      correctIndex: 1,
+      explanation: "A szinekdoché a metonímia alfaja, amely kifejezetten a rész-egész (pl. rész az egész helyett) vagy a nem-faj (pl. fajnév a nemnév helyett) viszonyára épül."
+    },
+    {
+      question: "Melyik kifejezésben valósul meg a szinekdoché rész-egész viszonya?",
+      options: ["Retteg a huszadik század", "Nincs egy fia deszkája sem (koporsó helyett deszka)", "Megiszom egy pohárral", "Vasra verik"],
+      correctIndex: 1,
+      explanation: "A „deszka” a koporsó egy része, így a rész megnevezése az egész helyett szinekdoché."
+    },
+    {
+      question: "Mi a szimbólum (jelkép) fő jellemzője a költészetben?",
+      options: ["Kizárólag egyetlen, pontosan lefordítható jelentése van", "Egy elvont gondolat vagy érzés érzéki képe, amelynek jelentése többrétegű, homályos és hangulati", "Egy rövid, kötőszavas hasonlítás", "A hangutánzó szavak felhalmozása"],
+      correctIndex: 1,
+      explanation: "A szimbólum többértelmű, sejtelmes költői kép, amely egy elvont fogalmat vagy érzést jelenít meg érzéki formában, és nem fejthető meg egyértelműen."
+    },
+    {
+      question: "Melyik stilisztikai eszköz jelenik meg Petőfi Sándor „Föltámadott a tenger” című versében, ahol a tenger a népet, a gálya a zsarnokokat jelképezi végig a mű során?",
+      options: ["Szinesztézia", "Szinekdoché", "Allegória", "Metonímia"],
+      correctIndex: 2,
+      explanation: "Az allegória egy elvont gondolat vagy eszme részletes bemutatása képsorozaton vagy egy egész történeten keresztül."
+    },
+    {
+      question: "Melyik szókép szerepel Ady Endre „A fekete zongora” című versének címében?",
+      options: ["Hasonlat", "Szimbólum", "Metonímia", "Szinekdoché"],
+      correctIndex: 1,
+      explanation: "A fekete zongora egy összetett, többrétegű költői kép, azaz szimbólum, amely az életet, a halált vagy a művészetet jeleníti meg sejtelmesen."
+    },
+    {
+      question: "Mit jelent az anyagbeli érintkezésen alapuló metonímia?",
+      options: ["Amikor az edényt használjuk a benne lévő dolog helyett", "Amikor az anyag nevét használjuk a belőle készült tárgy helyett (pl. 'vasra verik')", "Amikor a szerző nevével utalunk a művére", "Amikor a rész nevét használjuk az egész helyett"],
+      correctIndex: 1,
+      explanation: "Az anyagbeli érintkezés során az anyag neve (vas) jelöli a belőle készült tárgyat (bilincs)."
+    },
+    {
+      question: "Melyik szókép található Babits Mihály „fekete hegedűszó” kifejezésében?",
+      options: ["Megszemélyesítés", "Szinesztézia", "Hasonlat", "Szinekdoché"],
+      correctIndex: 1,
+      explanation: "A „fekete” (látás) és a „hegedűszó” (hallás) érzékterületeinek összekapcsolása szinesztézia."
+    },
+    {
+      question: "Mi a különbség az allegória és a szimbólum között?",
+      options: ["Nincs köztük különbség", "A szimbólum jelentése többrétegű és homályos, míg az allegória egy gondolatsort, történetet visz végig egyértelműbb jelentéssel", "Az allegória mindig rövidebb, mint a szimbólum", "A szimbólum nem szókép, az allegória igen"],
+      correctIndex: 1,
+      explanation: "A szimbólum egyedi, többértelmű kép, míg az allegória egy végigvitt, racionálisabban lefordítható képsor vagy megszemélyesített eszme (pl. az Igazság mint bekötött szemű nőalak)."
+    },
+    {
+      question: "Melyik elem felel meg az átvitt képnek (vehicle) a szóképek elemzésekor?",
+      options: ["A kiinduló fogalom, amit azonosítani akarunk", "A kép, amellyel azonosítunk, vagy amelyre a jelentést átvisszük", "A két fogalom közötti közös tulajdonság", "A kötőszó"],
+      correctIndex: 1,
+      explanation: "A stilisztikában a kiinduló fogalom a tenor, az átvitt kép a vehicle, a közös tulajdonság pedig a ground."
+    },
+    {
+      question: "Melyik szókép látható a következő mondatban: „A stadion ujjongott a gól után”?",
+      options: ["Hasonlat", "Térbeli érintkezésen alapuló metonímia", "Szinesztézia", "Szinekdoché"],
+      correctIndex: 1,
+      explanation: "A stadion (mint hely, építmény) nevét használjuk a benne lévő emberek (nézők) helyett, ami térbeli metonímia."
+    },
+    {
+      question: "Melyik szókép ismerhető fel József Attila „Kék, piros, sárga, összedőlt képeket / kevergetek...” sorában?",
+      options: ["Metafora (az emlékek mint képek)", "Megszemélyesítés", "Szinekdoché", "Metonímia"],
+      correctIndex: 0,
+      explanation: "Az emlékek azonosítása a színes, összedőlt képekkel metafora (kéttagú, mert az emlékek a kontextusban vannak)."
     }
   ]
 });

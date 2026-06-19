@@ -71,22 +71,124 @@ window.loadGrammarData(20, {
   ],
   quiz: [
     {
-      question: "Mit jelent a digitális térben a CSUPA NAGYBETŰS írásmód?",
-      options: ["Hogy a szöveg nagyon fontos információt tartalmaz", "Kiabálást, agresszív hangnemet", "Hogy a küldő sietett", "Hogy a helyesírás-ellenőrző be van kapcsolva"],
+      question: "Mit nevezünk információs társadalomnak?",
+      options: ["Olyan társadalmat, ahol nincs szükség technológiára", "Olyan társadalmi berendezkedést, ahol az információ előállítása, feldolgozása és közvetítése kulcsfontosságúvá vált a technológia révén", "A könyvnyomtatás elterjedésének korát", "A középkori írásbeliség időszakát"],
       correctIndex: 1,
-      explanation: "A hálózati etikett (netikett) szerint a csupa nagybetűs írás kiabálást jelent, ezért a mindennapi kommunikációban udvariatlanságnak számít."
+      explanation: "Az információs társadalom a modern digitális technológiára épül, ahol az információáramlás a gazdaság és a kultúra motorja."
     },
     {
-      question: "Melyik fogalom írja le a chatelés során tapasztalható írott, de szóbeli jellegű nyelvhasználatot?",
-      options: ["Elsődleges szóbeliség", "Másodlagos szóbeliség (írott beszélt nyelv)", "Hivatalos stílusréteg", "Tudományos értekezés"],
+      question: "Melyik nyelvészeti szakkifejezés írja le a chatelésre jellemző írott, de szóbeli jellegzetességeket mutató nyelvhasználatot?",
+      options: ["Elsődleges szóbeliség", "Másodlagos szóbeliség (írott beszélt nyelv)", "Tudományos nyelv", "Klasszikus írásbeliség"],
       correctIndex: 1,
-      explanation: "Az internetes chat írott formában zajlik, de nyelvtani és stilisztikai jellemzői (spontaneitás, laza szerkezet, érzelmi töltet) az élőbeszédre hasonlítanak, ezért írott beszélt nyelvnek vagy másodlagos szóbeliségnek nevezzük."
+      explanation: "Az internetes csevegések nyelve írott formájú, de spontaneitásában, szerkezetében és stílusában a beszélt nyelvet idézi (másodlagos szóbeliség)."
     },
     {
-      question: "Ki alkotta meg az 'Internet-nyelvészet' (Internet linguistics) fogalmát?",
-      options: ["Kazinczy Ferenc", "David Crystal", "Arisztotelész", "Noam Chomsky"],
+      question: "Ki volt az az angol nyelvész, aki az „Internet-nyelvészet” (Internet linguistics) tudományterületét megalapozta?",
+      options: ["Noam Chomsky", "David Crystal", "Ferdinand de Saussure", "William Shakespeare"],
       correctIndex: 1,
-      explanation: "David Crystal brit nyelvész volt az, aki úttörőként kutatta az internet hatását a nyelvre, és megalkotta ezt a tudományterületi megnevezést."
+      explanation: "David Crystal brit nyelvész volt az internetes nyelvhasználat kutatásának úttörője és a terület elnevezője."
+    },
+    {
+      question: "Melyik magyar nyelvész foglalkozott kiemelten a „netnyelv” és az infokommunikáció hatásainak kutatásával?",
+      options: ["Kazinczy Ferenc", "Balázs Géza", "Révai Miklós", "Aranyi János"],
+      correctIndex: 1,
+      explanation: "Balázs Géza (és Bódi Zoltán) a magyar netnyelv és az információs társadalom nyelvhasználatának legfőbb hazai kutatói."
+    },
+    {
+      question: "Melyik kommunikációs forma minősül szinkron (valós idejű) digitális kommunikációnak?",
+      options: ["Az e-mail küldés", "A valós idejű chat (pl. Messenger, WhatsApp)", "Egy blogbejegyzés megírása", "Fórum hozzászólás"],
+      correctIndex: 1,
+      explanation: "A szinkron kommunikáció valós időben zajlik, ahol a felek egyszerre vannak jelen (pl. azonnali üzenetküldés), míg az e-mail vagy a blog aszinkron."
+    },
+    {
+      question: "Melyik nyelvi gazdaságosságra törekvő eszköz terjedt el leginkább az internetes chatelés során?",
+      options: ["A passzív mondatszerkesztés", "Rövidítések és betűszavak (pl. sztem, lol, pill)", "A körmondatok használata", "A latin szakszavak használata"],
+      correctIndex: 1,
+      explanation: "A gyorsaság igénye miatt a netnyelvben elterjedtek a rövidítések (sztem = szerintem, pill = pillanat, lol = laugh out loud)."
+    },
+    {
+      question: "Milyen eszközzel pótolják a beszélők a digitális írott szövegből hiányzó nonverbális csatornákat (mimikát, hangsúlyt)?",
+      options: ["Bonyolult írásjelekkel", "Hangulatjelekkel (emotikonok, emojik) és GIF-ekkel", "Hosszabb mondatokkal", "Idegen szavakkal"],
+      correctIndex: 1,
+      explanation: "Az emojik és GIF-ek a személyes beszélgetés nonverbális jeleit (arckifejezést, gesztusokat) hivatottak helyettesíteni az írott szövegben."
+    },
+    {
+      question: "Mit jelent az anglicizmusok terjedése a modern digitális nyelvhasználatban?",
+      options: ["Angol nyelvű könyvek olvasását", "Angol eredetű szavak beépülését és magyarosodását a nyelvben (pl. lájkol, posztol)", "Az angol nyelv hivatalossá tételét", "Az angol nyelvtan szabályainak átvételét"],
+      correctIndex: 1,
+      explanation: "Az informatika és a közösségi média hatására rengeteg angol szó épült be a magyar nyelvbe (pl. posztol, megoszt, share-el, lájkol)."
+    },
+    {
+      question: "Mit nevezünk netikettnek (hálózati etikettnek)?",
+      options: ["Az internet sebességét mérő szoftvert", "A virtuális térben való kulturált viselkedés íratlan szabályrendszerét", "Az e-mailek automatikus törlését", "A számítógépes vírusok elleni védelmet"],
+      correctIndex: 1,
+      explanation: "A netikett (network + etiquette) a kulturált internetes kommunikáció és viselkedés szabályait tartalmazza."
+    },
+    {
+      question: "Miért számít udvariatlanságnak (kiabálásnak) a CSUPA NAGYBETŰS írás a netikett szerint?",
+      options: ["Mert nehéz elolvasni", "Mert a digitális térben a csupa nagybetű a hangos kiáltás vizuális megfelelője", "Mert helyesírási hibának minősül", "Mert túl sok helyet foglal"],
+      correctIndex: 1,
+      explanation: "A netikettben a csupa nagybetű a kiabálást jelképezi, így agresszívnek vagy udvariatlannak hathat."
+    },
+    {
+      question: "Melyik tényező jelent veszélyt a helyesírásra a digitális nyelvhasználat következtében?",
+      options: ["A túl sok olvasás", "A gyors gépelés miatti ékezetelhagyás, kisbetűs írásmód és az írásjelek elhanyagolása", "A helyesírás-ellenőrző programok túlzott pontossága", "A szépírás gyakorlása"],
+      correctIndex: 1,
+      explanation: "A gyors és kötetlen csevegés során a beszélők gyakran elhagyják az ékezeteket, a vesszőket és a mondatkezdő nagybetűket, ami rontja a helyesírási készségeket."
+    },
+    {
+      question: "Hogyan hat a sémák és emojik túlzott használata a beszélő szókincsére?",
+      options: ["Gazdagítja és árnyalja a kifejezésmódot", "A szókincs beszűküléséhez, a gondolatok leegyszerűsítéséhez vezethet", "Növeli az idegen szavak ismeretét", "Nem gyakorol rá hatást"],
+      correctIndex: 1,
+      explanation: "Ha a szavak helyett folyamatosan emojikat és előre gyártott sémákat használunk, csökken az árnyalt, pontos fogalmi kifejezés képessége."
+    },
+    {
+      question: "Mit jelent a digitális generációs nyelvi szakadék?",
+      options: ["A különböző generációk eltérő internetsebességét", "A fiatalok (Z és Alfa generáció) digitális szlengje és az idősebbek nyelvhasználata közötti megértési nehézségeket", "A számítógépek generációs fejlődését", "Az iskolai tankönyvek elavulását"],
+      correctIndex: 1,
+      explanation: "Az új technológiákkal felnövő generációk olyan szlenget és netnyelvet használnak, amelyet az idősebb korosztály gyakran nehezen vagy egyáltalán nem ért meg."
+    },
+    {
+      question: "Melyik stilisztikai elvárás érvényes egy hivatalos e-mail megírásakor a munkahelyen vagy iskolában?",
+      options: ["Nyugodtan használhatunk ékezet nélküli chat-szlenget és emojikat", "Pontos, választékos megfogalmazást és helyesírási szabályok betartását követeli meg", "Nem kell megszólítást alkalmazni", "Csak angolul szabad írni"],
+      correctIndex: 1,
+      explanation: "Bár az e-mail digitális csatorna, a hivatalos kommunikációban meg kell őrizni a formális stílust, a helyesírást és a hagyományos udvariassági normákat."
+    },
+    {
+      question: "Mit jelent az aszinkron kommunikáció fogalma?",
+      options: ["Amikor a felek egyszerre, élőben beszélnek", "Amikor az üzenetküldés és a válaszadás között időbeli eltolódás van (pl. e-mail, fórum)", "Amikor a számítógép lefagy", "Amikor nincs internetkapcsolat"],
+      correctIndex: 1,
+      explanation: "Az aszinkron kommunikációban a felek időben eltolva reagálnak egymás üzeneteire (nem egy időben zajlik az adás és a vétel)."
+    },
+    {
+      question: "Melyik szó számít klasszikus netnyelvi jövevényszónak (anglicizmusnak)?",
+      options: ["Kerékpár", "Lájkol", "Tinta", "Iskola"],
+      correctIndex: 1,
+      explanation: "A „lájkol” a digitális nyelvben az angol „to like” szóból képzett, magyar igekötővel és toldalékkal ellátott szó."
+    },
+    {
+      question: "Mi a legfőbb előnye az internetes nyelvhasználatnak a kommunikáció gyorsaságát tekintve?",
+      options: ["Lassítja a válaszadást", "Lehetővé teszi az azonnali, globális információcserét és a gyors reagálást", "Megszünteti az írásbeli formát", "Kizárólag bonyolult kódokat használ"],
+      correctIndex: 1,
+      explanation: "A netnyelv a gyorsaságra épül, lehetővé téve a valós idejű, globális interakciókat."
+    },
+    {
+      question: "Melyik nemkívánatos jelenség tartozik a netikett megsértéséhez?",
+      options: ["A trollkodás és a gyűlöletbeszédet tartalmazó kommentelés", "Az udvarias elköszönés", "A helyesírási hibák javítása", "A hivatalos hangnem használata"],
+      correctIndex: 0,
+      explanation: "A provokatív, rosszindulatú kommentelés (trollkodás) és a gyűlöletbeszéd súlyosan sérti a hálózati etikettet."
+    },
+    {
+      question: "Melyik tulajdonság NEM jellemzi az „írott beszélt nyelv” (másodlagos szóbeliség) koncepcióját?",
+      options: ["A spontaneitás", "A kötetlen mondatszerkesztés", "A passzív szerkezetek és a rendkívül bonyolult, többszörösen összetett körmondatok túlsúlya", "Az érzelmi töltet és a közvetlenség"],
+      correctIndex: 2,
+      explanation: "Az írott beszélt nyelvet a laza szerkezet és az egyszerű mondatok jellemzik; a bonyolult körmondatok a klasszikus, formális írásbeliség sajátjai."
+    },
+    {
+      question: "Mi a legfontosabb nyelvi tudatossággal kapcsolatos elv az információs társadalomban?",
+      options: ["Mindenhol chat-szlengben kell beszélni és írni", "Tudni kell különbséget tenni a kommunikációs helyzetek között, és a megfelelő stílust alkalmazni (laza csevegés vs. hivatalos szöveg)", "Teljesen el kell utasítani az internet használatát", "Csak emotikonokkal szabad kommunikálni"],
+      correctIndex: 1,
+      explanation: "A modern nyelvhasználatban a legfontosabb a helyzetnek megfelelő stílus megválasztása (stílusregiszterek közötti rugalmas váltás)."
     }
   ]
 });
